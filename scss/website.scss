@@ -17,7 +17,7 @@ $dark: $brandDark;
 $primary: $brandBlue;
 .Hero {
   overflow: hidden;
-  
+  height: 400px;
   .display-1 {
       border-left: 1px solid $brandOrange;
       position: relative;
@@ -39,11 +39,10 @@ $primary: $brandBlue;
           height: 50px;
           padding: 5px;  
         }
-        border-bottom: 1px solid rgba($brandDark, 0.4);
+        border-bottom: 1px solid rgba($body-bg, 0.4);
     }
 
     .logoicon {        
-        margin-top: 70px;
         height: 65px;
         transition: all .2s ease-in;
     }
@@ -63,13 +62,13 @@ $primary: $brandBlue;
     }
 }
 .round {
-  height: 100px;
-  width: 115%;  
-  position: absolute;  
+  height: 102px;
+  width: 120vw;  
+  
   background-color: white;
-  transform: rotate(-3deg);
-  border-top-left-radius: 18%;
-  border-top-right-radius: 80%;
+  transform: rotate(-1.5deg);
+  border-top-left-radius: 80%;
+  border-top-right-radius: 50%;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
