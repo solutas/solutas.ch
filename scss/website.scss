@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Neuton:800");
+@import url(../assets/animate.css);
+
+$font-family-serif: "Neuton", serif !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+
+$headings-font-family: $font-family-serif;
+
+$brandDark: #000015;
+$brandOrange: #dd851b;
+$brandBlue: #4b6cb7;
+
+$body-bg: white;
+$body-color: #111;
+$dark: $brandDark;
+$primary: $brandBlue;
+.Hero {
+  overflow: hidden;
+  
+  .display-1 {
+      border-left: 1px solid $brandOrange;
+      position: relative;
+      top: -20px;
+      margin-bottom:20px;
+      padding:0;
+      padding-left: 20px;
+    animation-duration: 2s !important;
+  }
+  padding:0;
+  margin:0;
+  
+}
+
+.brandnav {
+    &.navactive {
+        .logoicon {            
+            margin-top:0;
+          height: 50px;
+          padding: 5px;  
+        }
+        border-bottom: 1px solid rgba($brandDark, 0.4);
+    }
+
+    .logoicon {        
+        margin-top: 70px;
+        height: 65px;
+        transition: all .2s ease-in;
+    }
+}
+.TopNavigation {
+        height: 80px;
+        transition: all .5s ease-in;
+
+        &.bg-none {
+            background: none;
+            color: white;
+        }   
+}
+.navactive {
+    .TopNavigation {
+        height: 50px;
+    }
+}
+.round {
+  height: 100px;
+  width: 115%;  
+  position: absolute;  
+  background-color: white;
+  transform: rotate(-3deg);
+  border-top-left-radius: 18%;
+  border-top-right-radius: 80%;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
