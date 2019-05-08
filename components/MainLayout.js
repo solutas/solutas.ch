@@ -1,7 +1,7 @@
 //import "bootstrap/dist/css/bootstrap.min.css";
 import "../scss/website.scss";
 //import "../assets/custom.css";
-import {  Button,Container, Row, Col  } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 import Header from "./Header";
 import TopNavigation from "./TopNavigation";
 import Icon from "../assets/solutas-brief-weiss.png";
@@ -13,64 +13,76 @@ const layoutStyle = {
   padding: 0
 };
 
-
 class Layout extends React.Component {
   state = {
     topnavActive: false
-  }
-  
-  handleStatusChange = (event) => {
-    if(event.subject === "TOPNAV_CHANGE") {
+  };
+
+  handleStatusChange = event => {
+    if (event.subject === "TOPNAV_CHANGE") {
       this.setState({
         topnavActive: event.status
-      })
+      });
     }
-  }
+  };
   componentDidMount() {
     eventService.subscribe(this.handleStatusChange);
   }
 
   render() {
-   return (<div style={layoutStyle} className={`topnavActive-${this.state.topnavActive}`}>
-    <TopNavigation/> 
+    return (
+      <div
+        style={layoutStyle}
+        className={`topnavActive-${this.state.topnavActive}`}
+      >
+        <TopNavigation />
 
-    <h1 style={{marginTop: "200px"}}>{this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}</h1>
-    {this.props.children}
-    
-    <h1>{this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}</h1>
-    <div className="footer">
-      <Container>
-        <Row>
-          <Col sm="12" md="3" className="logo d-none d-lg-block"><img src={Icon} style={{ width: "200px"}}/>
-          </Col>
-          <Col sm="6" md="3">
-          <address>
-  <strong>SOLUTAS GmbH</strong><br/>
-  Paradieshofstrasse 117<br/>
-  4054 Basel, Switzerland
-  </address>
-          </Col>
-          <Col sm="6" md="3">
-          <address><br/>
-          <abbr title="Phone">Phone</abbr> +41 79 597 500 6<br/>
-            <abbr title="E-Mail">E-Mail</abbr> info@solutas.ch
-          </address>
-          </Col>
-          <Col sm="12" lg="3" className="d-none d-lg-block">
-          <address>
-          <abbr title="CH VAT No">CH VAT No</abbr> CH-234.973.545 MWST<br/>
-<abbr title="USt-IdNr">USt-IdNr</abbr> CH-234.973.545
-</address></Col>
-        </Row>
-        <Row>
-          <Col md="12" className="text-center copyright">Copyright &copy; 2019 SOLUTAS GmbH. All rights reserved.</Col>          
-        </Row>
-      </Container>
-    </div>
-  </div>)  
+        <h1 style={{ marginTop: "200px" }}>
+          {this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}
+        </h1>
+        {this.props.children}
 
+        <h1>{this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}</h1>
+        <div className="footer">
+          <Container>
+            <Row>
+              <Col sm="12" md="3" className="logo d-none d-lg-block">
+                <img src={Icon} style={{ width: "200px" }} />
+              </Col>
+              <Col sm="6" md="3">
+                <address>
+                  <strong>SOLUTAS GmbH</strong>
+                  <br />
+                  Paradieshofstrasse 117
+                  <br />
+                  4054 Basel, Switzerland
+                </address>
+              </Col>
+              <Col sm="6" md="3">
+                <address>
+                  <br />
+                  <abbr title="Phone">Phone</abbr> +41 79 597 500 6<br />
+                  <abbr title="E-Mail">E-Mail</abbr> info@solutas.ch
+                </address>
+              </Col>
+              <Col sm="12" lg="3" className="d-none d-lg-block">
+                <address>
+                  <abbr title="CH VAT No">CH VAT No</abbr> CH-234.973.545 MWST
+                  <br />
+                  <abbr title="USt-IdNr">USt-IdNr</abbr> CH-234.973.545
+                </address>
+              </Col>
+            </Row>
+            <Row>
+              <Col md="12" className="text-center copyright">
+                Copyright &copy; 2019 SOLUTAS GmbH. All rights reserved.
+              </Col>
+            </Row>
+          </Container>
+        </div>
+      </div>
+    );
   }
 }
-
 
 export default Layout;
