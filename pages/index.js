@@ -7,7 +7,7 @@ import Logo from "../assets/solutas-icon.png";
 
 const Index = () => (
   <Layout>
-    <Hero title="Time to reclaim what's really important" roundBottom/> 
+    <Hero title="Time to reclaim what's really important" color1="#000015" color2="#4b6cb7"/> 
     <TopNavigation/>    
   <Container  fluid>
     <Row>      

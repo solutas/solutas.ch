@@ -21,7 +21,7 @@ const Hero = props => (
 
     <Container>
       <h1 className="display-1 fadeInUp animated delay-2"   style={{
-      color: `${props.color ? props.color : "#dd851b"}
+      color: `${props.color ? props.color : ""}
   `
     }}>{props.title ? props.title : "add title"}</h1>
       {/*

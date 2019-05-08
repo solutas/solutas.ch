@@ -17,12 +17,13 @@ $dark: $brandDark;
 $primary: $brandBlue;
 .Hero {
   overflow: hidden;
-  height: 400px;
+  
   .display-1 {
-      border-left: 1px solid $brandOrange;
+      
       position: relative;
       top: -20px;
       margin-bottom:20px;
+      color: rgba($body-bg, 0.7);
       padding:0;
       padding-left: 20px;
     animation-duration: 2s !important;
@@ -49,7 +50,7 @@ $primary: $brandBlue;
 }
 .TopNavigation {
         height: 80px;
-        transition: all .5s ease-in;
+        transition: all .2s ease-in;
 
         &.bg-none {
             background: none;
@@ -69,6 +70,11 @@ $primary: $brandBlue;
   transform: rotate(-1.5deg);
   border-top-left-radius: 80%;
   border-top-right-radius: 50%;
+}
+.footer {
+  background-color: $brandDark; 
+  color: rgba(white, 0.7);
+  padding: 15px;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";

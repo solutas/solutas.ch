@@ -16,6 +16,7 @@ import {
 
 import Icon from "../assets/solutas-brief-weiss.png";
 import Icon2 from "../assets/solutas-icon.png";
+import eventService from "../services/ScrollEventService";
 
 // color1="#4b6bb7ed" color2="#182848e5" color=""
 
@@ -40,17 +41,25 @@ export default class TopNavigation extends React.Component {
   };
 
   calculateNav = () => {
-      console.log(this.elementHeight);
     if (this.offsetTop >= this.elementHeight && !this.highlight) {
       this.setState({
         highlight: true
       });
       this.highlight = true;
+      eventService.emmit({  
+        subject: "TOPNAV_CHANGE",
+        status: true
+      })
     } else if (this.offsetTop < this.elementHeight && this.highlight) {
       this.setState({
         highlight: false
       });
       this.highlight = false;
+      eventService.emmit({  
+        subject: "TOPNAV_CHANGE",
+        status: false
+      })
+
     }
   };
   updateElementHeight = () => {
@@ -64,8 +73,8 @@ export default class TopNavigation extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener(this.handleScrollEvent);
-    window.removeEventListener(this.updateElementHeight);
+    //window.removeEventListener(this.handleScrollEvent);
+    //window.removeEventListener(this.updateElementHeight);
   }
 
   toggle() {

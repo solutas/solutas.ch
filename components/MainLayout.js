@@ -5,17 +5,39 @@ import {  Button,Container, Row, Col  } from "reactstrap";
 import Header from "./Header";
 import TopNavigation from "./TopNavigation";
 import Icon from "../assets/solutas-brief-weiss.png";
+
+import eventService from "../services/ScrollEventService";
+
 const layoutStyle = {
   margin: 0,
   padding: 0
 };
 
-const Layout = props => (
-  <div style={layoutStyle}>
+
+class Layout extends React.Component {
+  state = {
+    topnavActive: false
+  }
+  
+  handleStatusChange = (event) => {
+    if(event.subject === "TOPNAV_CHANGE") {
+      this.setState({
+        topnavActive: event.status
+      })
+    }
+  }
+  componentDidMount() {
+    eventService.subscribe(this.handleStatusChange);
+  }
+
+  render() {
+   return (<div style={layoutStyle} className={`topnavActive-${this.state.topnavActive}`}>
     <TopNavigation/> 
-    {props.children}
 
-
+    <h1 style={{marginTop: "200px"}}>{this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}</h1>
+    {this.props.children}
+    
+    <h1>{this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}</h1>
     <div className="footer">
       <Container>
         <Row>
@@ -45,7 +67,10 @@ const Layout = props => (
         </Row>
       </Container>
     </div>
-  </div>
-);
+  </div>)  
+
+  }
+}
+
 
 export default Layout;
