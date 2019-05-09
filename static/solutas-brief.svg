@@ -1,23 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="42.210499mm"
    height="13.52646mm"
    viewBox="0 0 149.56476 47.9284"
    id="solutas-logo"
-   version="1.1">
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="solutas-brief.svg"
+   inkscape:export-filename="/Users/senol/github/labertasch.github.io/images/solutas-brief.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4805">
     <linearGradient
        id="linearGradient6909"
-       >
+       osb:paint="solid">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
          id="stop6911" />
     </linearGradient>
     <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6909"
        id="linearGradient6913"
        x1="379.50027"
        y1="237.08594"
@@ -25,8 +41,72 @@
        y2="237.08594"
        gradientUnits="userSpaceOnUse" />
   </defs>
-
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.5070378"
+     inkscape:cx="46.128234"
+     inkscape:cy="-26.298873"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1395"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:snap-text-baseline="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4857"
+       originx="-267.64444"
+       originy="-973.27902" />
+    <sodipodi:guide
+       position="192.35556,-133.27898"
+       orientation="0,1"
+       id="guide5461" />
+    <sodipodi:guide
+       position="232.35556,-183.27898"
+       orientation="0,1"
+       id="guide5463" />
+    <sodipodi:guide
+       position="93.35557,47.720998"
+       orientation="0,1"
+       id="guide3426" />
+    <sodipodi:guide
+       position="-0.6444304,33.720998"
+       orientation="1,0"
+       id="guide4232" />
+    <sodipodi:guide
+       position="149.35556,18.721018"
+       orientation="1,0"
+       id="guide4234" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4808">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
   <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-267.64444,-31.154823)">
     <g
@@ -70,7 +150,9 @@
        id="icon"
        style="fill:#dd851b;fill-opacity:1"
        transform="matrix(0.4170318,0,0,0.501677,63.252788,-69.63964)"
->      <g
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600">
+      <g
          id="stones"
          transform="matrix(0.16414741,0,0,0.16414741,471.29917,178.82729)">
         <ellipse

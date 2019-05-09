@@ -46,24 +46,25 @@ export default class TopNavigation extends React.Component {
         highlight: true
       });
       this.highlight = true;
-      eventService.emmit({  
+      eventService.emmit({
         subject: "TOPNAV_CHANGE",
         status: true
-      })
+      });
     } else if (this.offsetTop < this.elementHeight && this.highlight) {
       this.setState({
         highlight: false
       });
       this.highlight = false;
-      eventService.emmit({  
+      eventService.emmit({
         subject: "TOPNAV_CHANGE",
         status: false
-      })
-
+      });
     }
   };
   updateElementHeight = () => {
-    this.elementHeight = this.navigationElement.offsetHeight + this.navigationElement.offsetTop;
+    if (this.navigationElement)
+      this.elementHeight =
+        this.navigationElement.offsetHeight + 50;
   };
   componentDidMount() {
     this.updateElementHeight();
@@ -86,41 +87,38 @@ export default class TopNavigation extends React.Component {
     return (
       <div
         ref={ref => (this.navigationElement = ref)}
-        className={this.state.highlight ? "fixed-top navactive brandnav" : "fixed-top brandnav"}
+        className={
+          this.state.highlight
+            ? "fixed-top navactive brandnav"
+            : "fixed-top brandnav"
+        }
       >
         <Navbar
           color={this.state.highlight ? "primary" : "none"}
           expand="md"
-          className="TopNavigation"
+          className="TopNavigation md-auto"
         >
           <NavbarBrand href="/">
-            <img src={this.state.highlight ? Icon2 : Icon} className="logoicon"/>
+            <img src={Icon2} className="logoicon" />
           </NavbarBrand>
-          {/*
+          
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse isOpen={this.state.isOpen} navbar>         
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/components/">About Us</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
+                  Custom Development
                 </NavLink>
+              </NavItem>              
+              <NavItem>
+                <NavLink href="/components/">Our Services</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+
             </Nav>
-          </Collapse> */}
+          </Collapse> 
         </Navbar>
         <style jsx>{`
           .bg-solutas {

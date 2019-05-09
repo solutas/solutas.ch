@@ -20,10 +20,14 @@ const Hero = props => (
       { props.roundTop ? <div className="round-top"></div> : null }
 
     <Container>
+      {props.title ? 
       <h1 className="display-1 fadeInUp animated delay-2"   style={{
       color: `${props.color ? props.color : ""}
   `
     }}>{props.title ? props.title : "add title"}</h1>
+      : null}
+
+    {props.children}
       {/*
       
       

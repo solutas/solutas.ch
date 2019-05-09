@@ -33,13 +33,9 @@ class Layout extends React.Component {
     return (
       <div
         style={layoutStyle}
-        className={`topnavActive-${this.state.topnavActive}`}
+        className={this.state.topnavActive ? "topNavActive" : ""}
       >
         <TopNavigation />
-
-        <h1 style={{ marginTop: "200px" }}>
-          {this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}
-        </h1>
         {this.props.children}
 
         <h1>{this.state.topnavActive ? "NAV ACTIVE" : "NAV NOT ACTIVE"}</h1>

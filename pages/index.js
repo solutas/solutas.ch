@@ -4,11 +4,15 @@ import Layout from "../components/MainLayout.js";
 import { Jumbotron, Button,Container, Row, Col ,Badge } from "reactstrap";
 import TopNavigation from "../components/TopNavigation";
 import Logo from "../assets/solutas-icon.png";
-
+import { ReactComponent as LogoSvg } from "../assets/solutas-brief.svg";
+//Time to reclaim what's really important
 const Index = () => (
   <Layout>
-    <Hero title="Time to reclaim what's really important" color1="#000015" color2="#4b6cb7"/> 
-    <TopNavigation/>    
+    <Hero color1="#4b6cb7" color2="#000015">
+      <img src="/static/solutas-brief-2.svg" className="fadeInUp animated delay-2"width="500"/>
+      
+    </Hero> 
+    
   <Container  fluid>
     <Row>      
       <Col lg="3" style={{textAlign: "center", paddingTop: "20px"}} className="something d-none d-lg-block"><img  className=" leo animated flipInY" src={Logo}/>
