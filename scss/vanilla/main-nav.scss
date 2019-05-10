@@ -1,0 +1,51 @@
+.main-nav {
+  background-color: $brandBlue;
+  color: $brandWhite;
+  height: 50px;
+  display: grid;
+  grid-template-areas: "logo items";
+  align-items: center;
+  padding-left: 10px;
+
+  .logo {
+    grid-area: logo;
+    width: 50px;
+    height: 30px;
+    background-image: url("/static/solutas-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+  }
+
+  .main-nav-items {
+    grid-area: items;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    li {
+      list-style: none;
+      margin-right: 20px;
+      a {
+        color: $brandWhite;
+      }
+      &:hover {
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        border-bottom: 1px solid $brandWhite;
+      }
+      &.active {
+        a {
+          color: white;
+        }
+        border-bottom: 1px solid white;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
