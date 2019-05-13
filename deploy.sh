@@ -1,3 +1,5 @@
+rm -rfv ./node_modules
+npm install
 npm run build
 rm -rfv out
 npm run export
