@@ -9,6 +9,8 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 $font-family-sans-serif: "Lato", sans-serif;
 $headings-font-family: $font-family-serif;
 */
+
+/*
 $brandDark: #000015;
 $brandOrange: #dd851b;
 $brandBlue: #4b6cb7;
@@ -43,6 +45,7 @@ $primary: $brandBlue;
 
   .logoicon {
     transition: all 0.2s ease-in;
+  
     height: 50px;
     margin-top: 0;
     padding: 5px;
@@ -127,3 +130,4 @@ $primary: $brandBlue;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+*/

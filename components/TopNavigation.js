@@ -74,8 +74,8 @@ export default class TopNavigation extends React.Component {
   }
 
   componentWillUnmount() {
-    //window.removeEventListener(this.handleScrollEvent);
-    //window.removeEventListener(this.updateElementHeight);
+    window.removeEventListener(this.handleScrollEvent);
+    window.removeEventListener(this.updateElementHeight);
   }
 
   toggle() {
@@ -99,14 +99,14 @@ export default class TopNavigation extends React.Component {
           className="TopNavigation md-auto"
         >
           <NavbarBrand href="/">
-            <img src={Icon2} className="logoicon" />
+            <img src={Icon2} className="logoicon" /> 
           </NavbarBrand>
           
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>         
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">About Us</NavLink>
+                <NavLink href="/components/">About Us </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/reactstrap/reactstrap">

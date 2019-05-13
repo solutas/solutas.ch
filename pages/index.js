@@ -1,143 +1,401 @@
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
-import Hero from "../components/Hero";
-import Layout from "../components/MainLayout.js";
-import { Jumbotron, Button,Container, Row, Col ,Badge } from "reactstrap";
-import TopNavigation from "../components/TopNavigation";
+import { NavLink, Section } from "../components/TopNavLink";
+import EventService from "../services/ScrollEventService";
+
+import "../scss/vanilla/index.scss";
+
 import Logo from "../assets/solutas-icon.png";
-import { ReactComponent as LogoSvg } from "../assets/solutas-brief.svg";
-//Time to reclaim what's really important
-const Index = () => (
-  <Layout>
-    <Hero color1="#4b6cb7" color2="#000015">
-      <img src="/static/solutas-brief-2.svg" className="fadeInUp animated delay-2"width="500"/>
-      
-    </Hero> 
-    
-  <Container  fluid>
-    <Row>      
-      <Col lg="3" style={{textAlign: "center", paddingTop: "20px"}} className="something d-none d-lg-block"><img  className=" leo animated flipInY" src={Logo}/>
-      </Col>  
-      <Col md="12" lg="9">
-      <h1>About Us</h1>
-      <h2>Simplicity Matters.</h2>
-      <p>We are a Software Consultancy and Engineering Company located in Basel, Switzerland.</p>
-      <p>Our two Founders do have two totally different and unique Backgrounds. A licensed Nurse and a Computer Scientist. While both have had working in different domains, they both realized that technology, espacially in Software Engineering needs to be crafted around actual Human needs.</p>
-      <p>Merging over 10 Years experience in LifeScience, Tele Medicin, practicing Nurcing with more then 20 Years experience in Software Engineering in Digital Marketing, Media and Television resulted in SOLUTAS, because simplicty matters.</p>
-      <p>We dislike the Term User simply because it is degrating a Human just to be tool for using technology.</p>
-      <p>We believe that starting any Software Project focusing on the Human you want to target will ultimatvily lead to better results.</p>
-      <h3>At SOLUTAS we...</h3>
-      <blockquote className="blockquote">
-      <ul>
-        <li>...do love technology</li>
-        <li>...do love to solve very complex problems</li>
-        <li>...transfer your complex challenges into beautiful small and simple solutions</li>
-        <li>...design it for you</li>
-        <li>...architect it for you</li>
-        <li>...craft the software for you</li>
-        <li>...help you to focus on what you need</li>
-        <li>...simply enable you to your full potential</li>
-      </ul>
-      </blockquote>
+import Logo2 from "../assets/solutas-brief-weiss.png";
+import Fade from "react-reveal/Fade";
+import Flip from "react-reveal/Flip";
+import Slide from "react-reveal/Slide";
+/*
+export default () => {
+  return (
+    <div className="wrapper">
+      <nav className="main-nav">
+        <div className="logo">
+          <a href="/">
+            <img src={Logo} />
+          </a>
+        </div>
 
-      </Col>
-    </Row>  
-  </Container>    
+        <ul className="main-nav-items">
+          <li className="animated jackInTheBox">
+            <a href="">About Us.</a>
+          </li>
+          <li className="animated zoomIn">
+            <a href="">Services.</a>
+          </li>
+          <li className="animated bounceInRight">
+            <a href="">Contact Us.</a>
+          </li>
+        </ul>
+      </nav>
+      <header className="main-header">
+        <img src="/static/solutas-brief-2.svg" className="animated fadeInUp" />
+      </header>
+      <main className="content">
+        <section>
+          <Slide bottom opposite cascade>
+            <h1>Our Expertice. Your Benefit.</h1>
+          </Slide>
+          <Slide bottom cascade>
+          <article>
+            <h1>About Us.</h1>
+            <p>
+              We are a Software Consultancy and Engineering Company located in
+              Basel, Switzerland.
+            </p>
+            <p>
+              Our two Founders do have two totally different and unique
+              Backgrounds. A licensed Nurse and a Computer Scientist. While both
+              have had working in different domains, they both realized that
+              technology, espacially in Software Engineering needs to be crafted
+              around actual Human needs.
+            </p>
+            <p>
+              Merging over 10 Years experience in LifeScience, Tele Medicin,
+              practicing Nurcing with more then 20 Years experience in Software
+              Engineering in Digital Marketing, Media and Television resulted in
+              SOLUTAS, because simplicty matters.
+            </p>
+            <p>
+              We believe that starting any Software Project focusing on the
+              Human beeing going to actually using the Application will
+              ultimatvily lead to best results.
+            </p>
 
-  <Hero title="The Solution. Tailerd to you."
-  color="rgba(255,255,255,0.7)"
-  subHeader
-  color1="#000015" color2="#dd851b" />
+            <h1>At SOLUTAS we...</h1>
 
-
-<Container >
-    <Row>  
-    
-      <Col lg="12">
-      <h2 styleName="display-2">Custom Development</h2>
-      <h1 styleName="display-1">Engineering to make you happy.</h1>
-      <p>We believe that everybody diserves to have a custom software crafted to their individual needs.</p>
-      <p>We believe that this is possible regardless of the size of your organization.</p>
-      <p>We believe that there is a solution for every budget.</p>
-      <ul>
-        <li>Escalation Management</li>
-        <li>Custom Applications (for any size of business)</li>
-      </ul>
-      </Col>
-      
-    </Row>  
-  </Container>   
-
-  <Hero title="Our Services. Your Solution."   
-  color="rgba(255,255,255,0.7)"
-  subHeader
-  color1="#000015" color2="#4b6cb7" />
-
-    
-<Container>
-    <Row>  
-    <Col lg="6">
-    <h1 styleName="display-1">Business Consulting</h1>
-      </Col>  
-    
-      <Col lg="6">
-      <h1 styleName="display-1">App Development</h1>
-      <p>For us, you are not just a User, we are putting all our effort into designing and engineering solutions based around actual Human beeing.</p>
-     
-      <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
-
-      <ul>
-        <li>Escalation Management</li>
-        <li>Custom Applications (for any size of business)</li>
-      </ul>
-      </Col>
-      
-    </Row>  
-  </Container>   
-
-  <Hero title="Our Expertise. Your Benefit."   
-  color="rgba(255,255,255,0.7)"
-  subHeader
-  color1="#000015" color2="#4b6cb7" />
-
-    
-<Container>
-    <Row>  
-    <Col md="5">
-    <h4>Software Engineering</h4>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    <div className="expertise">
-    <Badge color="primary">Primary</Badge>
-        <Badge color="secondary">Secondary</Badge>
-        <Badge color="success">Success</Badge>
-        <Badge color="danger">Danger</Badge>
-        <Badge color="warning">Warning</Badge>
-        <Badge color="info">Info</Badge>
-        <Badge color="light">Light</Badge>
-        <Badge color="dark">Dark</Badge>
-    
+            <ul className="heartlist">
+              <Fade left>
+                <li>do love to solve very complex problems</li>
+                <li>do love technology</li>
+                <li>
+                  do love to transfer your complex challenges into beautiful
+                  small and simple solutions
+                </li>
+                <li>do love to design the solutions for you</li>
+                <li>do love to craft the software for you</li>
+                <li>do love to help you to focus on your actual work</li>
+              </Fade>
+            </ul>
+          </article>
+          </Slide>
+          <article>
+            <h1>Engineering to make you happy.</h1>
+            <p>
+              There is a correlation between over complicated, complex software
+              code, architecture and UI design and slow user adaption, usibility
+              and higher project costs.
+            </p>
+            <p>
+              Our definition of done is reached when happy users are using our
+              Software. Once we see how we could improve your daily life.
+            </p>
+            <h1>In our Team...</h1>
+            <ul className="smilelist">
+              <Fade left>
+                <li>
+                  We believe that everybody diserves to have a custom software
+                  crafted to their individual needs.
+                </li>
+                <li>
+                  We believe that this is possible regardless of the size of
+                  your organization.
+                </li>
+                <li>We believe that there is a solution for everything</li>
+                <li>
+                  We beleive that budget shouldn't stop you getting the
+                  Application you need
+                </li>
+              </Fade>
+            </ul>
+          </article>
+        </section>
+        <section>
+          <Slide bottom opposite cascade>
+            <h1>Our Services. Your Solutions.</h1>
+          </Slide>
+          <article>
+            <h1>Consulting</h1>
+            <ul className="smilelist">
+              <Fade left>
+                <li>Digital Transformation</li>
+                <li>Software Architecture</li>
+                <li>Agile Coaching</li>
+                <li>Escalation Management</li>
+                <li>Technical Project and Delivery Management</li>
+                <li>Change Management</li>
+              </Fade>
+            </ul>
+          </article>
+          <article>
+            <h1>Software Engineering.</h1>
+            <ul className="smilelist">
+              <Fade left>
+                <li>Custom Mobile and Desktop App Development</li>
+                <li>API Gateway Development</li>
+                <li>Big Data, Machinie Learning Solutions</li>
+                <li>Custom IoT and embedded Devices</li>
+                <li>
+                  Enterprise level Web Content Management Solutions (Adobe AEM,
+                  Magnolia,...)
+                </li>
+              </Fade>
+            </ul>
+          </article>
+          <p>If it's not listed, ask us and we find a solution.</p>
+        </section>
+      </main>
+      <footer className="main-footer">this is the footer</footer>
     </div>
-      </Col>  
-    
-      <Col md="5">
-      <h4>Network Engineering</h4>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    <div className="expertise">
-    <Badge color="primary">Primary</Badge>
-        <Badge color="secondary">Secondary</Badge>
-        <Badge color="success">Success</Badge>
-        <Badge color="danger">Danger</Badge>
-        <Badge color="warning">Warning</Badge>
-        <Badge color="info">Info</Badge>
-        <Badge color="light">Light</Badge>
-        <Badge color="dark">Dark</Badge>
-    
-    </div>
-      </Col>  
-      
-    </Row>  
-  </Container>   
+  );
+};
+*/
 
+export default class Vanilla extends React.Component {
+  scrolled = false;
+  state = {
+    scrolled: false
+  };
+  constructor() {
+    super();
+  }
+  componentDidMount() {
+    scrollSpy.update();
+    window.addEventListener("scroll", this.handleScrollEvent);
+  }
 
-  </Layout>
-);
-export default Index;
+  handleScrollEvent = () => {
+    if (window.pageYOffset >= 50) {
+      if (!this.scrolled) {
+        this.scrolled = true;
+        this.setState({
+          scrolled: true
+        });
+      }
+    } else {
+      if (this.scrolled) {
+        this.scrolled = false;
+        this.setState({
+          scrolled: false
+        });
+      }
+    }
+  };
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
+    window.removeEventListener(this.handleScrollEvent);
+  }
+  render() {
+    return (
+      <div className="wrapper" id="top">
+        <nav className={this.state.scrolled ? "main-nav scrolled" : "main-nav"}>
+          <Link className="logo" to="top" smooth={true} duration={500}>
+            <img src={Logo} />
+          </Link>
+
+          <ul className="main-nav-items">
+            <NavLink
+              className="animated jackInTheBox"
+              activeClass="active"
+              to="about-us"
+              offset={-50}
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              About Us.
+            </NavLink>
+            <NavLink
+              className="animated zoomIn"
+              activeClass="active"
+              to="services"
+              spy={true}
+              offset={-25}
+              smooth={true}
+              duration={500}
+            >
+              Services.
+            </NavLink>
+            <NavLink
+              className="animated bounceInRight"
+              activeClass="active"
+              to="contact-us"
+              spy={true}
+              offset={-25}
+              smooth={true}
+              duration={500}
+            >
+              Contact Us.
+            </NavLink>
+          </ul>
+        </nav>
+        <header className="main-header">
+          <img
+            src="/static/solutas-brief-2.svg"
+            className="animated fadeInUp"
+          />
+        </header>
+        <main className="content">
+          <Section id="about-us" title="Our Expertice. Your Benefit." color="#dd851b">
+            <section className="container">
+              <Slide bottom cascade ssrFadeout ssrReveal>
+                <article>
+                  <h1>Engineering to make you happy.</h1>
+
+                  <p>
+                    There is a correlation between over complicated, complex
+                    software code, architecture and UI design and slow user
+                    adaption, usibility and higher project costs.
+                  </p>
+                  <p>
+                    Our definition of done is reached when happy users are using
+                    our Software. Once we see how we could improve your daily
+                    life.
+                  </p>
+                </article>
+              </Slide>
+              <article>
+                <h1>At SOLUTAS we...</h1>
+
+                <ul className="heartlist">
+                  <Fade left>
+                    <li>do love to solve very complex problems</li>
+                    <li>do love technology</li>
+                    <li>
+                      do love to transfer your complex challenges into beautiful
+                      small and simple solutions
+                    </li>
+                    <li>do love to design the solutions for you</li>
+                    <li>do love to craft the software for you</li>
+                    <li>do love to help you to focus on your actual work</li>
+                  </Fade>
+                </ul>
+              </article>
+            </section>
+          </Section>
+          <Section id="services" title="Our Services. Your Solution." color="#4b6cb7">
+            <section className="container">
+              <article>
+                <h1>Consulting</h1>
+                <ul className="smilelist">
+                  <Fade left>
+                    <li>Digital Transformation</li>
+                    <li>Software Architecture</li>
+                    <li>Agile Coaching</li>
+                    <li>Escalation Management</li>
+                    <li>Technical Project and Delivery Management</li>
+                    <li>Change Management</li>
+                  </Fade>
+                </ul>
+              </article>
+              <article>
+                <h1>Software Engineering.</h1>
+                <ul className="smilelist">
+                  <Fade left>
+                    <li>Custom Mobile and Desktop App Development</li>
+                    <li>API Gateway Development</li>
+                    <li>Big Data, Machinie Learning Solutions</li>
+                    <li>Custom IoT and embedded Devices</li>
+                    <li>
+                      Enterprise level Web Content Management Solutions (Adobe
+                      AEM, Magnolia,...)
+                    </li>
+                  </Fade>
+                </ul>
+              </article>
+              {/*<h2 className="full-row">
+                If it's not listed, ask us and we find a solution.
+              </h2> */}
+            </section>
+          </Section>
+          <Section id="contact-us" title="Contact Us.">
+            <section className="container">
+              <article>
+                <h1>About Us.</h1>
+
+                <p>
+                  We are a Software Consultancy and Engineering Company located
+                  in Basel, Switzerland.
+                </p>
+                <p>
+                  Our two Founders do have two totally different and unique
+                  Backgrounds. A licensed Nurse and a Computer Scientist. While
+                  both have had working in different domains, they both realized
+                  that technology, espacially in Software Engineering needs to
+                  be crafted around actual Human needs.
+                </p>
+                <p>
+                  Merging over 10 Years experience in LifeScience, Tele Medicin,
+                  practicing Nurcing with more then 20 Years experience in
+                  Software Engineering in Digital Marketing, Media and
+                  Television resulted in SOLUTAS, because simplicty matters.
+                </p>
+              </article>
+
+              <article>
+                <h1>In our Team...</h1>
+                <ul className="smilelist">
+                  <Fade left>
+                    <li>
+                      We believe that everybody diserves to have a custom
+                      software crafted to their individual needs.
+                    </li>
+                    <li>
+                      We believe that this is possible regardless of the size of
+                      your organization.
+                    </li>
+                    <li>We believe that there is a solution for everything</li>
+                    <li>
+                      We beleive that budget shouldn't stop you getting the
+                      Application you need
+                    </li>
+                  </Fade>
+                </ul>
+              </article>
+            </section>
+          </Section>
+        </main>
+        <footer className="main-footer">
+          <section className="container">
+          <img src="/static/solutas-brief-2.svg" />
+            <address>
+              <strong>SOLUTAS GmbH</strong>
+              <br />
+              Paradieshofstrasse 117
+              <br />
+              4054 Basel, Switzerland
+            </address>
+            <address>              
+              <abbr title="Phone">Phone</abbr> +41 79 597 500 6<br />
+              <abbr title="E-Mail">E-Mail</abbr> info@solutas.ch
+            </address>
+            <address>
+              <abbr title="CH VAT No">CH VAT No</abbr> CH-234.973.545 MWST
+              <br />
+              <abbr title="USt-IdNr">USt-IdNr</abbr> CH-234.973.545
+            </address>
+          </section>
+          <h2 className="copyright">
+              Copyright &copy; 2019 SOLUTAS GmbH, Switzerland. All rights reserved.
+            </h2>
+
+        </footer>
+      </div>
+    );
+  }
+}

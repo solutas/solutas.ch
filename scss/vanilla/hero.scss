@@ -1,0 +1,47 @@
+@keyframes background-hero {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+.main-header {
+  height: 230px;
+  padding-top: 50px;
+  background-image: linear-gradient(220deg, #000015, #4b6cb7);
+  //background-size: 400% 400%;
+  //background-position: 0% 100%;
+  //animation: background-hero 10s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $brandWhite;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  @media (min-width: 800px) {
+    
+      height:350px;
+      animation:none;
+      background-position: fixed;
+    background-size: cover;
+  }
+  img {
+    width: 80%;
+    max-width: 400px;
+    animation-duration: 3s;
+  }
+  h1 {
+    color: $brandWhite;
+    font-weight: 700;
+    font-size: 2rem;
+    background-image: linear-gradient(220deg, #000015, #4b6cb7);
+    line-height: 1;
+    padding: 2px;
+  }
+}

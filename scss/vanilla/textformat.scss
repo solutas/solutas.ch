@@ -1,0 +1,27 @@
+ul {
+  &.heartlist {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 1em;
+    list-style: none;    
+    li {
+      position: relative;
+      padding-left: 0em;
+      margin-bottom:15px;
+      &:before {
+        content: "♥";
+        font-size: 1.2rem;
+        color: rgb(212, 28, 37);
+        position: relative;
+        left: -.8em;
+      }
+    }
+  }
+
+  &.smilelist {
+      list-style:  square;
+    margin: 0;
+    padding-left:15px;
+    line-height: 2;
+
+  }
+}
