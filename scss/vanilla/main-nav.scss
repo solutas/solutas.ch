@@ -45,6 +45,8 @@ $navHeight: 50px;
     padding-right: 20px;
     font-size: .9rem;
     top: 0;
+   
+
     li {
       list-style: none;
       margin-right: 20px;
@@ -78,6 +80,13 @@ $navHeight: 50px;
       &:last-child {
         margin-right: 0;
       }
+
     }
+    @media (min-width: 800px) { 
+      max-width: 500px;
+      margin: auto auto;
+         
+     }
+
   }
 }

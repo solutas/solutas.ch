@@ -2714,6 +2714,10 @@ ul.smilelist {
           color: white; }
       .main-nav .main-nav-items li:last-child {
         margin-right: 0; }
+    @media (min-width: 800px) {
+      .main-nav .main-nav-items {
+        max-width: 500px;
+        margin: auto auto; } }
 
 .main-footer {
   background-color: #000015;
