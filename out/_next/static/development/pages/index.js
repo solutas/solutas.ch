@@ -22,6 +22,115 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAADGCAYAAACN
 
 /***/ }),
 
+/***/ "./components/Blur.js":
+/*!****************************!*\
+  !*** ./components/Blur.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blur; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+var _jsxFileName = "/home/senol/Projects/solutas.ch/components/Blur.js";
+
+
+var Blur =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Blur, _React$Component);
+
+  function Blur() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Blur);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Blur)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "a", [["i", "n", "f", "o"], ["s", "o", "l", "u", "t", "a", "s"], [".", "c", "h"]]);
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "t", [["+", "4", "1 ", "7", "9 "], ["5", "9", "7 ", "5"], ["0", "0", "6"]]);
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      active: false
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "unBlur", function () {
+      var t = _this.props.a ? _this.a[0].join("") + "@" + _this.a[1].join("") + _this.a[2].join("") : _this.t[0].join("") + _this.t[1].join("") + _this.t[2].join("");
+      var text = _this.props.a ? react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "mailto:" + t,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, t) : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
+        href: "tel:" + t,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, t);
+
+      _this.setState({
+        active: true,
+        text: text
+      });
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Blur, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return this.state.active ? this.state.text : react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+        className: "blur",
+        title: "click to see",
+        onClick: function onClick() {
+          _this2.unBlur();
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        },
+        __self: this
+      }, "xxxxxxx");
+    }
+  }]);
+
+  return Blur;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+
+
+
+/***/ }),
+
 /***/ "./components/TopNavLink.js":
 /*!**********************************!*\
   !*** ./components/TopNavLink.js ***!
@@ -5623,16 +5732,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_ScrollEventService__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../services/ScrollEventService */ "./services/ScrollEventService.js");
 /* harmony import */ var _scss_vanilla_index_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../scss/vanilla/index.scss */ "./scss/vanilla/index.scss");
 /* harmony import */ var _scss_vanilla_index_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_scss_vanilla_index_scss__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/solutas-icon.png */ "./assets/solutas-icon.png");
-/* harmony import */ var _assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _assets_solutas_brief_weiss_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/solutas-brief-weiss.png */ "./assets/solutas-brief-weiss.png");
-/* harmony import */ var _assets_solutas_brief_weiss_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_solutas_brief_weiss_png__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-reveal/Fade */ "./node_modules/react-reveal/Fade.js");
-/* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var react_reveal_Flip__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-reveal/Flip */ "./node_modules/react-reveal/Flip.js");
-/* harmony import */ var react_reveal_Flip__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Flip__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var react_reveal_Slide__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-reveal/Slide */ "./node_modules/react-reveal/Slide.js");
-/* harmony import */ var react_reveal_Slide__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Slide__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _components_Blur__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Blur */ "./components/Blur.js");
+/* harmony import */ var _assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/solutas-icon.png */ "./assets/solutas-icon.png");
+/* harmony import */ var _assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _assets_solutas_brief_weiss_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/solutas-brief-weiss.png */ "./assets/solutas-brief-weiss.png");
+/* harmony import */ var _assets_solutas_brief_weiss_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_assets_solutas_brief_weiss_png__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-reveal/Fade */ "./node_modules/react-reveal/Fade.js");
+/* harmony import */ var react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var react_reveal_Flip__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-reveal/Flip */ "./node_modules/react-reveal/Flip.js");
+/* harmony import */ var react_reveal_Flip__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Flip__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var react_reveal_Slide__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! react-reveal/Slide */ "./node_modules/react-reveal/Slide.js");
+/* harmony import */ var react_reveal_Slide__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(react_reveal_Slide__WEBPACK_IMPORTED_MODULE_17__);
 
 
 
@@ -5641,6 +5751,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/home/senol/Projects/solutas.ch/pages/index.js";
+
 
 
 
@@ -5860,14 +5971,14 @@ function (_React$Component) {
         id: "top",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 205
+          lineNumber: 207
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("nav", {
         className: this.state.scrolled ? "main-nav scrolled" : "main-nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 206
+          lineNumber: 208
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_scroll__WEBPACK_IMPORTED_MODULE_8__["Link"], {
@@ -5877,21 +5988,21 @@ function (_React$Component) {
         duration: 500,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 207
+          lineNumber: 209
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        src: _assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_12___default.a,
+        src: _assets_solutas_icon_png__WEBPACK_IMPORTED_MODULE_13___default.a,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 208
+          lineNumber: 210
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "main-nav-items",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 213
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TopNavLink__WEBPACK_IMPORTED_MODULE_9__["NavLink"], {
@@ -5904,7 +6015,7 @@ function (_React$Component) {
         duration: 500,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 212
+          lineNumber: 214
         },
         __self: this
       }, "About Us."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TopNavLink__WEBPACK_IMPORTED_MODULE_9__["NavLink"], {
@@ -5917,7 +6028,7 @@ function (_React$Component) {
         duration: 500,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 223
+          lineNumber: 225
         },
         __self: this
       }, "Services."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TopNavLink__WEBPACK_IMPORTED_MODULE_9__["NavLink"], {
@@ -5930,14 +6041,14 @@ function (_React$Component) {
         duration: 500,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 234
+          lineNumber: 236
         },
         __self: this
       }, "Contact Us."))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("header", {
         className: "main-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 247
+          lineNumber: 249
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -5945,14 +6056,14 @@ function (_React$Component) {
         className: "animated fadeInUp",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 248
+          lineNumber: 250
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("main", {
         className: "content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 253
+          lineNumber: 255
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TopNavLink__WEBPACK_IMPORTED_MODULE_9__["Section"], {
@@ -5961,110 +6072,110 @@ function (_React$Component) {
         color: "#dd851b",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 254
+          lineNumber: 256
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("section", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 259
+          lineNumber: 261
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Slide__WEBPACK_IMPORTED_MODULE_16___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Slide__WEBPACK_IMPORTED_MODULE_17___default.a, {
         bottom: true,
         cascade: true,
         ssrFadeout: true,
         ssrReveal: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 262
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("article", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 261
+          lineNumber: 263
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 262
-        },
-        __self: this
-      }, "Engineering to make you happy."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 264
         },
         __self: this
+      }, "Engineering to make you happy."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 266
+        },
+        __self: this
       }, "There is a correlation between over complicated, complex software code, architecture and UI design and slow user adaption, usibility and higher project costs."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 269
+          lineNumber: 271
         },
         __self: this
       }, "Our definition of done is reached when happy users are using our Software. Once we see how we could improve your daily life."))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("article", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 278
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 277
+          lineNumber: 279
         },
         __self: this
       }, "At SOLUTAS we..."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "heartlist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14___default.a, {
-        left: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 280
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 281
         },
         __self: this
-      }, "do love to solve very complex problems"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15___default.a, {
+        left: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 282
         },
         __self: this
-      }, "do love technology"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 283
         },
         __self: this
+      }, "do love to solve very complex problems"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 284
+        },
+        __self: this
+      }, "do love technology"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 285
+        },
+        __self: this
       }, "do love to transfer your complex challenges into beautiful small and simple solutions"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 287
+          lineNumber: 289
         },
         __self: this
       }, "do love to design the solutions for you"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 288
+          lineNumber: 290
         },
         __self: this
       }, "do love to craft the software for you"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 289
+          lineNumber: 291
         },
         __self: this
       }, "do love to help you to focus on your actual work")))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TopNavLink__WEBPACK_IMPORTED_MODULE_9__["Section"], {
@@ -6073,132 +6184,132 @@ function (_React$Component) {
         color: "#4b6cb7",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 295
+          lineNumber: 297
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("section", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 300
+          lineNumber: 302
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("article", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 301
+          lineNumber: 303
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 302
+          lineNumber: 304
         },
         __self: this
       }, "Consulting"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "smilelist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 303
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14___default.a, {
-        left: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 304
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 305
         },
         __self: this
-      }, "Digital Transformation"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15___default.a, {
+        left: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 306
         },
         __self: this
-      }, "Software Architecture"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 307
         },
         __self: this
-      }, "Agile Coaching"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "Digital Transformation"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 308
         },
         __self: this
-      }, "Escalation Management"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "Software Architecture"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 309
         },
         __self: this
-      }, "Technical Project and Delivery Management"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "Agile Coaching"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 310
         },
         __self: this
+      }, "Escalation Management"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 311
+        },
+        __self: this
+      }, "Technical Project and Delivery Management"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 312
+        },
+        __self: this
       }, "Change Management")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("article", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 314
+          lineNumber: 316
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 315
+          lineNumber: 317
         },
         __self: this
       }, "Software Engineering."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "smilelist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 316
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14___default.a, {
-        left: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 317
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 318
         },
         __self: this
-      }, "Custom Mobile and Desktop App Development"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15___default.a, {
+        left: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 319
         },
         __self: this
-      }, "API Gateway Development"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 320
         },
         __self: this
-      }, "Big Data, Machinie Learning Solutions"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "Custom Mobile and Desktop App Development"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 321
         },
         __self: this
-      }, "Custom IoT and embedded Devices"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "API Gateway Development"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 322
+        },
+        __self: this
+      }, "Big Data, Machinie Learning Solutions"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 323
+        },
+        __self: this
+      }, "Custom IoT and embedded Devices"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 324
         },
         __self: this
       }, "Enterprise level Web Content Management Solutions (Adobe AEM, Magnolia,...)")))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_TopNavLink__WEBPACK_IMPORTED_MODULE_9__["Section"], {
@@ -6206,198 +6317,212 @@ function (_React$Component) {
         title: "Contact Us.",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 334
+          lineNumber: 336
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("section", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 335
+          lineNumber: 337
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("article", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 336
+          lineNumber: 338
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 337
-        },
-        __self: this
-      }, "About Us."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 339
         },
         __self: this
+      }, "About Us."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 341
+        },
+        __self: this
       }, "We are a Software Consultancy and Engineering Company located in Basel, Switzerland."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 343
+          lineNumber: 345
         },
         __self: this
       }, "Our two Founders do have two totally different and unique Backgrounds. A licensed Nurse and a Computer Scientist. While both have had working in different domains, they both realized that technology, espacially in Software Engineering needs to be crafted around actual Human needs."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 350
+          lineNumber: 352
         },
         __self: this
       }, "Merging over 10 Years experience in LifeScience, Tele Medicin, practicing Nurcing with more then 20 Years experience in Software Engineering in Digital Marketing, Media and Television resulted in SOLUTAS, because simplicty matters.")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("article", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 358
+          lineNumber: 360
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 359
+          lineNumber: 361
         },
         __self: this
       }, "In our Team..."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         className: "smilelist",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 360
+          lineNumber: 362
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_reveal_Fade__WEBPACK_IMPORTED_MODULE_15___default.a, {
         left: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 361
+          lineNumber: 363
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 362
+          lineNumber: 364
         },
         __self: this
       }, "We believe that everybody diserves to have a custom software crafted to their individual needs."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 366
+          lineNumber: 368
         },
         __self: this
       }, "We believe that this is possible regardless of the size of your organization."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 370
+          lineNumber: 372
         },
         __self: this
       }, "We believe that there is a solution for everything"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 371
+          lineNumber: 373
         },
         __self: this
       }, "We beleive that budget shouldn't stop you getting the Application you need"))))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("footer", {
         className: "main-footer",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 381
+          lineNumber: 383
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("section", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 382
+          lineNumber: 384
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
         src: "/static/solutas-brief-2.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 383
+          lineNumber: 385
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("address", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 384
+          lineNumber: 386
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 385
+          lineNumber: 387
         },
         __self: this
       }, "SOLUTAS GmbH"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 386
+          lineNumber: 388
         },
         __self: this
       }), "Paradieshofstrasse 117", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 388
+          lineNumber: 390
         },
         __self: this
       }), "4054 Basel, Switzerland"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("address", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 391
+          lineNumber: 393
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("abbr", {
         title: "Phone",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 392
+          lineNumber: 394
         },
         __self: this
-      }, "Phone"), " +41 79 597 500 6", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
+      }, "Phone"), " ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Blur__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        t: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 392
+          lineNumber: 394
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 394
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("abbr", {
         title: "E-Mail",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 393
+          lineNumber: 395
         },
         __self: this
-      }, "E-Mail"), " info@solutas.ch"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("address", {
+      }, "E-Mail"), " ", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Blur__WEBPACK_IMPORTED_MODULE_12__["default"], {
+        a: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 395
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("address", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 397
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("abbr", {
         title: "CH VAT No",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 396
+          lineNumber: 398
         },
         __self: this
       }, "CH VAT No"), " CH-234.973.545 MWST", react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 397
+          lineNumber: 399
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("abbr", {
         title: "USt-IdNr",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 398
+          lineNumber: 400
         },
         __self: this
       }, "USt-IdNr"), " CH-234.973.545")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
         className: "copyright",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 401
+          lineNumber: 403
         },
         __self: this
       }, "Copyright \xA9 2019 SOLUTAS GmbH, Switzerland. All rights reserved.")));
@@ -6482,7 +6607,7 @@ function () {
 
 /***/ }),
 
-/***/ 4:
+/***/ 0:
 /*!***************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fsenol%2FProjects%2Fsolutas.ch%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************/
@@ -6505,5 +6630,5 @@ module.exports = dll_829b10deddf10e1653a8;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

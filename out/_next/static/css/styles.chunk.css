@@ -2723,12 +2723,18 @@ ul.smilelist {
   justify-content: center;
   padding-top: 10px;
   flex-direction: column; }
+  .main-footer .blur {
+    font-size: 2rem;
+    color: transparent;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); }
   .main-footer .container {
     display: grid;
     grid-gap: 20px;
     justify-self: center;
     justify-content: center;
     align-items: end; }
+    .main-footer .container a {
+      color: #dd851b; }
   .main-footer .copyright {
     margin-top: 20px;
     color: rgba(255, 255, 255, 0.8);
