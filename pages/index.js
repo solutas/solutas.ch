@@ -13,6 +13,8 @@ import EventService from "../services/ScrollEventService";
 
 import "../scss/vanilla/index.scss";
 
+import Blur from "../components/Blur";
+
 import Logo from "../assets/solutas-icon.png";
 import Logo2 from "../assets/solutas-brief-weiss.png";
 import Fade from "react-reveal/Fade";
@@ -389,8 +391,8 @@ export default class Vanilla extends React.Component {
               4054 Basel, Switzerland
             </address>
             <address>
-              <abbr title="Phone">Phone</abbr> +41 79 597 500 6<br />
-              <abbr title="E-Mail">E-Mail</abbr> info@solutas.ch
+              <abbr title="Phone">Phone</abbr> <Blur t/><br />
+              <abbr title="E-Mail">E-Mail</abbr> <Blur a />
             </address>
             <address>
               <abbr title="CH VAT No">CH VAT No</abbr> CH-234.973.545 MWST

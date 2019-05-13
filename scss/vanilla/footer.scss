@@ -6,12 +6,21 @@
   justify-content: center;
   padding-top: 10px;
   flex-direction: column;
+
+  .blur {
+    font-size:2rem;
+    color: transparent;
+	  text-shadow: 0 0 8px $brandWhite;
+  }
   .container {
     display: grid;
     grid-gap: 20px;
     justify-self: center;
     justify-content: center;
     align-items: end;
+    a {
+      color: $brandOrange;
+    }
   }
 
   .copyright {
