@@ -251,7 +251,11 @@ export default class Vanilla extends React.Component {
           />
         </header>
         <main className="content">
-          <Section id="about-us" title="Our Expertice. Your Benefit." color="#dd851b">
+          <Section
+            id="about-us"
+            title="Our Expertice. Your Benefit."
+            color="#dd851b"
+          >
             <section className="container">
               <Slide bottom cascade ssrFadeout ssrReveal>
                 <article>
@@ -288,7 +292,11 @@ export default class Vanilla extends React.Component {
               </article>
             </section>
           </Section>
-          <Section id="services" title="Our Services. Your Solution." color="#4b6cb7">
+          <Section
+            id="services"
+            title="Our Services. Your Solution."
+            color="#4b6cb7"
+          >
             <section className="container">
               <article>
                 <h1>Consulting</h1>
@@ -372,7 +380,7 @@ export default class Vanilla extends React.Component {
         </main>
         <footer className="main-footer">
           <section className="container">
-          <img src="/static/solutas-brief-2.svg" />
+            <img src="/static/solutas-brief-2.svg" />
             <address>
               <strong>SOLUTAS GmbH</strong>
               <br />
@@ -380,7 +388,7 @@ export default class Vanilla extends React.Component {
               <br />
               4054 Basel, Switzerland
             </address>
-            <address>              
+            <address>
               <abbr title="Phone">Phone</abbr> +41 79 597 500 6<br />
               <abbr title="E-Mail">E-Mail</abbr> info@solutas.ch
             </address>
@@ -391,9 +399,9 @@ export default class Vanilla extends React.Component {
             </address>
           </section>
           <h2 className="copyright">
-              Copyright &copy; 2019 SOLUTAS GmbH, Switzerland. All rights reserved.
-            </h2>
-
+            Copyright &copy; 2019 SOLUTAS GmbH, Switzerland. All rights
+            reserved.
+          </h2>
         </footer>
       </div>
     );
