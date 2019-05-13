@@ -4,8 +4,10 @@ export default class Blur extends React.Component {
     a = [ ["i", "n", "f", "o"],
 ["s", "o", "l", "u","t","a","s"], [".","c","h"]]
 
-t = [["+", "4", "1 ",  "7", "9 "],[ "5", "9", "7 ", "5"],["0", "0" , "6"]];
-    state = {
+t = [["+", "4", "1 ",  "7", "9 "],[
+    
+    "5", "9", "7 ", "5"],["0", "0" , "6"]];
+    state = {  
         active:false
     }
     unBlur = () => {
