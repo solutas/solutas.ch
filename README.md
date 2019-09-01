@@ -1,2 +1,0 @@
-# solutas.ch
-website Solutas
