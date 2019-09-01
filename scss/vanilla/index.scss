@@ -1,8 +1,18 @@
 @import url(../../assets/animate.css);
 
+// Required Bootstrap imports
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// optinal imports
+@import "../../node_modules/bootstrap/scss/reboot";
+
+
+
 @import "./variables.scss";
 
-@import "./reset.scss";
+//@import "./reset.scss";
 @import "./pagelayout.scss";
 @import "./textformat.scss";
 
@@ -11,7 +21,7 @@
  */
 @import "./main-nav.scss";
 
-@import "./footer.scss";
+@import "./footer.scss"; 
 
 @import "./hero.scss";
 
