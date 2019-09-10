@@ -27,8 +27,9 @@ $items = wp_get_nav_menu_items($menu_item);
 foreach( $items as $item2) {
   $id =  $item2->object_id;
   $post   = get_post( $id );
+  //$item2->ID
   ?>
-  <section class="hero" id="section<?=$item2->ID?>">
+  <section class="hero" id="<?=str_replace(home_url(),'', $item2->url)?>">
   <div class="hero-body">
     <div class="container">
     <h1 class="title"><?=$post->post_title?></h1>

@@ -25,7 +25,7 @@ class NavbarItem {
               this.active = true;
               this.item.classList.add("is-active");
              // var stateObj = { foo: "bar" };
-            //history.pushState(stateObj, "page 2", "#" + (this.target.id ? this.target.id : "/"));
+             // history.pushState(stateObj, "page 2", "" + (this.target.id ? this.target.id : "/"));
           }           
       } else {
           if(this.active) {
