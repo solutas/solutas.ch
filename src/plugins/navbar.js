@@ -1,3 +1,5 @@
+import NavbarItem from "./NavbarItem";
+
 /**
  * Navbar - bulma navigation
  */
@@ -14,8 +16,16 @@ class Navbar {
         this.calculateTop();
         window.addEventListener('scroll', this.calculateTop);
         this.attachHamburgerMenu();
+        this.navItems = document.getElementsByClassName("scroll-navigation");
+        this.attachAutoScroll();
     }
 
+    attachAutoScroll = ()=> {
+        console.log("attah scoroalsdf");
+        for(let item of this.navItems) {
+            new NavbarItem(item);
+        }
+    }
     attachHamburgerMenu = () => {
         for(let item of this.navbarElement) {
             let hamburgerItems = item.getElementsByClassName("navbar-burger");
@@ -35,7 +45,6 @@ class Navbar {
     calculateTop = ()=> {
         let scrollPosition = window.scrollY;          
         let showShadow = scrollPosition > 20;
-        console.log(showShadow + " -  " + this.top)
         if (showShadow) {
           window.requestAnimationFrame(()=> {
             this.toggleTop(false);

@@ -1,4 +1,5 @@
 import "./scss/index.scss";
+import '@fortawesome/fontawesome-free/js/all';
 
 import Navbar from "./plugins/navbar";
 import Hero from "./plugins/hero";

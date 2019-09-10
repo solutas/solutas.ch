@@ -114,17 +114,26 @@ function solutas_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'solutas_widgets_init' );
+//add_action( 'widgets_init', 'solutas_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
 function solutas_scripts() {
-	wp_enqueue_style( 'solutas-style', get_stylesheet_uri() );
+//	wp_enqueue_style( 'solutas-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'solutas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+//	wp_enqueue_script( 'solutas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'solutas-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+//	wp_enqueue_script( 'solutas-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+global $wp_styles;
+
+	// loop over all of the registered scripts
+	foreach ($wp_styles->registered as $handle => $data)
+	{
+		// remove it
+		wp_deregister_style($handle);
+		wp_dequeue_style($handle);
+	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -168,7 +177,8 @@ function displayTopNavigation() {
         !empty( $item->attr_title ) and $attributes .= ' title="'  . esc_attr( $item->attr_title ) .'"';
         !empty( $item->target ) and $attributes .= ' target="' . esc_attr( $item->target     ) .'"';
         !empty( $item->xfn ) and $attributes .= ' rel="'    . esc_attr( $item->xfn        ) .'"';
-        !empty( $item->url ) and $attributes .= ' href="'   . esc_attr( $item->url        ) .'"';
+		!empty( $item->url ) and $attributes .= ' href="'   . esc_attr( $item->url        ) .'"';
+		
         $title = apply_filters( 'the_title', $item->title, $item->ID );
         
         /*$item_output = $args->before
@@ -180,17 +190,18 @@ function displayTopNavigation() {
         . $args->after;*/
         $classes = $item->classes;
         if(in_array('page_item', $classes)) {
-            array_push($classes,  'is-active');
+        	//array_push($classes,  'is-active');
         }
-        
+        array_push($classes,  'scroll-navigation');
         /*$classes = array_push($classes, 'is-active');
         
         if(in_array('current_page', $item->classes)) {
             array_push($item->classes, 'is-active');
         }*/
         
-        $classNames  = join($classes, ' ');
-        $item_output ="<a class='navbar-item ".$classNames."' href='".esc_attr( $item->url )."'>".$title."</a>";
+		$classNames  = join($classes, ' ');
+		
+        $item_output ="<a data-navigation-target='section".$item->ID."' class='navbar-item ".$classNames."' href='".esc_attr( $item->url )."'>".$title."</a>";
 
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
     }
@@ -211,6 +222,18 @@ function displayTopNavigation() {
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
+	//require get_template_directory() . '/inc/jetpack.php';
 }
+
+add_filter( 'content_save_pre', 'remove_nbsps' ) ;
+
+function remove_nbsps( $content ) {
+
+	 $content = str_replace( '&nbsp;', ' ', $content ) ;
+	 $content = str_replace( 'SCHEISSE;', ' ', $content ) ;
+
+     return $content ;
+
+}
+
 

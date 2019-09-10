@@ -15,6 +15,7 @@
 
 	<footer class="footer">
   <div class="content has-text-centered">
+<?=the_custom_logo();?>
     <p>
       <strong>SOLUTAS GmbH</strong>, Paradieshofstrasse 117, 4054 Basel, Switzerland
     </p>

@@ -47,6 +47,20 @@ if ( ! function_exists( 'solutas_header_style' ) ) :
 
 		// If we get this far, we have custom styles. Let's do this.
 		?>
+
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147508305-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147508305-1');
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 		<style type="text/css">
 		<?php
 		// Has the text been hidden?

@@ -20,6 +20,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(woff2?|ttf|otf|eot|svg)$/,
+        loader: 'file-loader',
+        options: {
+            name: '[path][name].[ext]'
+        }
+    },
+      {
         test: /\.mp4$/,
         use: "file-loader?name=videos/[name].[ext]"
       },

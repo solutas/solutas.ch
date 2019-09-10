@@ -1,7 +1,7 @@
 @charset "utf-8";
 //@import "~bulma/bulma";
 
-// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Coiny|Finger+Paint&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
 // Set your brand colors
@@ -35,7 +35,6 @@ $primary: $brandOrange;
 $info: $brandBlue;
 $blue: $lightBlue;
 
-
 @import "~animate.css/animate";
 @import "~bulma/bulma";
 
@@ -49,10 +48,10 @@ $blue: $lightBlue;
 @import "~bulma/sass/components/navbar.sass";
 @import "~bulma/sass/layout/hero.sass";
 @import "~bulma/sass/layout/section.sass";*/
-
 body {
+  margin: 0;
+  padding: 0;
 }
-
 .navbar {
   transition: background 0.3s ease-in-out;
   box-shadow: $box-shadow;
@@ -60,8 +59,7 @@ body {
     background: none;
     box-shadow: none;
     .phone {
-        
-        color: white;
+      color: white;
     }
     .navbar-burger,
     a {
@@ -71,10 +69,22 @@ body {
       color: rgba(255, 255, 255, 0.575);
     }
   }
+ 
+  a.navbar-item {
+    &:focus {
+      outline: none;
+    }
+    &.is-active {
+      //border:1px solid yellow !important;
+    }
+  }
 }
 
 .site {
-  
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
   .is-brand {
     background-image: linear-gradient(220deg, #000015, #4b6cb7);
     color: white;
@@ -84,41 +94,78 @@ body {
     }
     .subtitle {
       color: rgba(255, 255, 255, 0.774);
-    }    
+    }
   }
   .is-success2 {
     background-color: rgba(0, 128, 0, 0.452);
     color: white;
   }
-  
+
   .is-brand-blue {
     background-color: $lightBlue;
     color: rgba(255, 255, 255, 0.774);
-    .title,.subtitle {
+    .title,
+    .subtitle {
       color: rgba(255, 255, 255, 0.774);
     }
   }
   .is-brand-blue2 {
     background-color: #4b6bb7a6;
     color: rgba(255, 255, 255, 1);
-    .title,.subtitle {
+    .title,
+    .subtitle {
       color: rgba(255, 255, 255, 1);
     }
   }
-$lightWhite : rgba(255, 255, 255, 0.753);
+  $lightWhite: rgba(255, 255, 255, 0.753);
   .is-primary2 {
     background-color: #dd861b;
-   color: $lightWhite;
-   h2 {
     color: $lightWhite;
-   }
+    h2 {
+      color: $lightWhite;
+    }
   }
-    
+
+  .content-area {
+    .site-main {
+      .hero {
+        .hero-body {
+          .container {
+            > .title {
+              color: $brandBlue;
+              text-align: center;
+              text-transform: uppercase;
+              @include tablet {
+                font-size:70px;
+                font-weight: 300;
+              }
+          
+            }
+            > .subtitle {
+              text-align: center;
+              color: $brandOrange;
+              border-bottom: 1px dotted $brandOrange;
+              padding-bottom: 10px;
+              @include tablet {
+                font-size:50px;
+                font-weight: 100;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
   .site-header {
     @extend .hero;
     @extend .is-primary;
     @extend .is-bold;
-    height: 500px;
+    height: 250px;
+
+    @include tablet {
+      height: 600px;
+    }
     background-size: cover;
 
     overflow: hidden;
@@ -137,33 +184,42 @@ $lightWhite : rgba(255, 255, 255, 0.753);
       align-items: center;
       justify-items: center;
       .container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
 
-          .cta {
-              justify-self: flex-end
-          }
-    
+        .cta {
+          justify-self: flex-end;
+        }
       }
       .custom-logo {
-          margin-top: 30px;
-          max-width: 300px;
-          display: inline-block;
+        margin-top: 30px;
+        max-width: 300px;
+        display: inline-block;
       }
       .title {
         text-align: center;
-        text-transform: uppercase;
-        //font-size: 80px;
-        color: rgba(255, 255, 255, 0.7);
+
+        font-size: 31px;
+        @include tablet {
+          font-size: 100px;
+        }
+       // font-family: "Coiny", cursive;
+        font-weight: 100;
+        font-family: 'Finger Paint', cursive;
+        color: rgba(255, 255, 255, 0.9);
       }
       .subtitle {
         text-align: center;
         text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 14px;
+        @include tablet {
+          font-size: 25px;
+          margin: 25px;
+        }
       }
-      
     }
 
     video {
@@ -171,7 +227,10 @@ $lightWhite : rgba(255, 255, 255, 0.753);
       object-fit: cover;
       z-index: 0;
       width: 100%;
-      height: 500px;
+      height: 250px;
+      @include tablet {
+        height: 600px;
+      }
       opacity: 0;
       &.play {
         opacity: 1;
@@ -200,6 +259,121 @@ $lightWhite : rgba(255, 255, 255, 0.753);
     }
   }
 
+  .section {
+    .container2 {
+      @extend .container;
+      .content {
+        .quote {
+          background-color: $content-blockquote-background-color;
+          border-left: $content-blockquote-border-left;
+          padding: $content-blockquote-padding;
+        }
+      }
+    }
+  }
+
+  .color-tiles {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    .wp-block-column {
+      flex: 1;
+      border-radius: 15px;
+      padding: 15px;
+      display: grid;
+      grid-template-rows: auto auto auto 10px auto 70px;
+
+      box-shadow: $card-shadow;
+      margin-bottom: 15px;
+      margin-left: 0;
+      &:nth-last-child() {
+        margin-bottom: 0;
+      }
+      align-items:start;
+      @include desktop {
+        grid-template-rows: auto auto auto 10px 250px 50px;
+        margin-left: 15px;
+        margin-bottom: 0px;
+      }
+
+      &:nth-child(1) {
+        background-color: $brandOrange;
+        margin-left: 0;
+      }
+
+      &:nth-child(2) {
+        background-color: $blue;
+      }
+      &:nth-child(3) {
+        background-color: $green;
+      }
+
+      color: white;     
+
+      strong {
+        color: white;
+      }
+      h2,
+      h3 {
+        padding: 0;
+        margin: 0;
+        color: white;        
+      }
+
+      h2 {
+        &:nth-child(1) {
+          text-align: center;
+          left: 0;
+          border-bottom: 1px solid $lightWhite;    
+          margin-bottom:5px;          
+          padding-bottom: 10px;      
+          font-weight: 300;
+        }
+      }
+
+      h3 {
+        text-align: center;
+        left: 0;
+        margin-bottom: 5px;
+        font-weight: 100;
+      }
+      .link-offerte {
+        align-self: center;
+        justify-self: center;
+        a {
+          @extend .button;
+          @extend .is-white;
+          @extend .is-outlined;
+        }
+      }
+    }
+  }
+
+  .centercard {
+    @extend .container;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+      max-width:400px;
+      @include mobile {
+        box-shadow: none;
+      }
+    }
+  }
+  .contact-area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    .wp-block-column {
+      &:nth-child(2) {
+        padding-left:15px;
+      }
+    }
+  }
   .page {
     @extend .section;
     .entry-title {
