@@ -1,4 +1,5 @@
 <?php
+
 /**
  * solutas functions and definitions
  *
@@ -120,9 +121,9 @@ function solutas_widgets_init() {
  * Enqueue scripts and styles.
  */
 function solutas_scripts() {
-//	wp_enqueue_style( 'solutas-style', get_stylesheet_uri() );
+	//wp_enqueue_style( 'solutas-style', get_stylesheet_uri() );
 
-//	wp_enqueue_script( 'solutas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	//wp_enqueue_script( 'solutas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 //	wp_enqueue_script( 'solutas-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 global $wp_styles;
@@ -167,7 +168,8 @@ require get_template_directory() . '/inc/customizer.php';
 function displayTopNavigation() {
     class Description_Walker extends Walker_Nav_Menu
 {
-    function start_el(&$output, $item, $depth, $args)
+	//function start_el(&$output, $item, $depth, $args)
+	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) 
     {
         $classes = empty($item->classes) ? array () : (array) $item->classes;
         $class_names = join(' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) );
@@ -234,6 +236,126 @@ function remove_nbsps( $content ) {
 
      return $content ;
 
+} 
+
+
+
+$createEmail = require get_template_directory() . '/inc/email.php';
+function getContent($request) {
+	
+	$params = $request->get_json_params();
+
+
+
+
+$verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
+$secret = "6Lcbt7cUAAAAALZJY4YSNtAPGvW7aHh-cCIPA-3_";
+$token = $params["g-recaptcha-response"];
+
+$data = array('secret' => $secret, 'response' => $token);
+
+
+
+
+$noRobot = true;
+$status = 200;
+/*
+$response_check = wp_remote_post( $verifyUrl, array('body' => $data));
+if ( is_wp_error( $response_check ) ) {
+    $res = $response_check->get_error_message();
+} else {
+	$res = json_decode($response_check['body'], true);
+    $noRobot =  $res["success"];
+}*/
+
+
+if($noRobot) {
+	$headers = array('Content-Type: text/html; charset=UTF-8');
+
+	$mailBody = createEmail(
+		$params["subject"], 
+		$params["name"], 
+		$params["company"],  
+		$params["phone"], 
+		$params["email"],
+		nl2br($params["message"]));
+
+	$email_sent = wp_mail( 'senol@solutas.ch', $params["subject"].' von '.$params["name"] , $mailBody, $headers );
+
+
+$args = array(
+	'subject' =>$params["subject"], 
+	'name' => $params["name"], 
+	'company' => $params["company"],  
+	'phone' => $params["phone"], 
+	'email' => $params["email"],
+	'message' =>$params["message"],
+	'email-sent' => $email_sent	
+);
+
+
+$phoenixUrl = "https://us-central1-phoenix-solutas.cloudfunctions.net/helloWorld";
+$phoenixSecret = "5e586e2c-fbda-48c3-bd0f-07040a57cfbe";
+$phoenix = wp_remote_post( $phoenixUrl, array('body' => $args,
+'headers' => array(
+	'secret' => $phoenixSecret,
+)));
+
+if ( is_wp_error( $phoenix ) ) {
+	 $phoenix->get_error_message();
+	 $status = "444";	 
+} else {
+	//$res = json_decode($phoenix['body'], true);
+   // $noRobot =  $res["success"];
+}
+
+} else {
+	$args = array(
+		'error' => $res
+		);
+	$status = 400;
 }
 
 
+$response = new WP_REST_Response($args);
+    $response->set_status($status);
+    return $response;
+
+}
+
+add_action('rest_api_init', function () {
+	register_rest_route( 'solutas/v1', 'contact',array(
+				  'methods'  => 'POST',
+				  'callback' => 'getContent'
+		));
+  });
+
+
+// config php mailer stuff
+add_action( 'phpmailer_init', 'config_ionos_mail' );
+function config_ionos_mail( $phpmailer ) {
+    $phpmailer->isSMTP();     
+    $phpmailer->Host = 'smtp.ionos.com';
+    $phpmailer->SMTPAuth = true; // Force it to use Username and Password to authenticate
+    $phpmailer->Port = 587;
+    $phpmailer->Username = 'do-not-reply@manage.solutas.ch';
+	$phpmailer->Password = 's,5D4@d_8uk-Hr<&';
+	$phpmailer->SMTPSecure = "tls";
+	$phpmailer->AddReplyTo = "info@solutas.ch";
+	$phpmailer->AddReplyToName = "SOLUTAS Office";
+	$phpmailer->Sender = "do-not-reply@manage.solutas.ch";
+	$phpmailer->From = "do-not-reply@manage.solutas.ch";
+	$phpmailer->FromName = "SOLUTAS GmbH Backoffice";
+    // Additional settings…
+    //$phpmailer->SMTPSecure = "tls"; // Choose SSL or TLS, if necessary for your server
+    //$phpmailer->From = "you@yourdomail.com";
+    //$phpmailer->FromName = "Your Name";
+}
+
+
+add_action( 'wp_mail_failed', 'onMailError', 10, 1 );
+    function onMailError( $wp_error ) {
+        echo "<pre>";
+        print_r($wp_error);
+        echo "</pre>";
+    }       

@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<!--something-->
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147508305-1"></script>
 <script>
@@ -27,6 +28,7 @@
 </script>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<?php wp_deregister_script('jquery'); ?>
 	<?php wp_head(); ?>
 </head>
 
@@ -50,7 +52,8 @@ displayTopNavigation()
 
 			<div class="navbar-right">
 				<a class="navbar-item phone">
-					Kontaktieren Sie uns direkt:  +41 79 597 5006</a>
+					<i class="fas fa-phone" style="border: 1px solid white;border-radius:50%;padding:5px;font-size:32px"></i>
+				</a>
 			</div>
 
 	</div>
@@ -65,10 +68,10 @@ displayTopNavigation()
 		$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 		?>	  
-      <h1 class="title animated fadeInUp">	  	  
+      <h1 class="title animated fadeInDown">	  	  
 	  <?php bloginfo( 'name' ); ?>
       </h1>
-      <h2 class="subtitle animated fadeInUp  delay-2s">	  
+      <h2 class="subtitle animated fadeInUp  delay-1s">	  
 	  <?php bloginfo( 'description' ); ?>	  
 	  </h2>
 	  

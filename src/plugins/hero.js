@@ -12,12 +12,13 @@ class Hero {
     for (let item of this.heros) {
       let dir = item.dataset.dir;
 
-      item.style.backgroundImage = `url(${dir}/dist/${BackgroundImage})`;
+     // item.style.backgroundImage = `url(${dir}/dist/${BackgroundImage})`;
       
       let video = document.createElement("video");
       let videoItem = document.createElement("source");
       videoItem.src = `${dir}/dist/${BackgroundVideo}`;
       video.muted = true;
+      video.playsinline = true;
       video.playbackRate = 0.5;
 
       video.addEventListener("canplay", () => {
@@ -34,7 +35,7 @@ class Hero {
 
       video.append(videoItem);
 
-      item.append(video);
+     // item.append(video);
     }
   };
 }
