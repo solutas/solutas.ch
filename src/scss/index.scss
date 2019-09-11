@@ -398,9 +398,11 @@ body {
     align-items: center;
     justify-content: center;
     max-width:650px;    
+    
     .card {
       //max-width:400px;
-      width: 100%;
+      transition: all 1s ease-in-out;
+      width: 100%;      
       @include mobile {
         box-shadow: none;
       }
