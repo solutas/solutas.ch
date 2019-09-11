@@ -55,7 +55,7 @@ body {
 
 @keyframes pulse {
   from {
-    opacity: .5;
+    opacity: 0.5;
     transform: rotateY(0);
   }
 
@@ -272,27 +272,45 @@ body {
   }
 
   .contact-form {
+    .form {
+      @include mobile {
+        flex-direction: column !important;
+        padding: 0;
+        margin: 0;
+        .column {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
     .is-hidden {
       display: none;
     }
 
-    form {
-      .column {
-        opacity: 1;
-      }
-      &.loading {
-        animation-duration: 3s;
+    .column {
+      opacity: 1;
+    }
+    .busy {
+      display: none;
+    }
+
+    transition: all 1s ease;
+    &.loading {
+      opacity: 0.5;
+      /*animation-duration: 3s;
         animation-name: pulse;
         animation-direction: alternate-reverse;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
+*/
+      .busy {
+        display: block;
+      }
 
-
-        .column {
-
-          .button {
-            @extend .is-loading;
-          }
+      .column {
+        .button {
+          @extend .is-loading;
         }
       }
     }
@@ -397,12 +415,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width:650px;    
-    
+    max-width: 650px;
+
     .card {
       //max-width:400px;
       transition: all 1s ease-in-out;
-      width: 100%;      
+      width: 100%;
       @include mobile {
         box-shadow: none;
       }
@@ -410,6 +428,12 @@ body {
         form {
           display: flex;
           flex-direction: row;
+
+          input {
+            &:invalid {
+              @extend .is-danger;
+            }
+          }
           .column {
             flex: 1;
           }
@@ -436,6 +460,47 @@ body {
 
       p:first-child {
         @extend .subtitle;
+      }
+    }
+  }
+
+
+  .navbar {
+  .navbar-menu {
+    border: 20px solid orange;
+    background-color: red;
+    @include mobile {
+      
+      height: 100vh;
+      background: black;
+    }
+  
+  }
+}
+  .footer {
+    .container {
+      display: flex;
+      justify-content: center;
+      .columns {        
+
+        .column {
+
+          &:nth-child(1) {
+            img {
+              width:170px;
+            }
+          }
+
+          &:nth-child(4) {
+              min-width:200px;
+          }
+          font-size: 11px;
+          flex-direction: column;
+          display: flex;
+          align-items: left;
+          justify-content: flex-end;
+          
+        }
       }
     }
   }

@@ -13,12 +13,30 @@
 
 	</div><!-- #content -->
 
-	<footer class="footer">
-  <div class="content has-text-centered">
-<?=the_custom_logo();?>
-    <p>
-      <strong>SOLUTAS GmbH</strong>, Paradieshofstrasse 117, 4054 Basel, Switzerland
-    </p>
+	<footer class="footer" style="justify-content: center">
+  <div class="container">
+
+
+<div class="columns">
+<div class="column"><?=the_custom_logo()?></div>
+  <div class="column"><strong>SOLUTAS GmbH</strong><br>
+Paradieshofstrasse 117<br>
+4054 Basel, Switzerland</div>
+  
+  <div class="column">
+  <div>
+    <i class="fas fa-phone"></i> 079 59 75 00 6
+  </div>
+  
+  <div>
+    <i class="fas fa-envelope"></i> info solutas.ch
+  </div>
+  
+  </div>
+  <div class="column">CH VAT No CH-234.973.545 MWST<br>
+USt-IdNr CH-234.973.545</div>
+</div>
+
   </div>
 </footer>
 </div><!-- #page -->

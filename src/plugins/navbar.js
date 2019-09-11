@@ -21,7 +21,6 @@ class Navbar {
     }
 
     attachAutoScroll = ()=> {
-        console.log("attah scoroalsdf");
         for(let item of this.navItems) {
             new NavbarItem(item);
         }

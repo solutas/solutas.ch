@@ -12,49 +12,51 @@ class ContactForm {
     console.log("CONTACT FORM");
 
     console.log(this.container);
-    this.form = this.container.querySelector(".form");    
+    this.form = this.container.querySelector(".form");
     this.card = this.container;
     this.success = this.container.querySelector(".success");
     this.error = this.container.querySelector(".error");
-    console.log(this.card);
 
     this.form.onsubmit = this.publishForm;
   };
 
+  disableAllFields = (disabled = false)=>{
+    [...this.form.elements].forEach(input => {
+      input.disabled = disabled;
+    });
+  }
+
   publishForm = async e => {
     e.preventDefault();
-    
-    
-    let data = {};
-        
-    [...this.form.elements].forEach(input=>{
-        if(input.type !== "submit") {        
-            data[input.name|| input.id] = input.value;
-        }
-        
-    })
 
-console.log("add laoding calss to the form");
-console.log(this.card);
-console.log("done with it");
-  this.form.classList.add("loading");
-  this.form.classList.remove("success");
-console.log(this.form);
-    try {
-    let response = await axios.post("/wp-json/solutas/v1/contact",{
-      ...data
+    let data = {};
+
+    [...this.form.elements].forEach(input => {
+      if (input.type !== "submit") {
+        data[input.name || input.id] = input.value;
+      }
     });
 
-    }catch(e) {
-        console.log(e);
-    }
-    console.log("this.form.parent");
-    console.log(this.card);
+    if (!this.error.classList.contains("is-hidden"))
+        this.error.classList.add("is-hidden");
 
-    //this.card.classList.add("success");
-    this.form.classList.remove("loading");
-    this.success.classList.remove("is-hidden");
-    this.form.classList.add("is-hidden");
+    this.container.classList.add("loading");
+    this.disableAllFields(true);
+    this.form.classList.remove("success");
+    try {
+      let response = await axios.post("/wp-json/solutas/v1/contact", {
+        ...data
+      });
+      this.container.classList.remove("loading");
+      this.success.classList.remove("is-hidden");
+      this.form.classList.add("is-hidden");
+  
+    } catch (e) {
+      this.error.classList.remove("is-hidden");
+      this.container.classList.remove("loading");
+    }
+    this.disableAllFields(false);
+
     return false;
   };
 }

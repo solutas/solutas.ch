@@ -23,7 +23,8 @@ class NavbarItem {
       if(window.scrollY >= this.position.top  && window.scrollY <= this.position.bottom){
           if(!this.active) {
               this.active = true;
-              this.item.classList.add("is-active");
+              if(!this.item.dataset.noactive)
+                this.item.classList.add("is-active");
              // var stateObj = { foo: "bar" };
              // history.pushState(stateObj, "page 2", "" + (this.target.id ? this.target.id : "/"));
           }           

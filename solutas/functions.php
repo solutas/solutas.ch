@@ -259,14 +259,14 @@ $data = array('secret' => $secret, 'response' => $token);
 
 $noRobot = true;
 $status = 200;
-/*
+
 $response_check = wp_remote_post( $verifyUrl, array('body' => $data));
 if ( is_wp_error( $response_check ) ) {
     $res = $response_check->get_error_message();
 } else {
 	$res = json_decode($response_check['body'], true);
     $noRobot =  $res["success"];
-}*/
+}
 
 
 if($noRobot) {
@@ -280,7 +280,7 @@ if($noRobot) {
 		$params["email"],
 		nl2br($params["message"]));
 
-	$email_sent = wp_mail( 'senol@solutas.ch', $params["subject"].' von '.$params["name"] , $mailBody, $headers );
+	$email_sent = true;// wp_mail( 'senol@solutas.ch', $params["subject"].' von '.$params["name"] , $mailBody, $headers );
 
 
 $args = array(
