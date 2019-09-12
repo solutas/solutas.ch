@@ -140,7 +140,7 @@
 
 					<a class="button is-white is-outlined cta">Rufen Sie uns an</a>
 				</div>
-
+				<div class="arrow-down is-hidden-mobile"><i class="fas fa-angle-double-down"></i></div>
 			</div>
 		</section>
 
