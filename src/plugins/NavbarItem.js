@@ -33,8 +33,8 @@ class NavbarItem {
 
   calculateTop = () => {
     if (
-      this.position && (window.scrollY >= this.position.top &&
-      window.scrollY <= this.position.bottom)
+      window.scrollY >= this.position.top &&
+      window.scrollY <= this.position.bottom
     ) {
       if (!this.active) {
         this.active = true;
