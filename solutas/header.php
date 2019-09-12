@@ -39,7 +39,8 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> id="sapp">
+
 	<nav class="navbar  is-fixed-top is-top" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
 			<a class="navbar-item scroll-navigation" data-noactive="true" href="/">

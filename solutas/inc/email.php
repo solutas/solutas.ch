@@ -137,7 +137,7 @@ width: 100% !important;
     <br>
                           <table style="margin: 0 auto;text-align:left" border="1" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td style="text-align: left">Name new tamplate:</td>
+                            <td style="text-align: left">Name:</td>
                             <td style="text-align: left">$name</td>
                             </tr>
                           <tr>
@@ -172,7 +172,7 @@ width: 100% !important;
                         <w:anchorlock/>
                         <center>
                       <![endif]-->
-                          <a href="http://"
+                          <a href="https://phoenix.solutas.ch"
                     style="background-color:#178f8f;border-radius:4px;color:#ffffff;display:inline-block;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Phoenix öffnen</a>
                       <!--[if mso]>
                         </center>

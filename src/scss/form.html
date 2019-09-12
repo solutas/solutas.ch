@@ -1,33 +1,56 @@
 <div class="centercard">
   <div class="card" style="border-radius: 15px;">
     <div class="card-content contact-form">
-      <div class="success is-hidden">success</div>
-      <div class="error is-hidden">error</div>
+
+      <div class="success is-hidden animated fadeIn">
+        <article class="message is-success animated fadeIn">
+          <div class="message-body">
+            <strong>Vielen Dank</strong> für Ihre Nachricht. Wir werden uns bald
+            bei Ihnen melden.
+            <br>
+            Sollten Sie in der Zwischenzeit Fragen haben, zögern Sie nicht sich bei uns zu melden: 
+<a href="tel:+41795975006"><span style="color:rgb(32, 112, 32)"> +41 79 597 50 06&nbsp;<i class="fas fa-phone"></i></span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="error is-hidden">
+        <article class="message is-danger animated fadeInUp">
+          <div class="message-body">
+            <strong>Es ist ein Fehler aufgetreten</strong> Bitte überprüfen Sie
+            alle Felder und versuchen Sie es nocheinmal. Oder rufen Sie uns doch
+            am besten gleich direkt an: <br><a href="tel:+41795975006"><span style="color:rgb(32, 112, 32)"> +41 79 597 50 06&nbsp;<i class="fas fa-phone"></i></span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="content busy animated fadeInUp">
+        Ihre Nachricht wird an uns übermittelt
+      <progress class="progress is-large is-primary" max="100"></progress>
+      </div>
+    
+
+
       <form class="form">
+
         <div class="column">
           <div class="field">
             <label class="label">Name</label>
             <div class="control">
-              <input class="input" name="name" type="text" placeholder="Text input" />
+              <input class="input" name="name" type="text" placeholder="Text input" required="">
             </div>
           </div>
           <div class="field">
             <label class="label">Firmenname</label>
             <div class="control">
-              <input class="input" name="company_name" type="text" placeholder="Text input" />
+              <input class="input" name="company" type="text" placeholder="Text input">
             </div>
           </div>
 
           <div class="field">
             <label class="label">Telefon</label>
             <div class="control has-icons-left has-icons-right">
-              <input
-                class="input"
-                type="text"
-                name="phone"
-                placeholder="Text input"
-                value=""
-              />
+              <input class="input" type="text" name="phone" placeholder="Text input" value="">
               <span class="icon is-small is-left">
                 <i class="fas fa-phone"></i>
               </span>
@@ -37,13 +60,7 @@
           <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input
-                class="input"
-                type="email"
-                name="email"
-                placeholder="Email input"
-                value=""
-              />
+              <input class="input" type="email" name="email" placeholder="Email input" value="" required="">
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -53,34 +70,30 @@
         <div class="column">
           <div class="field">
             <label class="label">Betreff</label>
-            <div class="control"> 
+            <div class="control">
               <div class="select">
                 <select name="subject">
                   <option>Rückruf</option>
-                  <option>Offerte Anfrage</option>
+                  <option>Anfrage</option>
+                  <option value="Offerte">Offerte Dini Mini-App</option>
+                  <option>Sonstiges</option>
                 </select>
               </div>
             </div>
           </div>
 
           <div class="field">
-            <label class="label">Nachricht</label>
+            <label class="label">Ihre Nachricht an uns</label>
             <div class="control">
               <textarea name="message" class="textarea" placeholder="Textarea"></textarea>
             </div>
           </div>
           <div class="field">
-            <div
-              class="g-recaptcha"
-              data-sitekey="6Lcbt7cUAAAAACeg5qoXvF9SdjgKFjC7w4AL7vZQ"
-            ></div>
+            <div class="g-recaptcha" data-sitekey="6Lcbt7cUAAAAACeg5qoXvF9SdjgKFjC7w4AL7vZQ"></div>
           </div>
           <div class="field is-grouped">
             <div class="control">
-              <button class="button is-link">Submit</button>
-            </div>
-            <div class="control">
-              <button class="button is-text">Cancel</button>
+              <button class="button is-link">senden</button>
             </div>
           </div>
         </div>
