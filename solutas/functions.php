@@ -141,6 +141,7 @@ global $wp_styles;
 	}
 
 	wp_enqueue_script ( 'bundle-script', get_template_directory_uri() . '/dist/bundle.js' );
+	wp_enqueue_style ( 'bundle-main', get_template_directory_uri() . '/dist/main.css' );
 }
 add_action( 'wp_enqueue_scripts', 'solutas_scripts' );
 

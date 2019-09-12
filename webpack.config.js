@@ -41,14 +41,14 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          /*  {
+            {
             loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: process.env.NODE_ENV === 'development',
             },
-          },*/
+          },
           // Creates `style` nodes from JS strings
-          "style-loader",
+          //"style-loader",
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS

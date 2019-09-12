@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: SOLUTAS GmbH
 Author URI: http://www.solutas.ch
 Description: SOLUTAS Homepage
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: solutas
@@ -19,3 +19,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
+body {
+    margin:100px;
+    background-color: red;
+}

@@ -19,7 +19,7 @@
 
 <div class="columns">
 <div class="column"><?=the_custom_logo()?></div>
-  <div class="column"><strong>SOLUTAS GmbH</strong><br>
+  <div class="column"><strong>SOLUTAS GmbH</strong>
 Paradieshofstrasse 117<br>
 4054 Basel, Switzerland</div>
   
