@@ -49,7 +49,7 @@
 				Kontakt<span class="is-hidden-mobile">ieren Sie uns&nbsp;</span> 079 597 50 06 &nbsp; <i class="fas fa-phone"></i>
 			</a>
 			<div class="navbar-item text is-hidden-desktop">oder</div>
-			<a class="navbar-item is-hidden-desktop" href="#/kontakt/" style="font-size:14px">
+			<a class="navbar-item is-hidden-desktop" href="#/kontakt" style="font-size:14px">
 			 <i class="fas fa-envelope"></i>
 			</a>
 
@@ -141,7 +141,7 @@
   </div>
 </div>*/ ?>
 
-					<a class="button is-white is-outlined cta" href="#/kontakt/">Rufen Sie uns an</a>
+					<a class="button is-white is-outlined cta" href="#/kontakt">Rufen Sie uns an</a>
 				</div>
 				<div class="arrow-down is-hidden-mobile"><i class="fas fa-angle-double-down"></i></div>
 			</div>
