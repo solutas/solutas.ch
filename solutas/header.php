@@ -31,7 +31,7 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-147508305-1');
+		gtag('config', 'UA-147508305-1');		
 	</script>
 
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -49,7 +49,7 @@
 				<span class="is-hidden-mobile">Kontaktieren Sie uns&nbsp;</span> 079 597 50 06 &nbsp; <i class="fas fa-phone"></i>
 			</a>
 			<div class="navbar-item text is-hidden-desktop">oder</div>
-			<a class="navbar-item is-hidden-desktop" href="#/kontakt" style="font-size:14px">
+			<a class="navbar-item is-hidden-desktop" href="#/kontakt" style="font-size:14px" id="main_nav_mobile_kontakt">
 			 <i class="fas fa-envelope"></i>
 			</a>
 

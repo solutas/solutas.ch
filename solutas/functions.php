@@ -210,7 +210,7 @@ function displayTopNavigation() {
         
 		$classNames  = join($classes, ' ');
 		
-        $item_output ="<a data-navigation-target='".str_replace(home_url(),'', $item->url)."' class='navbar-item ".$classNames."' href='".esc_attr( $item->url )."'>".$title."</a>";
+        $item_output ="<a data-navigation-target='".str_replace(home_url(),'', $item->url)."' class='navbar-item ".$classNames."' id='main_nav_".str_replace(" ", "_", $title)."' href='".esc_attr( $item->url )."'>".$title."</a>";
 
         $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
     }

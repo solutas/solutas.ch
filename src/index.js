@@ -10,6 +10,7 @@ import ContactForm from "./plugins/ContactForm";
 
 class Pages {
     constructor() {
+        ga('create', 'UA-147508305-1', 'auto');
         //this.doAlert();
         new Navbar("navbar");
         new Hero("site-header");

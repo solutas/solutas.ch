@@ -15,7 +15,20 @@ class Navbar {
     this.navbarElement = document.getElementsByClassName(this.className);
     this.navItems = document.getElementsByClassName("scroll-navigation");
     this.outerLinks = document.querySelectorAll("a[href*='#/']");
+    
+    
+    this.phoneLinks = document.querySelectorAll("a[href*='tel']");
 
+    [...this.phoneLinks].forEach((item)=>{
+      item.addEventListener("click", ()=>{
+        ga('send', 'event', {
+          eventCategory: 'ContactForm',
+          eventAction: 'click phone link',
+          eventLabel: "PhoneLink"
+        });
+      })
+    });
+    
     this.calculateTop();
     window.addEventListener("scroll", this.calculateTop);
     this.attachHamburgerMenu();
