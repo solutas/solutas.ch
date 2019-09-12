@@ -175,6 +175,13 @@ body {
     }
   }
 
+  .wp-block-columns {
+    display: flex;
+    flex-direction: row;
+    .wp-block-column {
+      flex: 1;      
+    }
+  }
   .content-area {
     .site-main {
       .hero {
