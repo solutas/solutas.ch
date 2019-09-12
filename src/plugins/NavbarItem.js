@@ -1,7 +1,17 @@
 class NavbarItem {
-  constructor(item) {
+  constructor(item, topNav = true) {
+    this.supportSmoothScroll =
+      "scrollBehavior" in document.documentElement.style;
+
     this.item = item;
-    let target = item.dataset.navigationTarget;
+
+    let target =  topNav ? item.dataset.navigationTarget : item.getAttribute("href").replace("/#", "").replace("#", "");
+
+    if(!topNav) {
+
+      this.item.setAttribute("data-noactive", true);
+    }
+
     if (!target) {
       this.target = 0;
     } else {
@@ -10,8 +20,6 @@ class NavbarItem {
     this.calculatePosition();
     this.item.addEventListener("click", e => {
       e.preventDefault();
-      console.log("click me");
-      console.log(this.item);
       this.scroll();
       return false;
     });
@@ -32,10 +40,11 @@ class NavbarItem {
           this.item.classList.add("is-active");
         }
         // var stateObj = { foo: "bar" };
+
         history.pushState(
           {},
           this.target.id,
-          "" + (this.target.id ? this.target.id : "")
+          (this.target.id ? "/#"+this.target.id : "")
         );
       }
     } else {
@@ -60,11 +69,15 @@ class NavbarItem {
   };
 
   scroll = e => {
-    window.scrollTo({
-      top: this.position.top,
-      left: window.scrollX,
-      behavior: "smooth"
-    });
+    if (this.supportSmoothScroll) {
+      window.scrollTo({
+        top: this.position.top,
+        left: window.scrollX,
+        behavior: "smooth"
+      });
+    } else {
+      window.scrollTo(window.scrollX, this.position.top);
+    }
     return false;
   };
 }

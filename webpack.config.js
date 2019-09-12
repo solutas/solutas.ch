@@ -6,13 +6,13 @@ module.exports = {
   mode: "development",
   output: {
     path: path.resolve(__dirname, "solutas/dist"),
-    filename: "bundle.js"
+    filename: "main.js"
   },
   plugins: [
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // all options are optional
-      filename: "[name].css",
+      filename: "[name]-bundle.css",
       chunkFilename: "[id].css",
       ignoreOrder: false // Enable to remove warnings about conflicting order
     })

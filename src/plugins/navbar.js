@@ -13,17 +13,25 @@ class Navbar {
 
   init() {
     this.navbarElement = document.getElementsByClassName(this.className);
+    this.navItems = document.getElementsByClassName("scroll-navigation");
+    this.outerLinks = document.querySelectorAll("a[href*='#/']");
+
     this.calculateTop();
     window.addEventListener("scroll", this.calculateTop);
     this.attachHamburgerMenu();
-    this.navItems = document.getElementsByClassName("scroll-navigation");
     this.attachAutoScroll();
+    
   }
 
   attachAutoScroll = () => {
     for (let item of this.navItems) {
       new NavbarItem(item);
     }
+    // outerlinks
+    console.log(this.outerLinks);
+    [...this.outerLinks].forEach((item)=>new NavbarItem(item, false));
+    
+
   };
   attachHamburgerMenu = () => {
     for (let item of this.navbarElement) {
