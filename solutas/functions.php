@@ -287,7 +287,7 @@ if($noRobot) {
 		$params["email"],
 		nl2br($params["message"]));
 
-	$email_sent = true;// wp_mail( 'senol@solutas.ch', $params["subject"].' von '.$params["name"] , $mailBody, $headers );
+	$email_sent = wp_mail( 'info@solutas.ch', $params["subject"].' von '.$params["name"] , $mailBody, $headers );
 
 
 $args = array(
