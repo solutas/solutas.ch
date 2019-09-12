@@ -25,7 +25,7 @@ Paradieshofstrasse 117<br>
   
   <div class="column">
   <div>
-    <i class="fas fa-phone"></i> 079 59 75 00 6
+    <a href="tel:+41795975006"><i class="fas fa-phone"></i> 079 59 75 00 6</a>
   </div>
   
   <div>

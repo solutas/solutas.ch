@@ -27,11 +27,9 @@ class Navbar {
     for (let item of this.navItems) {
       new NavbarItem(item);
     }
-    // outerlinks
-    console.log(this.outerLinks);
+
     [...this.outerLinks].forEach((item)=>new NavbarItem(item, false));
     
-
   };
   attachHamburgerMenu = () => {
     for (let item of this.navbarElement) {

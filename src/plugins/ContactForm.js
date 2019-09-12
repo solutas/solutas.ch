@@ -9,9 +9,6 @@ class ContactForm {
   }
 
   init = () => {
-    console.log("CONTACT FORM");
-
-    console.log(this.container);
     this.form = this.container.querySelector(".form");
     this.card = this.container;
     this.success = this.container.querySelector(".success");
@@ -57,10 +54,21 @@ class ContactForm {
       this.container.classList.remove("loading");
       this.success.classList.remove("is-hidden");
       this.form.classList.add("is-hidden");
-  
+      ga('send', 'event', {
+        eventCategory: 'ContactForm',
+        eventAction: 'submit',
+        eventLabel: "ContactMainForm"
+      });
+      
     } catch (e) {
       this.error.classList.remove("is-hidden");
       this.container.classList.remove("loading");
+      ga('send', 'event', {
+        eventCategory: 'ContactForm',
+        eventAction: 'submit',
+        eventLabel: "Error"
+      });
+
     }
     this.disableAllFields(false);
 

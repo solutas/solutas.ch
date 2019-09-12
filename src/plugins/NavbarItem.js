@@ -19,8 +19,10 @@ class NavbarItem {
     }
     this.calculatePosition();
     this.item.addEventListener("click", e => {
-      e.preventDefault();
+      e.preventDefault();      
       this.scroll();
+      ga('send', 'event', 'ClickNavigation', this.item.id);
+
       return false;
     });
     window.addEventListener("resize", this.calculatePosition);
@@ -43,9 +45,10 @@ class NavbarItem {
 
         history.pushState(
           {},
-          this.target.id,
-          (this.target.id ? "/#"+this.target.id : "")
+          "page",
+          (this.target && this.target.id ? "/#"+this.target.id : "")
         );
+        ga('send', 'pageview', this.target && this.target.id ? this.target.id : "homepage");
       }
     } else {
       if (this.active) {

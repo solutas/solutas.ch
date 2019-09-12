@@ -81,6 +81,7 @@ body {
 .navbar {
   transition: background 0.3s ease-in-out;
   box-shadow: $box-shadow;
+  
   a.navbar-item {
     &:focus {
       outline: none;
@@ -99,6 +100,11 @@ body {
     .navbar {
       background: none;
       box-shadow: none;
+      .navbar-item {
+        &.text {
+            color: white;
+        }
+      }
       .phone {
         color: white;
       }
