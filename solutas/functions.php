@@ -121,7 +121,7 @@ function solutas_widgets_init() {
  * Enqueue scripts and styles.
  */
 function solutas_scripts() {
-	//wp_enqueue_style( 'solutas-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'solutas-style', get_stylesheet_uri() );
 
 	//wp_enqueue_script( 'solutas-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -162,7 +162,7 @@ require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
- */
+ */ 
 require get_template_directory() . '/inc/customizer.php';
 
 
@@ -359,4 +359,12 @@ add_action( 'wp_mail_failed', 'onMailError', 10, 1 );
         echo "<pre>";
         print_r($wp_error);
         echo "</pre>";
-    }       
+	}       
+	
+
+	function solutas_theme_body_classes( $classes ) {
+			$classes[] = 'solutas-body';
+		
+		return $classes;
+	}
+	add_filter( 'body_class', 'solutas_theme_body_classes' );

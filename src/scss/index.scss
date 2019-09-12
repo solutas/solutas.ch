@@ -68,21 +68,6 @@ body {
 .navbar {
   transition: background 0.3s ease-in-out;
   box-shadow: $box-shadow;
-  &.is-top {
-    background: none;
-    box-shadow: none;
-    .phone {
-      color: white;
-    }
-    .navbar-burger,
-    a {
-      color: white;
-    }
-    a:hover {
-      color: rgba(255, 255, 255, 0.575);
-    }
-  }
-
   a.navbar-item {
     &:focus {
       outline: none;
@@ -90,8 +75,63 @@ body {
     &.is-active {
       //border:1px solid yellow !important;
     }
+    a:hover {
+      
+    }
   }
 }
+
+.solutas-body {
+  &.is-top {
+    .navbar {
+      background: none;
+      box-shadow: none;
+      .phone {
+        color: white;
+      }
+      .navbar-burger,
+      a {
+        color: white;
+      }
+      a:hover {
+        color: rgba(255, 255, 255, 0.575);
+      }
+      a.navbar-item {
+        &:hover {          
+          background:none;
+
+        }
+      }
+    }
+  }
+
+  
+  &.hamburger-is-active {
+    &.is-top {
+    .navbar {
+      background: white;
+      .phone {
+        color: black;
+      }
+      a {
+        color: black;
+      }
+      a:hover {
+        color: rgba(0, 0, 0, 0.575);
+      }
+      .navbar-burger,
+      a {
+        color: black;
+      }
+      a:hover {
+        color: rgba(0, 0, 0, 0.575);
+      }
+    }
+  }
+  }
+  
+}
+
 
 .site {
   .is-brand {
@@ -464,44 +504,64 @@ body {
     }
   }
 
-
   .navbar {
-  .navbar-menu {
-    border: 20px solid orange;
-    background-color: red;
-    @include mobile {
-      
-      height: 100vh;
-      background: black;
+    .navbar-menu {
+      border: 20px solid orange;
+      background-color: red;
+      @include mobile {
+        height: 100vh;
+        background: black;
+      }
     }
-  
   }
-}
   .footer {
     .container {
       display: flex;
       justify-content: center;
-      .columns {        
-
+      .columns {
         .column {
-
           &:nth-child(1) {
             img {
-              width: 150px;
+              width: 200px;
             }
           }
 
           &:nth-child(4) {
-              min-width:200px;
+            min-width: 200px;
           }
           font-size: 11px;
           flex-direction: column;
           display: flex;
           align-items: left;
           justify-content: flex-end;
-          
         }
       }
     }
+  }
+
+
+  .error {    
+    @include mobile {
+      position: fixed;
+      z-index:9000;
+      bottom: 0;
+      left:0;
+      background-color: rgba(0,0,0,0.5);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      padding: 20px;
+      align-items: flex-end;
+      justify-items: flex-end;
+
+.message {
+  .delete {
+    position:absolute;
+    top:5px;
+    right:5px;
+  }
+}
+    }
+
   }
 }

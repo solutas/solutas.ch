@@ -16,6 +16,13 @@ class ContactForm {
     this.card = this.container;
     this.success = this.container.querySelector(".success");
     this.error = this.container.querySelector(".error");
+    
+    let close = document.createElement("a");
+    close.classList.add("delete");
+    close.classList.add("is-hidden-tablet");
+
+    close.addEventListener("click", ()=>this.error.classList.add("is-hidden"));
+    this.error.querySelector(".message").prepend(close);
 
     this.form.onsubmit = this.publishForm;
   };
