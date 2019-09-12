@@ -6,7 +6,7 @@ class NavbarItem {
     this.item = item;
 
     let target =  topNav ? item.dataset.navigationTarget : item.getAttribute("href").replace("/#", "").replace("#", "");
-
+    this.active = false;
     if(!topNav) {
 
       this.item.setAttribute("data-noactive", true);
@@ -17,7 +17,7 @@ class NavbarItem {
     } else {
       this.target = document.getElementById(target);
     }
-    this.calculatePosition();
+    
     this.item.addEventListener("click", e => {
       e.preventDefault();      
       this.scroll();
@@ -27,8 +27,10 @@ class NavbarItem {
     });
     window.addEventListener("resize", this.calculatePosition);
 
-    this.active = false;
+    
     window.addEventListener("scroll", this.calculateTop);
+
+    this.calculatePosition();
   }
 
   calculateTop = () => {
