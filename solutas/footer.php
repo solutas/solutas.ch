@@ -29,7 +29,7 @@ Paradieshofstrasse 117<br>
   </div>
   
   <div>
-    <a href="#/kontakt/"><i class="fas fa-envelope"></i> info solutas.ch</a>
+    <a href="#/kontakt"><i class="fas fa-envelope"></i> info solutas.ch</a>
   </div>
   
   </div>
