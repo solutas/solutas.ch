@@ -116,7 +116,9 @@
 					?>
 					<h1 class="title animated fadeInDown">
 						<?php 
-						if(is_home()) {
+						wp_reset_query();
+					//	if(is_front_page() && is_home()) {
+						if(get_post_meta($post->ID, 'microsite', true) !== "yes") {
 						 echo bloginfo('name'); 
 						}else {
 							echo $post->post_title;
@@ -127,7 +129,8 @@
 					<h2 class="subtitle animated fadeInUp  delay-1s">
 
 						<?php 
-						if(is_home()) {
+//						if(is_home() && is_front_page()) {
+	if(get_post_meta($post->ID, 'microsite', true) !== "yes") {
 						bloginfo('description'); 
 						}else {
 							echo get_post_meta($post->ID, 'subtitle', true);
