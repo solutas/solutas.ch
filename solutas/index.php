@@ -17,16 +17,15 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
 <?php
 	  the_post();
-	  echo the_content()
+	echo the_content()
 	  ?>
 
 		<?php
 		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) :
+			if ( !is_home() && ! is_front_page() ) :
 				?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -55,7 +54,6 @@ get_header();
 
 		endif;
 		?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

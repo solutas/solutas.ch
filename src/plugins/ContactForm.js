@@ -49,7 +49,8 @@ class ContactForm {
     this.form.classList.remove("success");
     try {
       let response = await axios.post("/wp-json/solutas/v1/contact", {
-        ...data
+        ...data,
+        source: window.localStorage.getItem("source")
       });
       this.container.classList.remove("loading");
       this.success.classList.remove("is-hidden");

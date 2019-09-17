@@ -370,7 +370,14 @@ add_action( 'wp_mail_failed', 'onMailError', 10, 1 );
 
 	function solutas_theme_body_classes( $classes ) {
 			$classes[] = 'solutas-body';
-		
+			if(!is_front_page() && !is_home()){
+				$classes[] = 'single-page';
+			}
 		return $classes;
 	}
 	add_filter( 'body_class', 'solutas_theme_body_classes' );
+
+
+function is_microsite() {	
+ return get_post_meta($post->ID, 'microsite', true);
+}
