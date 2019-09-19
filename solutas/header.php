@@ -101,7 +101,7 @@
 	?>
 		<section class="site-header" data-dir="<?= get_template_directory_uri() ?>">
 		 <? if($feat_image) {?>
-			<div style="background: linear-gradient(to right, rgba(0,0,0,.7) 20%,rgba(0,0,0,.4)), url(<?=$feat_image?>);background-size:cover;background-position: center center;" class="site-header--background">
+			<div style="background: linear-gradient(to right, rgba(0,0,0,.5) 20%,rgba(0,0,0,.1)), url(<?=$feat_image?>);background-size:cover;background-position: center center;" class="site-header--background">
 
 			</div>
 			
