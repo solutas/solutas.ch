@@ -12,21 +12,19 @@ export const mutations = {
   }
 }
 
-export const getters =  {
-    menu: (state) => (id) => {
-      return state.menu.main;
-    }
+export const getters = {
+  menu: state => id => {
+    return state.menu.main
+  }
 }
 
 export const actions = {
   async get({ commit }) {
     await this.$axios.get(MENU).then(res => {
       if (res.status === 200) {
+        console.log(res.data)
         commit('set', res.data)
       }
-    })    
-  },
-  async nuxtServerInit({ dispatch }) {
-    await dispatch('set')
-  }  
+    })
+  }
 }

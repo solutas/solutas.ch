@@ -1,0 +1,93 @@
+@import "~bootstrap/scss/bootstrap";
+html, body {
+    height: 100%;
+    width:  100%;
+    margin: 0;
+    padding: 0;    
+    background-color: #181919; //#262626;
+    //background-color: #212121;
+    color: rgba(255,255,255,0.73);
+  }
+  @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+
+  h1, h2, h3, h4 {
+   // font-family: 'Oswald' ;
+   font-weight: 300;
+  }
+
+  .section-header {
+    
+    margin-bottom: 55px;
+    h1 {
+      font-size: 50px;
+    }
+  }
+.hero {
+  @extend .jumbotron;
+  background-image: url(../assets/hero.png);
+  background-size: cover;
+  background-position: center right;
+  height: 430px;
+  margin-bottom: 20px;
+  //border-bottom:1px solid #404040;
+padding:0;
+  &__content {
+    display: flex;
+    background-color: rgba(17, 17, 17, 0.514);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Oswald' ;
+    text-align: center;
+    h2 {
+      font-size:35px;
+      color: rgba(255,255,255,0.73);
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 90px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.84);
+    }
+  }
+}
+
+.hero-fluid {
+  @extend .jumbotron-fluid;
+}
+
+
+.bg-brand {
+  background-color: #141313;
+  border-bottom:1px solid rgba(255,255,255,0.2);
+  border-bottom:1px solid #404040;
+  background: none;
+  position: fixed;
+  top: 0;
+  border: none;
+}
+
+.happyppl {
+  @extend .jumbotron;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding:0;
+  background-image: url(../assets/happyppl.png);
+  background-size: cover;
+  background-position: center right;
+  height: 430px;
+  font-family: 'Oswald' ;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border-bottom:1px solid #404040;
+   h1 {
+    background-color: #141313c4;
+    padding: 15px;
+
+    margin:0;
+   }
+
+}
