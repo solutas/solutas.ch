@@ -12,12 +12,36 @@ module.exports = {
   },
   plugins: [ 
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.svg$/ // See below to configure properly
+        }
+      }
+    },    
+    {
     resolve: `gatsby-plugin-sass`,
     options: {
       postCssPlugins: [require("autoprefixer")],
       precision: 6,
     },
   },  
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      defaultLayouts: {
+        default: require.resolve("./src/layouts/de.js"),
+      },
+    },
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `markdown-pages`,
+      path: `${__dirname}/src/pages`,
+    },
+  },
+  `gatsby-transformer-remark`,
   `gatsby-plugin-react-helmet`,
     {
       resolve: 'gatsby-plugin-i18n',

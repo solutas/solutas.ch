@@ -1,4 +1,4 @@
 module.exports = {
-  selectLanguage: "Wähle deine Sprache",
+  selectLanguage: "Sprache",
   termsandconditionlink: "AGBs",
 }

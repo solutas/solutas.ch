@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg  viewBox="0 0 1024 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="1.11022302e-14%" y1="50.5128726%" x2="100%" y2="49.4871274%" id="linearGradient-1">
+            <stop stop-color="#2A2A3C" offset="0%"></stop>
+            <stop stop-color="#B620E0" offset="51.2583893%"></stop>
+            <stop stop-color="#F7B500" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1024,-8 L1024.01512,12.3560552 C1059.27972,16.9493722 1079,22.0829962 1079,27.5 C1079,37.6117514 1043.0284,61.0047327 972.141721,63 C948.430799,63.667398 926.343735,93.2373719 893,96.1882693 C868.682686,98.3403346 851.113679,65.7307826 822,73.7226887 C797.575515,80.4273785 769.879211,89.1283315 743.606806,96.1882693 C723.597968,101.565057 650.356044,121.829772 629,96.1882693 C607.643956,70.5467661 618.015642,59.4579525 556.079774,49.876819 C530.364708,45.8988415 441.167263,49.9512884 433,49.876819 C373.110036,49.3307397 253.592483,63.6607778 200,63 C4.63173674,60.591173 -75,41.4861382 -75,27.5 C-75,21.6376526 -51.9039353,16.1071949 -11.0047203,11.234274 L-11,-8 L1024,-8 Z" id="path-2"></path>
+        <filter x="-5.2%" y="-51.6%" width="110.5%" height="202.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="10.5" dy="9.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.8 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="-10" dy="-10" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.8 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="white-site">
+            <g id="Combined-Shape">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

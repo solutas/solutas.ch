@@ -1,13 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 import Helmet from "react-helmet"
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n"
 import { StaticQuery, graphql } from "gatsby"
 import { IntlProvider } from "react-intl"
 import "intl"
+//import AOS from 'aos';
+//import 'aos/dist/aos.css';
 
-const Layout = ({ children, location, i18nMessages }) => {
+const Layout = ({ children, location, i18nMessages,soft }) => {
+
+  /*useEffect(() => {
+    AOS.init({
+      duration: 2000
+    });
+  }, [AOS]);*/
+
   return (
     <StaticQuery
       query={graphql`
@@ -37,9 +47,9 @@ const Layout = ({ children, location, i18nMessages }) => {
         }))
         return (
           <IntlProvider locale={langKey} messages={i18nMessages}>
-            <div>
+            <div className={soft ? 'soft': ''}>
               <Helmet
-                title="livebeam"
+                title="solutas"
                 meta={[
                   { name: "description", content: "Sample" },
                   { name: "keywords", content: "sample, something" },
@@ -48,6 +58,8 @@ const Layout = ({ children, location, i18nMessages }) => {
               <Header langs={langsMenu} lang={langKey} />
 
               {children}
+
+              <Footer/>
             </div>
           </IntlProvider>
         )

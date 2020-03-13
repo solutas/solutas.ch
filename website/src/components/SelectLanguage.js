@@ -2,27 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import { FormattedMessage } from 'react-intl';
-import Dropdown from "react-bootstrap/Dropdown";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 
 const SelectLanguage = (props) => {
   const links = props.langs.map(lang =>
-    <Dropdown.Item as={Link} to={lang.link} active={lang.selected}>{lang.langKey}</Dropdown.Item>        
+    <NavDropdown.Item as={Link} to={lang.link} active={lang.selected}>{lang.langKey}</NavDropdown.Item>        
   );
 
   return (
-    
-      <Dropdown>
-  <Dropdown.Toggle variant="dark" id="dropdown-basic">
-  <FormattedMessage id="selectLanguage" />
-  </Dropdown.Toggle>
-
-  <Dropdown.Menu>
-  {links}    
-  </Dropdown.Menu>
-</Dropdown>
-      
-    
+    <NavDropdown title={<FormattedMessage id="selectLanguage" />} id="collasible-nav-dropdown">
+      {links}                    
+    </NavDropdown>      
   );
 };
 
