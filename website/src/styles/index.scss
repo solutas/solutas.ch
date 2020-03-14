@@ -1,3 +1,6 @@
+html, body {
+  font-size: 20px;   
+}
 @import "~bootstrap/scss/functions.scss";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins"; 
@@ -14,11 +17,14 @@
 @import "~bootstrap/scss/jumbotron"; 
 @import "~bootstrap/scss/dropdown"; 
 
+@import "typo";
 
-.top-header {
-  padding-top: 20px;
-  padding-left: 15px;
-  background-color: $sol-info;
+// custom components
+@import "header";
+@import "buttons";
+
+main {
+  padding-top: 65px;
 }
 
 .direction-reverse {
@@ -37,8 +43,10 @@
 
 .hero {
   @extend .jumbotron-fluid;
-  
-  height: 500px;
+  display: flex;
+  height: 465px;
+  align-items: center;
+  justify-content: center;
 
   @include media-breakpoint-up(md){
     height: 341px;
@@ -47,12 +55,49 @@
   background-color: $sol-info;
 
   .hero__content {
+    display: flex;
+    align-items: center;    
+    justify-items: center;
+
+    &--left {
+      display: flex;
+      align-items: center;    
+      justify-content: center;
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;    
+      justify-items: center;
+      align-content: center;
+      justify-content: center;
+
+    }
+
+    .heroimg {
+      width: 150px;
+      @include media-breakpoint-up(md){
+        width: 300px;
+      }
+    }
+    @include media-breakpoint-between(xs,sm){
+      .btn {
+          @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+      }
+    }
     h1 {
+      margin-top: 40px;
       font-weight: 300;
-      font-size: 35px;
+      font-size: 30px;
       color: $sol-white;
+      text-align: center;
       letter-spacing: 0.73px;
       text-transform: uppercase;
+      @include media-breakpoint-up(md){
+        font-weight: 300;
+        font-size: 35px;  
+      }
     }
   }
 }

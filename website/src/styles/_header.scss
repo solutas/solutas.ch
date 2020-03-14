@@ -1,0 +1,10 @@
+
+.top-header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: $grid-gutter-width / 2;
+    align-items: center;
+    background-color: $sol-info;
+    z-index: 999;
+  }
