@@ -65,12 +65,7 @@ const IndexPage = props => (
       <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
       <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
       </TextBlock>
-      <Form label="Name" type="text" placeholder="name"></Form>
-      <Form position="left" label="Subject" type="text" placeholder="Subject of your message"></Form>
-      <Form label="Company" type="text" placeholder="name"></Form>
-      <Form position="left" label="Message" type="textarea" placeholder="Your message to us"></Form>
-      <Form label="Phone" type="number" placeholder="phone number"></Form>
-      <Form label="E-Mail" type="email" placeholder="your e-mail adress"></Form>
+      <Form/>
 
 
 
