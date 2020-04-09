@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 const SecondPage = props => (
   <Layout location={props.location}>
-    <div class="container">
+    <main class="container">
       <h1>Terms and Conditions</h1>
 
       <p>Last updated: February 12, 2020</p>
@@ -571,7 +571,7 @@ const SecondPage = props => (
           <li>By phone number: +41 79 59 75 00 6</li>
         </ul>
       </p>
-    </div>
+    </main>
 
     <div className="container mb-5 mt-5">
       <Row className="align-items-center mb-4">

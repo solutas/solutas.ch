@@ -29,42 +29,40 @@ const IndexPage = props => (
       <Jumbotron fluid bsPrefix="hero">
         <div className="hero__content">
           <Container>
-            <Row>
-              <Col md={{ span: 4, offset: 1 }}>
-              <HeroImage width="100%" height="100%"/>
-              <img src={require("../assets/undraw_breaking_barriers_vnf3.svg")}/>
+            <Row >
+              <Col md={{ span: 4, offset: 1 }} className="hero__content--left">
+              <HeroImage width="100%" height="100%" className="heroimg"/>
               </Col>
-              <Col md="7" className="d-flex align-items-center flex-column justify-content-center">
+              <Col md="7" className="hero__content--right">
                 <h1 class="display-3 mb-4">push the boundaries</h1>                
-                <a  className="btn btn-primary btn-lg" href="#" role="button">
-                  getting 
-                </a>
+                <a  className="btn btn-primary btn-sm" href="#" role="button">
+                  getting started
+                </a> 
               </Col>
             </Row>
           </Container>
-        </div>
+        </div>  
       </Jumbotron>
 
-      <TextBlock title="Be creative. Don’t accept any constrains." image={<TimeImage width="300" height="182"/>}>
+      <TextBlock position="right" title="Be creative. Don’t accept any constrains." image={<TimeImage width="300" height="182"/>}>
+      <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
+      <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
+      </TextBlock>
+  
+      <TextBlock title="Put your resources to the right place." image={<WalletImage width="300" height="211"/>}>
       <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
       <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
       </TextBlock>
 
-      <TextBlock position="right" title="Be creative. Don’t accept any constrains." image={<WalletImage width="300" height="211"/>}>
+      <TextBlock position="right" title="Be on the winning side." image={<RunningImage width="300" height="182"/>}>
       <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
       <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
       </TextBlock>
 
-      <TextBlock title="Be creative. Don’t accept any constrains." image={<RunningImage width="300" height="182"/>}>
+      <TextBlock title="Let's start your journey." image={<CelebrateImage width="300" height="211"/>}>
       <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
       <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
       </TextBlock>
-
-      <TextBlock position="right" title="Be creative. Don’t accept any constrains." image={<CelebrateImage width="300" height="211"/>}>
-      <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
-      <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
-      </TextBlock>
-
 
 
       {/* 

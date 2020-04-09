@@ -5,6 +5,17 @@
     width: 100%;
     padding: $grid-gutter-width / 2;
     align-items: center;
-    background-color: $sol-info;
+    background: none;    
     z-index: 999;
+    transition: all 0.4s ease;
+    &--scrolled {
+        background-color: $sol-white;//darken($sol-info, 0%);
+        padding: $grid-gutter-width / 3;
+        padding-left: $grid-gutter-width / 2;  
+        $col: rgba($sol-gray, 0.2);        
+        box-shadow: 0px 1px 24px 0px $col;       
+        .solutas-icon {
+           height: 25px;
+        }
+    }    
   }

@@ -55,10 +55,8 @@ const Layout = ({ children, location, i18nMessages,soft }) => {
                   { name: "keywords", content: "sample, something" },
                 ]}
               />
-              <Header langs={langsMenu} lang={langKey} />
-
-              {children}
-
+              <Header langs={langsMenu} lang={langKey} />              
+              {children}              
               <Footer/>
             </div>
           </IntlProvider>
