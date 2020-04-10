@@ -10,6 +10,7 @@ import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import IntlLink from "../components/IntlLink"
 import TextBlock from "../components/TextBlock"
+import Form from "../components/Form"
 import Slide from "react-reveal/Slide";
 import Flip from "react-reveal/Flip";
 import Fade from "react-reveal/Fade";
@@ -63,6 +64,7 @@ const IndexPage = props => (
       <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
       <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
       </TextBlock>
+      <Form/>
 
 
       {/* 
