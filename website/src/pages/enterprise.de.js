@@ -8,7 +8,9 @@ import Form from "../components/Form"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import HeroImage from  '../assets/undraw_city_girl_ccpd.svg';
-
+import Developer from  '../assets/undraw_web_developer_p3e5.svg';
+import SuperHero from  '../assets/undraw_superhero_kguv.svg';
+import TimeImage from  '../assets/undraw_season_change_f99v.svg';
 
 const SecondPage = (props) => (
   <Layout location={props.location}>
@@ -32,6 +34,21 @@ const SecondPage = (props) => (
           </Container>
         </div>  
       </Jumbotron>
+
+      <TextBlock position="right" title="Take advantage of the full potential." image={<SuperHero width="300" height="182"/>}>      
+      <p>One of our Founder alone has more then 20 Years expierence within the Enterprise Content Management field.</p>
+      <p>He contributed to Open Source Projects such as Apache Sling and influenced well known commercial Systems like Adobe AEM.
+      Knowing all the pitfalls, our goal at SOLUTAS is to unfold the full potental of your Content Management Systems.
+      </p>
+      </TextBlock>
+
+      <TextBlock position="left" title="Jam. JAM. JAM STack." image={<Developer width="300" height="182"/>}>            
+      <p>Unlike many established Agencies in the Sector, we started our journey with the strong belief that in order to be successful you need to fully boost the Frontend implementation, especially with Java backed CMS Systems.</p>
+      <p>We have a strong track record, implementing technologies like offline-first, server side rendering, even before the terms have had been created</p>
+      <p>No miscommunication between "Backend" and "Frontend" Development.</p>
+      </TextBlock>      
+
+      <Form/>
      
   </Layout>
 )

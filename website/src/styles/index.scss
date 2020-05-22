@@ -52,9 +52,9 @@ main {
 
 .hero {
   @extend .jumbotron-fluid;  
-
-  height: 465px;  
-  padding-top: 65px;
+  display: flex;
+  height: 465px;
+  align-items: center;    
 
   @include media-breakpoint-up(md){
     height: 400px;
@@ -63,7 +63,9 @@ main {
   background-color: $sol-info;
 
   .hero__content {
+    font-family: $font-family-sans-serif;
     display: flex;
+    flex: 1;
     align-items: center;    
     justify-items: center;
 
@@ -102,7 +104,7 @@ main {
       font-size: 25px;
       color: $sol-white;
       text-align: center;
-      letter-spacing: 0.73px;
+      letter-spacing: -2px;
       text-transform: uppercase;
       line-height: 15px;
       @include media-breakpoint-up(md){
@@ -112,10 +114,10 @@ main {
     }
     h2 {
       margin-top: 0px;
-      color: rgba($sol-white, 0.5);
-      text-align: center;
-      letter-spacing: -1px;      
-      font-weight: 200;
+      color: rgba($sol-white, .5);
+      text-align: center;      
+      letter-spacing: -2px;            
+      font-weight: 300;
       font-size: 25px;
       @include media-breakpoint-up(md){
         font-weight: 100;        

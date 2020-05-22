@@ -8,7 +8,7 @@ const IntlLink = ({ to, intl: { locale }, children, ...props }) => {
   const path = locale === languages.defaultLangKey ? to : `/${locale}${to}`
 
   return (
-    <Link to={path} {...props}>
+    <Link to={path} {...props} activeClassName="active">
       {children}
     </Link>
   )

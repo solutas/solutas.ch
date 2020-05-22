@@ -1,21 +1,66 @@
+@import "_theme.scss";
 
 .top-header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: $grid-gutter-width / 2;
+  align-items: center;
+  background: none;
+  z-index: 999;
+  transition: all 0.4s ease;
+
+  .navbar-links {
+    margin-left: auto;
+    font-size: 15px;
+    height: 25px;
     display: flex;
-    position: fixed;
-    width: 100%;
-    padding: $grid-gutter-width / 2;
-    align-items: center;
-    background: none;    
-    z-index: 999;
-    transition: all 0.4s ease;
-    &--scrolled {
-        background-color: $sol-white;//darken($sol-info, 0%);
-        padding: $grid-gutter-width / 3;
-        padding-left: $grid-gutter-width / 2;  
-        $col: rgba($sol-gray, 0.2);        
-        box-shadow: 0px 1px 24px 0px $col;       
-        .solutas-icon {
-           height: 25px;
-        }
-    }    
+    justify-content: flex-end;
+    flex: 1;
+    .navbar-link {
+        font-family: $font-family-sans-serif;
+      display: flex;
+      padding: 15px;
+      justify-content: center;
+      align-items: center;
+      color: $sol-white;
+      text-transform: uppercase;
+      font-weight: 400;
+      line-height: 25px;      
+      letter-spacing: -0.25px;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 1px solid $sol-white;
+      }
+      &.active {          
+        color: $sol-white-trans;
+        border-bottom: none;
+    }
+    
+      
+    }
   }
+
+  &--scrolled {
+    background-color: $sol-white; //darken($sol-info, 0%);
+    padding: $grid-gutter-width / 3;
+    padding-left: $grid-gutter-width / 2;
+    $col: rgba($sol-gray, 0.2);
+    box-shadow: 0px 1px 24px 0px $col;
+    .solutas-icon {
+      height: 25px;
+    }
+
+    .navbar-links {
+      margin-left: auto;
+      .navbar-link {
+        color: $sol-secondary;
+        &.active {          
+            color: $sol-secondary-trans;
+            border-bottom: none;
+        }
+      }
+    }
+  }
+}

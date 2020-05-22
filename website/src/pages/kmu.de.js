@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Layout from "../layouts/de"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
@@ -9,7 +8,8 @@ import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import HeroImage from  '../assets/undraw_barber_3uel.svg';
 import SwissLogo from "../assets/Schweizer-Kreuz.jpg";
-
+import TimeImage from  '../assets/undraw_season_change_f99v.svg';
+import SoluneoOne from "../assets/soluneo-1.gif";
 const SecondPage = (props) => (
   <Layout location={props.location}>
     
@@ -24,7 +24,7 @@ const SecondPage = (props) => (
               <Col md="7" className="hero__content--right">
               
                 <h1 className="display-3 mb-4 d-flex" style={{alignItems: 'center'}}><img src={SwissLogo} height="20" className="mr-2"/>Your Local Partner.</h1>                
-                <h2 className="display-5">For small business owners.</h2>
+                <h2>For small business owners.</h2>
                 
                 
                 <a  className="btn btn-primary btn-sm" href="#" role="button">
@@ -35,6 +35,21 @@ const SecondPage = (props) => (
           </Container>
         </div>  
       </Jumbotron>
+
+
+      <TextBlock position="right" title={<span>We <span className="text-swiss">♥</span> Small Businesses. We <span className="text-swiss">♥</span> to impact.</span>} image={<img src={SoluneoOne}  width="100%" />}>
+      <p>Our goal is to support our Local Small  and Micro-Business. We believe that you can benefit from our extensive knowledge in Digitalization.</p>
+      <p>We have worked as futurists and have developed prorotypes 15 years ago from the world we are living in Today.</p>
+      <p>Don't be ok with just following what is needed today, but build up your business to be up-to-date and ready for what ever will happen in the future. We love to partner with you.</p>
+      </TextBlock>
+
+      <TextBlock position="left" title={<span>We <span className="text-swiss">♥</span> to innovate. And we are right in your Neighborhood.</span>} image={<img src={SoluneoOne}  width="100%" />}>      
+      <p>We believe, you don't need to wait for the silicon valley to bring us a solution, changing and adapting it until it fits our local market.</p>
+      <p>We are already building them, no customization, because we have and are building the future together with you.</p>
+      <p>So, you will not read anything like Wordpress, Jimdo, Shopify, PHP, WooCommerce or anything alike form us. Tell us your challeange and we will show you the solutions.</p>
+      </TextBlock>
+
+      <Form/>
      
   </Layout>
 )

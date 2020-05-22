@@ -9,6 +9,8 @@ $sol-white: #F5EFED;
 $sol-info: #2292A4;
 $sol-green: #BDBF09;
 $sol-gray: #262625;
+$sol-white-trans: rgba(245, 239, 237, 0.753);
+$sol-secondary-trans: rgba(15, 10, 10, 0.753);
 
 
 $body-bg: $sol-white;
@@ -31,7 +33,8 @@ $theme-colors: (
   "info": $sol-info,
   "secondary": $sol-secondary,
   "white": $sol-white,
-  "danger": #8f241e
+  "danger": #8f241e,
+  "swiss": #E11A27
 );
 
 /*$theme-colors: (

@@ -13,24 +13,19 @@ export default ()=>(
         <div className="col-12 col-md">
         <img src={SwissLogo} height="37" className="mb-2"/>
         <small className="d-block mb-0 text-muted">Swiss Quality</small>
-        <small className="d-block mb-3 text-muted">Made with ♥ in Basel </small>
+        <small className="d-block mb-3 text-muted">Made with <span className="text-swiss">♥</span> in Basel </small>
+        </div>
+        <div className="col-6 col-md">
+          <h5>Contact</h5>
+          <small className="text-muted"><strong>SOLUTAS GmbH</strong><br/>
+          Paradieshofstrasse 117<br/>
+          4051 Basel, Switzerland</small>
         </div>
         <div className="col-6 col-md">
           <h5>Resources</h5>
           <ul className="list-unstyled text-small">
-            <li><a className="text-muted" href="#">Resource</a></li>
-            <li><a className="text-muted" href="#">Resource name</a></li>
-            <li><a className="text-muted" href="#">Another resource</a></li>
-            <li><a className="text-muted" href="#">Final resource</a></li>
-          </ul>
-        </div>
-        <div className="col-6 col-md">
-          <h5>Resources</h5>
-          <ul className="list-unstyled text-small">
-            <li><a className="text-muted" href="#">Business</a></li>
-            <li><a className="text-muted" href="#">Education</a></li>
-            <li><a className="text-muted" href="#">Government</a></li>
-            <li><a className="text-muted" href="#">Gaming</a></li>
+            <li><a className="text-muted" href="#">www.soluneo.com</a></li>
+            <li><a className="text-muted" href="#">www.livebeam.me</a></li>            
           </ul>
         </div>
         <div className="col-6 col-md">
