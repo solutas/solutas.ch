@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../assets/solutas-brief.png";
+import SwissLogo from "../assets/Schweizer-Kreuz.jpg";
 
 export default ()=>(
     
@@ -9,16 +10,10 @@ export default ()=>(
           <img src={Logo} width="100%" className="mb-2"/>
           <small className="d-block mb-3 text-muted">&copy; 2019-2020</small>
         </div>
-        <div className="col-6 col-md">
-          <h5>Features</h5>
-          <ul className="list-unstyled text-small">
-            <li><a className="text-muted" href="#">Cool stuff</a></li>
-            <li><a className="text-muted" href="#">Random feature</a></li>
-            <li><a className="text-muted" href="#">Team feature</a></li>
-            <li><a className="text-muted" href="#">Stuff for developers</a></li>
-            <li><a className="text-muted" href="#">Another one</a></li>
-            <li><a className="text-muted" href="#">Last time</a></li>
-          </ul>
+        <div className="col-12 col-md">
+        <img src={SwissLogo} height="37" className="mb-2"/>
+        <small className="d-block mb-0 text-muted">Swiss Quality</small>
+        <small className="d-block mb-3 text-muted">Made with ♥ in Basel </small>
         </div>
         <div className="col-6 col-md">
           <h5>Resources</h5>

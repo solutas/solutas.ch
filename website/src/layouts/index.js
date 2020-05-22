@@ -10,8 +10,7 @@ import "intl"
 //import AOS from 'aos';
 //import 'aos/dist/aos.css';
 
-const Layout = ({ children, location, i18nMessages,soft }) => {
-
+const Layout = ({ children, location, i18nMessages, soft }) => {
   /*useEffect(() => {
     AOS.init({
       duration: 2000
@@ -28,6 +27,10 @@ const Layout = ({ children, location, i18nMessages,soft }) => {
                 defaultLangKey
                 langs
               }
+              menuLinks {
+                name
+                link
+              }
             }
           }
         }
@@ -37,6 +40,7 @@ const Layout = ({ children, location, i18nMessages,soft }) => {
         const { langs, defaultLangKey } = data.site.siteMetadata.languages
         const langKey = getCurrentLangKey(langs, defaultLangKey, url)
         const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, "/")
+        const { menuLinks } = data.site.siteMetadata;
         const langsMenu = getLangs(
           langs,
           langKey,
@@ -47,7 +51,7 @@ const Layout = ({ children, location, i18nMessages,soft }) => {
         }))
         return (
           <IntlProvider locale={langKey} messages={i18nMessages}>
-            <div className={soft ? 'soft': ''}>
+            <div className={soft ? "soft" : ""}>
               <Helmet
                 title="solutas"
                 meta={[
@@ -55,9 +59,13 @@ const Layout = ({ children, location, i18nMessages,soft }) => {
                   { name: "keywords", content: "sample, something" },
                 ]}
               />
-              <Header langs={langsMenu} lang={langKey} />              
-              {children}              
-              <Footer/>
+              <Header
+                langs={langsMenu}
+                lang={langKey}
+                menuLinks={menuLinks}
+              />
+              {children}
+              <Footer />
             </div>
           </IntlProvider>
         )

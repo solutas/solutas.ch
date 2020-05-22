@@ -8,7 +8,25 @@ const languages = require("./src/data/languages");
 module.exports = {
   siteMetadata: {
     title: `Livebeam,.me`,
-    languages
+    languages,
+    menuLinks: [
+      {
+        name: "home",
+        link: "/"
+      },
+      {
+        name: "for-enterprise",
+        link: "/enterprise"
+      },
+      {
+        name: "for-small-business",
+        link: "/kmu"
+      },
+      {
+        name: "products",
+        link: "/products"
+      }
+    ]
   },
   plugins: [ 
     {
