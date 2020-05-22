@@ -11,14 +11,39 @@
   transition: all 0.4s ease;
 
   .navbar-links {
-    margin-left: auto;
+    position: absolute;
+    transform: translateX(+100%);
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
     font-size: 15px;
-    height: 25px;
+
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    background-color: $sol-brown;
+    padding-top: 60px;
     flex: 1;
+    z-index:900;
+    transition: transform 1s ease-in-out;
+    
+    &.open {
+      transform: translateX(0);
+      
+    }
+    @include media-breakpoint-up(md) {
+      margin-left: auto;
+      position: relative;
+      justify-content: flex-end;
+      flex-direction: row;
+      transform: translateX(0);
+      padding-top: 0;
+      background: none;
+      height: 25px;
+    }
+
     .navbar-link {
-        font-family: $font-family-sans-serif;
+      font-family: $font-family-sans-serif;
       display: flex;
       padding: 15px;
       justify-content: center;
@@ -26,19 +51,55 @@
       color: $sol-white;
       text-transform: uppercase;
       font-weight: 400;
-      line-height: 25px;      
+      line-height: 25px;
       letter-spacing: -0.25px;
       text-align: center;
       text-decoration: none;
       &:hover {
         border-bottom: 1px solid $sol-white;
       }
-      &.active {          
+      &.active {
         color: $sol-white-trans;
         border-bottom: none;
+      }
+    }
+  }
+
+  .hamburger {
+    cursor: pointer;
+    fill: $sol-white;
+    z-index:1000;
+    margin-left: auto;
+    .line1 {
+      transition: all 0.4s ease-in-out;
+      transform-origin: 15% 50%;      
+    }
+    .line2 {
+      transition: all 0.4s ease-in-out;
+    }
+
+    .line3 {
+      transition: all 0.4s ease-in-out;
+      transform-origin: 25% 50%;
     }
     
+    &.open {
+      fill: $sol-white;                  
       
+      .line1 {        
+        transform: rotate(45deg);
+      }
+      .line2 {
+        opacity: 0;
+      }
+
+      .line3 {
+        transform: rotate(-45deg);
+      }
+
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
     }
   }
 
@@ -51,16 +112,35 @@
     .solutas-icon {
       height: 25px;
     }
+    .hamburger {
+      fill: $sol-secondary;
+      margin-right: 10px;
+    }
 
     .navbar-links {
-      margin-left: auto;
       .navbar-link {
         color: $sol-secondary;
-        &.active {          
-            color: $sol-secondary-trans;
-            border-bottom: none;
+        &.active {
+          color: $sol-secondary-trans;
+          border-bottom: none;
         }
       }
+      &.open {
+        .navbar-link {
+          color: $sol-white;
+          &.active {
+            color: $sol-white-trans;
+          }
+          @include media-breakpoint-up(md) {
+            color: $sol-secondary;
+            &.active {
+              color: $sol-secondary-trans;
+            }
+          }
+          
+        }
+      }
+      
     }
   }
 }

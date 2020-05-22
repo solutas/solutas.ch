@@ -29,6 +29,7 @@ module.exports = {
     ]
   },
   plugins: [ 
+    `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-plugin-react-svg",
       options: {

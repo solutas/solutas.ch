@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Link from "gatsby-link"
 import SelectLanguage from "./SelectLanguage"
 import Navbar from "react-bootstrap/Navbar"
@@ -14,6 +14,7 @@ import Wave from "../assets/wave.svg"
 
 const Header = ({ menuLinks }) => {
   let scroll = useScroll(65)
+  let [navOpen, setNavOpen] = useState(false)
 
   //<!Wave className={scroll ? 'waved' : 'waved hide'}/>
   return (
@@ -67,7 +68,7 @@ const Header = ({ menuLinks }) => {
           </g>
         </svg>
       </IntlLink>
-      <div className="navbar-links">
+      <div className={`navbar-links ${navOpen? 'open' :null}`}>
         {menuLinks
           ? menuLinks.map(item => (
               <IntlLink to={item.link} className="navbar-link">
@@ -76,6 +77,12 @@ const Header = ({ menuLinks }) => {
             ))
           : null}
       </div>
+
+      <svg viewBox="0 0 100 80" width="20" height="20" className={`hamburger ${navOpen? 'open' :null}`} onClick={()=>setNavOpen(!navOpen)}>
+        <rect width="100" height="2" className="line1"></rect>
+        <rect y="30" width="100" height="2" className="line2"></rect>
+        <rect y="60" width="100" height="2" className="line3"></rect>
+      </svg>
     </header>
   )
 }
