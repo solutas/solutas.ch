@@ -19,7 +19,7 @@ const SecondPage = (props) => (
           <Container> 
             <Row>
               <Col md={{ span: 4, offset: 1 }} className="hero__content--left">
-              <HeroImage width="100%" height="100%" className="d"/>
+              <HeroImage width="100%" height="100%" className="heroimg"/>
               </Col>
               <Col md="7" className="hero__content--right">
               

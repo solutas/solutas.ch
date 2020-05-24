@@ -21,7 +21,7 @@ const SecondPage = (props) => (
           <Container> 
             <Row>
               <Col md={{ span: 4, offset: 1 }} className="hero__content--left">
-              <HeroImage width="100%" height="100%" className="d"/>
+              <HeroImage width="100%" height="100%" className="heroimg"/>
               </Col>
               <Col md="7" className="hero__content--right">
                 <h1 class="display-3 mb-4">Your trusted Agency.</h1>                
@@ -42,7 +42,14 @@ const SecondPage = (props) => (
       </p>
       </TextBlock>
 
-      <TextBlock position="left" title="Jam. JAM. JAM STack." image={<Developer width="300" height="182"/>}>            
+
+      <TextBlock position="left" title="Full Power of Enterprise CMS. Easyness of .." image={<Developer width="300" height="182"/>}>            
+      <p>Magnolia CMS full JCR powered Java Enterprise CMS with headless a joy </p>
+      <p>We have a strong track record, implementing technologies like offline-first, server side rendering, even before the terms have had been created</p>
+      <p>No miscommunication between "Backend" and "Frontend" Development.</p>
+      </TextBlock>      
+
+      <TextBlock position="right" title="Jam. JAM. JAMStack." image={<Developer width="300" height="182"/>}>            
       <p>Unlike many established Agencies in the Sector, we started our journey with the strong belief that in order to be successful you need to fully boost the Frontend implementation, especially with Java backed CMS Systems.</p>
       <p>We have a strong track record, implementing technologies like offline-first, server side rendering, even before the terms have had been created</p>
       <p>No miscommunication between "Backend" and "Frontend" Development.</p>
