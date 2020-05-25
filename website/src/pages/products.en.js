@@ -38,14 +38,13 @@ const SecondPage = (props) => (
 
       <TextBlock position="right" title="Soluneo. Locally Connected." image={<div><img src={SoluneoOne}  width="100%"/></div>}>
       <p>Soluneo ("the new solution"), currently in private Beta,  is providing a Digital Platform to support local SMEs and MICRO Businesses to establish a locally shared customer base by enabling them to easily create a Unique web-presence leading into increased consumer recognition, conversion rates and therefor increased sales.</p>
-
+      <p>The universal page editor provides maximum flexibility; for example being able to manage targeted campaigns (like “new arrivals”) to audience nearby, with the simple “Calendar Management” solution, we provide an end-to-end solution for your appointment management.</p>
+      
       </TextBlock>
       <TextBlock>
         <div>
-
-<p>The universal page editor provides maximum flexibility; for example being able to manage targeted campaigns (like “new arrivals”) to audience nearby, with the simple “Calendar Management” solution, we provide an end-to-end solution for your appointment management.</p>
-<p>We provide you the option of a unique e-commerce solution paired with the “Check-in” & “Check-out” functionality to increase customer satisfaction due to securely captured personal details like payment types, delivery address etc.</p>
-<strong>Current &amp; Desired Features</strong>
+        <p>We provide you the option of a unique e-commerce solution paired with the “Check-in” & “Check-out” functionality to increase customer satisfaction due to securely captured personal details like payment types, delivery address etc.</p>
+        <strong>Current &amp; Desired Features</strong>
 <ul>
   <li>A Complete Web-CMS Solution for Small and Micro Businesses with access to thousends of royalty free Images. Change your content on the road with your Phone or Tablet.</li>
   <li>E-Commerce Solution to handle one-time payment</li>
@@ -62,6 +61,15 @@ const SecondPage = (props) => (
 <strong>Interested?</strong> Get in touch with us for a Demo we are happy to evaluate if we can extend our Beta Program to you.
         </div>
       </TextBlock>
+
+      <TextBlock>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2QP6SxUDYbA" allowfullscreen></iframe>
+</div>
+      </TextBlock> 
+
+     
       <TextBlock position="left" title="Livebeam.me - Experience Your Event With The Eyes Of Your Guests." image={<div><img src={LivebeamOne}  width="100%"/></div>}>
       <p>Livebeam.me Started as a private Project for a Wedding, Birthday for a Child and New Years Party. 
         After getting so many requests from the Attendees to make that available to them, we have decided to invest in this Product to make it publicly available.</p>
@@ -75,6 +83,8 @@ const SecondPage = (props) => (
         <p>Register for the Beta Program and if you know already of an Event, let us know. We are more then happy to come back to you and to give you a demo account.</p>      
         </div>
       </TextBlock>
+
+      
       <TextBlock>
       <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HUzgxscpsWM" allowfullscreen></iframe>
