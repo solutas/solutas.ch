@@ -47,7 +47,7 @@ const SecondPage = (props) => (
 <p>We provide you the option of a unique e-commerce solution paired with the “Check-in” & “Check-out” functionality to increase customer satisfaction due to securely captured personal details like payment types, delivery address etc.</p>
 <strong>Current &amp; Desired Features</strong>
 <ul>
-  <li>A Complete Web-CMS Solution with access to thousends of royalty free Images. Change your content on the road with your Phone or Tablet.</li>
+  <li>A Complete Web-CMS Solution for Small and Micro Businesses with access to thousends of royalty free Images. Change your content on the road with your Phone or Tablet.</li>
   <li>E-Commerce Solution to handle one-time payment</li>
   <li>Subscription Management for recuring revenue</li>
   <li>Manage Classes &amp; Workshops from Website, Payment to Booking</li>
