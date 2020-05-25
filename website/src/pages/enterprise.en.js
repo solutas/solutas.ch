@@ -62,7 +62,7 @@ const SecondPage = props => (
     <TextBlock
       position="left"
       title="Full Power of Enterprise but lightway Development"
-      image={<img width="100%" src={LightDev} />}
+      image={<div><img width="100%" src={LightDev} /></div>}
     >
       <p>
         For us as at SOLUTAS, Magnolia CMS is bringing back the fun when
