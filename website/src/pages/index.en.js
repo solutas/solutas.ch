@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../layouts/de"
+import Layout from "../layouts/en"
 import Link from "gatsby-link"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
