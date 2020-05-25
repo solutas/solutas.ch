@@ -58,7 +58,7 @@ const IndexPage = props => (
           constrains
         </p>
         <p>
-          We put you and your customer experience first. For us technology is a
+          For us technology is a
           vehicle, still we live and breath the latest technology. Not only do
           we follow trends, we are able to innovate and lead.
         </p>

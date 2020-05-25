@@ -29,7 +29,7 @@ module.exports = {
     ]
   },
   plugins: [ 
-    //require.resolve(`./soluneo-plugin`),
+    require.resolve(`./soluneo-plugin`),
     `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-plugin-react-svg",

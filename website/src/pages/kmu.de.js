@@ -37,13 +37,13 @@ const SecondPage = (props) => (
       </Jumbotron>
 
 
-      <TextBlock position="right" title={<span>We <span className="text-swiss">♥</span> Small Businesses. We <span className="text-swiss">♥</span> to impact.</span>} image={<img src={SoluneoOne}  width="100%" />}>
+      <TextBlock position="right" title={<span>We <span className="text-swiss">♥</span> Small Businesses. We <span className="text-swiss">♥</span> to impact.</span>} image={<div><img src={SoluneoOne}  width="100%" /></div>}>
       <p>Our goal is to support our Local Small  and Micro-Business. We believe that you can benefit from our extensive knowledge in Digitalization.</p>
       <p>We have worked as futurists and have developed prorotypes 15 years ago from the world we are living in Today.</p>
       <p>Don't be ok with just following what is needed today, but build up your business to be up-to-date and ready for what ever will happen in the future. We love to partner with you.</p>
       </TextBlock>
 
-      <TextBlock position="left" title={<span>We <span className="text-swiss">♥</span> to innovate. And we are right in your Neighborhood.</span>} image={<img src={SoluneoOne}  width="100%" />}>      
+      <TextBlock position="left" title={<span>We <span className="text-swiss">♥</span> to innovate. And we are right in your Neighborhood.</span>} image={<div><img src={SoluneoOne}  width="100%" /></div>}>
       <p>We believe, you don't need to wait for the silicon valley to bring us a solution, changing and adapting it until it fits our local market.</p>
       <p>We are already building them, no customization, because we have and are building the future together with you.</p>
       <p>So, you will not read anything like Wordpress, Jimdo, Shopify, PHP, WooCommerce or anything alike form us. Tell us your challeange and we will show you the solutions.</p>

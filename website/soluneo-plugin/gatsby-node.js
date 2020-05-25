@@ -26,7 +26,7 @@ exports.sourceNodes = async ({
   const { createNode } = actions
 
   const response = await fetch(
-    "http://localhost:5000/nghelvetia/us-central1/editor-delivery/1wlYeL1w38tR45NkJG0c"
+    "http://localhost:5000/nghelvetia/us-central1/editor-delivery/6D6N1U7TlEzcrWICNpDy"
   )
   const pages = await response.json()
   console.log("CHIASLDFA SDFLKAs -dfU ")
@@ -81,31 +81,54 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
-    const result = await graphql(`
+    const response = await fetch(
+      "http://localhost:5000/nghelvetia/us-central1/editor-delivery/1wlYeL1w38tR45NkJG0c"
+    )
+    const pages = await response.json()
+    console.log(response);
+    createPage({
+      path: (pages.index.defaultLanguage || 'de') + "/"+ pages.id,
+      component: path.resolve(`./src/layouts/pages.js`),
+      context: {
+        // Data passed to context is available
+        // in page qes.businessueries as GraphQL variables.
+        page: pages.index,
+        business: pages.business
+      },
+    });
+
+    pages.children.forEach(page => {
+      createPage({
+        path: (page.defaultLanguage || 'de') + "/"+ page.name,
+        component: path.resolve(`./src/layouts/pages.js`),
+        context: {
+          // Data passed to context is available
+          // in page qes.businessueries as GraphQL variables.
+          page: page.content,
+          business: pages.business
+        },
+      })
+    });
+    
+    /*const result = await graphql(`
       query {
         allPages {
-            totalCount
-            nodes {
-              id      
-              business {name}
-              public
-              defaultLanguage
-              languages {
-                de {
-                  meta {
-                    title
-                  }
-                }
-              }
+          totalCount
+          nodes {
+            id
+            defaultLanguage
+            languages {
+              de {meta { title}}
             }
           }
+        }
       }
     `)
     console.log(result.data);
     result.data.allPages.nodes.forEach(({ id, defaultLanguage }) => {        
 
       createPage({
-        path: defaultLanguage + "/"+ id,
+        path: (defaultLanguage || 'de') + "/"+ id,
         component: path.resolve(`./src/layouts/pages.js`),
         context: {
           // Data passed to context is available
@@ -113,5 +136,5 @@ exports.createPages = async ({ graphql, actions }) => {
           id  
         },
       })
-    })
+    })*/
   }
