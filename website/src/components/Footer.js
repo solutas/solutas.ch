@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from "../assets/solutas-brief.png";
 import SwissLogo from "../assets/Schweizer-Kreuz.jpg";
-
+import IntlLink from "./IntlLink"
 export default ()=>(
     
     <footer className="container py-5">
@@ -31,10 +31,10 @@ export default ()=>(
         <div className="col-6 col-md">
           <h5>About</h5>
           <ul className="list-unstyled text-small">
-            <li><a className="text-muted" href="#">Team</a></li>
+          <li><IntlLink className="text-muted" to="/team">Team</IntlLink></li>
             <li><a className="text-muted" href="#">Locations</a></li>
             <li><a className="text-muted" href="#">Privacy</a></li>
-            <li><a className="text-muted" href="#">Terms</a></li>
+            <li><IntlLink className="text-muted" to="/terms">Terms</IntlLink></li>
           </ul>
         </div>
       </div>

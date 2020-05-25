@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import TextBlock from "../components/TextBlock"
 
+
 const SecondPage = props => (
   <Layout location={props.location}>
     <Jumbotron fluid bsPrefix="hero">
