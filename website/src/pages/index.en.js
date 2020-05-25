@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../layouts/en"
+import Layout from "../layouts/de"
 import Link from "gatsby-link"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
@@ -11,63 +11,104 @@ import Row from "react-bootstrap/Row"
 import IntlLink from "../components/IntlLink"
 import TextBlock from "../components/TextBlock"
 import Form from "../components/Form"
-import Slide from "react-reveal/Slide";
-import Flip from "react-reveal/Flip";
-import Fade from "react-reveal/Fade";
-import Zoom from 'react-reveal/Zoom';
-import Bounce from 'react-reveal/Bounce';
-import Wave from  '../assets/wave.svg';
-import HeroImage from  '../assets/undraw_breaking_barriers_vnf3.svg';
-import TimeImage from  '../assets/undraw_season_change_f99v.svg';
-import WalletImage from  '../assets/undraw_wallet_aym5.svg';
-import RunningImage from '../assets/undraw_finish_line_katerina_limpitsouni_xy20.svg';
-import CelebrateImage from '../assets/undraw_celebration_0jvk.svg';
+import Slide from "react-reveal/Slide"
+import Flip from "react-reveal/Flip"
+import Fade from "react-reveal/Fade"
+import Zoom from "react-reveal/Zoom"
+import Bounce from "react-reveal/Bounce"
+import Wave from "../assets/wave.svg"
+import HeroImage from "../assets/undraw_breaking_barriers_vnf3.svg"
+import TimeImage from "../assets/undraw_season_change_f99v.svg"
+import WalletImage from "../assets/undraw_wallet_aym5.svg"
+import RunningImage from "../assets/undraw_finish_line_katerina_limpitsouni_xy20.svg"
+import CelebrateImage from "../assets/undraw_celebration_0jvk.svg"
 
 const IndexPage = props => (
   <Layout location={props.location}>
     <div>
-      
       <Jumbotron fluid bsPrefix="hero">
         <div className="hero__content">
           <Container>
-            <Row >
+            <Row>
               <Col md={{ span: 4, offset: 1 }} className="hero__content--left">
-              <HeroImage width="100%" height="100%" className="heroimg"/>
+                <HeroImage width="100%" height="100%" className="heroimg" />
               </Col>
               <Col md="7" className="hero__content--right">
-                <h1 class="display-3 mb-4">push the boundaries</h1>                
-                <a  className="btn btn-primary btn-sm" href="#" role="button">
+                <h1 class="display-3 mb-4">push the boundaries</h1>
+                <h2 class="display-5">To shape your future.</h2>
+                <a className="btn btn-primary btn-sm" href="#" role="button">
                   getting started
-                </a> 
+                </a>
               </Col>
             </Row>
           </Container>
-        </div>  
+        </div>
       </Jumbotron>
 
-      <TextBlock position="right" title="Be creative. Don’t accept any constrains." image={<TimeImage width="300" height="182"/>}>
-      <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
-      <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
-      </TextBlock>
-  
-      <TextBlock title="Put your resources to the right place." image={<WalletImage width="300" height="211"/>}>
-      <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
-      <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
+      <TextBlock
+        position="right"
+        title="Be creative. Don’t accept any constrains."
+        image={<TimeImage width="300" height="182" />}
+      >
+        <p>
+          There are a lot of constrains out there when you try to do the right
+          thing. We live in a fast changing world. Your own and your cusotmers
+          expectations are changing rapidly. Not everybody can start their digitalization project on a
+          greenfield. And if so, there are time, budget and technology
+          constrains
+        </p>
+        <p>
+          For us technology is a
+          vehicle, still we live and breath the latest technology. Not only do
+          we follow trends, we are able to innovate and lead.
+        </p>
       </TextBlock>
 
-      <TextBlock position="right" title="Be on the winning side." image={<RunningImage width="300" height="182"/>}>
-      <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
-      <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
+      <TextBlock
+        title="Be smart. Don't waste your resources."
+        image={<WalletImage width="300" height="211" />}
+      >
+        <p>Resources are limited. Time and budget wise.</p>
+        <p>
+          Therefore it is crusual to invest exactly in the right cause with
+          maximum impact on your business.
+        </p>
+        <p>
+          You want a Partner to help you with an external view to understand
+          your unique business individually, a partner to help and consult you,
+          in order to go to the right direction, at the right time.
+        </p>
       </TextBlock>
 
-      <TextBlock title="Let's start your journey." image={<CelebrateImage width="300" height="211"/>}>
-      <p>There are a lot of constrains out there when you try to do the right thing. We live in a fast chaning world. Your own and your cusotmers expectations are changing fast. Not everybody can start on a greenfield. And if so, there are time, budget and technology constrains</p>
-      <p>We put you and your customer experience first. For us technology is a vehicle, still we live and breath the latest tehcnology. Not only do we follow, we innovate and lead.</p>
+      <TextBlock
+        position="right"
+        title="Be fast. Don't loose focus."
+        image={<RunningImage width="300" height="182" />}
+      >
+        <p>
+          Your business is complex and you are facing your own individual
+          challenges.
+        </p>
+        <p>
+          You can never ever resolve and improve every challenge you are facing
+          at the same time. We know that, we encourage you and help you not to
+          stand still. We innovate with you, in small iterations and we never
+          get your long term vision out of our sight. You want a partner to
+          trust. You want a partner to act in your very best interest.
+        </p>
       </TextBlock>
-      <Form/>
 
+      <TextBlock
+        title="Show courage.  Let's start your journey."
+        image={<CelebrateImage width="300" height="211" />}
+      >
+        <p>Changing and improving can be scary. You have to operate now and think about the future.</p>
+        <p>We are your sparring partner. You can brainstorm with us, tell us your ideas. Together, we will find a good way to move you forward. You have the right to get a honest Partner, helping you to shape your future, without risking your current.</p>
+        <p>Start today. Don't wait for tomorrow. Contact us now.</p>
+      </TextBlock>
 
-      {/* 
+      <Form />
+      {/*   
       <Slide bottom cascade ssrFadeout ssrReveal>
       <Container className="text-centers section-header besoft">
         <h1 className="display-5">Be creative. Don't accept any constrains.</h1>
