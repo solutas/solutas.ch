@@ -1,14 +1,30 @@
 import React from "react"
 import Link from "gatsby-link"
 import Layout from "../layouts/en"
+import Jumbotron from "react-bootstrap/Jumbotron"
+import Container from "react-bootstrap/Container"
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
+import TextBlock from "../components/TextBlock"
 
 const SecondPage = props => (
   <Layout location={props.location}>
-    <div class="container">
-      <h1>Terms and Conditions</h1>
-
+    <Jumbotron fluid bsPrefix="hero">
+      <div className="hero__content">
+        <Container>
+          <Row>
+            <Col md={{ span: 8, offset: 2 }}>
+              <h1>Terms and Conditions</h1>
+              <h2>For livebeame.me and Soluneo.</h2>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Jumbotron>
+    <TextBlock>
+    <div className="container">
+      
       <p>Last updated: February 12, 2020</p>
-
       <p>
         Please read these terms and conditions carefully before using Our
         Service.
@@ -77,7 +93,7 @@ const SecondPage = props => (
         </li>
         <li>
           <strong>Website</strong> refers to livebeam.me, accessible from
-          http://secret.livebeam.me
+          http://secret.livebeam.me and Soluneo, accessible from www.soluneo.com
         </li>{" "}
         <li>
           <strong>You</strong> means the individual accessing or using the
@@ -312,7 +328,7 @@ const SecondPage = props => (
         believe that the copyrighted work has been copied in a way that
         constitutes copyright infringement that is taking place through the
         Service, You must submit Your notice in writing to the attention of our
-        copyright agent via email at info@livebeam.me and include in Your notice
+        copyright agent via email at info@solutas.ch and include in Your notice
         a detailed description of the alleged infringement.
       </p>
       <p>
@@ -351,7 +367,7 @@ const SecondPage = props => (
           owner or authorized to act on the copyright owner's behalf.
         </li>
       </ul>
-      <p>You can contact our copyright agent via email at info@livebeam.me.</p>
+      <p>You can contact our copyright agent via email at info@solutas.ch.</p>
       <p>
         Upon receipt of a notification, the Company will take whatever action,
         in its sole discretion, it deems appropriate, including removal of the
@@ -568,10 +584,12 @@ const SecondPage = props => (
       </p>
 
       <ul>
-        <li>By email: info@livebeam.me</li>
+        <li>By email: info@solutas.ch</li>
         <li>By phone number: +41 79 59 75 00 6</li>
       </ul>
+      
     </div>
+    </TextBlock>
   </Layout>
 )
 
