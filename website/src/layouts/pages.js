@@ -16,7 +16,7 @@ const SecondPage = ({ data, pageContext: { business, page }, ...props }) => {
 )}
 
 export default SecondPage
-
+/*
 export const query = graphql`
   query($id: String) {
     pages(id: { eq: $id }) {
@@ -37,4 +37,4 @@ export const query = graphql`
       }
     }
   }
-`
+`*/
