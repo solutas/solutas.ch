@@ -124,7 +124,7 @@ const SecondPage = props => (
         At the core, we do our implementation using our Agile Methodology. But
         weather you are using Prince, Hermes or any other Methodology, we are
         able to embedd our Engineering effort within your existing Project
-        Management framework.
+        Management framework. SOLUTAS has also experience in working in regulated environments.
       </p>
     </TextBlock>
     <TextBlock
