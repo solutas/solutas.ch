@@ -37,7 +37,7 @@ const SecondPage = (props) => (
       </Jumbotron>
 
       <TextBlock position="right" title="Soluneo. Locally Connected." image={<div><img src={SoluneoOne}  width="100%"/></div>}>
-      <p>Soluneo, currently in private Beta,  is providing a Digital Platform to support local SMEs and MICRO Businesses to establish a locally shared customer base by enabling them to easily create a Unique web-presence leading into increased consumer recognition, conversion rates and therefor increased sales.</p>
+      <p>Soluneo ("the new solution"), currently in private Beta,  is providing a Digital Platform to support local SMEs and MICRO Businesses to establish a locally shared customer base by enabling them to easily create a Unique web-presence leading into increased consumer recognition, conversion rates and therefor increased sales.</p>
 
       </TextBlock>
       <TextBlock>
