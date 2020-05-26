@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import Icon from "../assets/solutas-icon.png"
 import Helmet from "react-helmet"
 import { getCurrentLangKey, getLangs, getUrlForLang } from "ptz-i18n"
 import { StaticQuery, graphql } from "gatsby"
@@ -40,7 +41,7 @@ const Layout = ({ children, location, i18nMessages, soft }) => {
         const { langs, defaultLangKey } = data.site.siteMetadata.languages
         const langKey = getCurrentLangKey(langs, defaultLangKey, url)
         const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, "/")
-        const { menuLinks } = data.site.siteMetadata;
+        const { menuLinks } = data.site.siteMetadata
         const langsMenu = getLangs(
           langs,
           langKey,
@@ -55,15 +56,13 @@ const Layout = ({ children, location, i18nMessages, soft }) => {
               <Helmet
                 title="solutas"
                 meta={[
-                  { name: "description", content: "Sample" },
-                  { name: "keywords", content: "sample, something" },
+                  { name: "description", content: "SOLUTAS. Digital Solution Partner. Magnolia Partner. " },
+                  { name: "keywords", content: "Wordpress, Engineering, Magnolia, Headless,JAM Stack,Website,App, Development" },
                 ]}
-              />
-              <Header
-                langs={langsMenu}
-                lang={langKey}
-                menuLinks={menuLinks}
-              />
+              >
+                <link rel="icon" href={Icon} />
+              </Helmet>
+              <Header langs={langsMenu} lang={langKey} menuLinks={menuLinks} />
               {children}
               <Footer />
             </div>
