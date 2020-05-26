@@ -30,7 +30,7 @@ export default ()=>(
         </div>
         <div className="col-12 col-md">
           <h5>About</h5>
-          <ul className="list-unstyled text-small">
+          <ul className="list-unstyled text-small"> 
           <li><IntlLink className="text-muted" to="/team">Team</IntlLink></li>
             {/*<li><a className="text-muted" href="#">Locations</a></li>
             <li><a className="text-muted" href="#">Privacy</a></li>*/}
