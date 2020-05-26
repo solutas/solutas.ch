@@ -15,6 +15,7 @@ import TimeImage from "../assets/undraw_season_change_f99v.svg"
 import LightDev from "../assets/mgnl-lightdev.png"
 import ScrumBoard from "../assets/undraw_scrum_board_cesn.svg"
 import CelebrateImage from "../assets/undraw_celebration_0jvk.svg"
+import LiveDevelopment from "../assets/undraw_developer_activity_bv83.svg"
 const SecondPage = props => (
   <Layout location={props.location}>
     <Jumbotron fluid bsPrefix="hero">
@@ -62,7 +63,7 @@ const SecondPage = props => (
     <TextBlock
       position="left"
       title="Full Power of Enterprise but lightway Development"
-      image={<div><img width="100%" src={LightDev} /></div>}
+      image={<LiveDevelopment width="300" height="182" />}
     >
       <p>
         For us as at SOLUTAS, Magnolia CMS is bringing back the fun when
