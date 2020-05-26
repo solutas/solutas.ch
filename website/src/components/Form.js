@@ -9,8 +9,8 @@ import Container from "react-bootstrap/Container"
 function content() {
   return (
     <>
-      <Form data-netlify="true" name="solutas-contact-form">
-        <input type="hidden" name="name" value="solutas-contact-form" />
+      <Form data-netlify="true" name="solutas-contact-form" method="post">
+        <input type="hidden" name="form-name" value="solutas-contact-form" />
         <Row>
           <Col md={{ offset: 2, span: 4 }}>
             <Form.Group>
