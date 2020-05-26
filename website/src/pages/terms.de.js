@@ -1,15 +1,31 @@
 import React from "react"
 import Link from "gatsby-link"
 import Layout from "../layouts/de"
-import Row from "react-bootstrap/Row"
+import Jumbotron from "react-bootstrap/Jumbotron"
+import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
+import TextBlock from "../components/TextBlock"
+
+
 const SecondPage = props => (
   <Layout location={props.location}>
-    <main class="container">
-      <h1>Terms and Conditions</h1>
-
+    <Jumbotron fluid bsPrefix="hero">
+      <div className="hero__content">
+        <Container>
+          <Row>
+            <Col md={{ span: 8, offset: 2 }}>
+              <h1>Terms and Conditions</h1>
+              <h2>For livebeame.me, Soluneo.com, solutas.ch</h2>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Jumbotron>
+    <TextBlock>
+    <div className="container">
+      
       <p>Last updated: February 12, 2020</p>
-
       <p>
         Please read these terms and conditions carefully before using Our
         Service.
@@ -39,7 +55,7 @@ const SecondPage = props => (
         <li>
           <strong>Company</strong> (referred to as either "the Company", "We",
           "Us" or "Our" in this Agreement) refers to SOLUTAS GmbH,
-          Paradieshofstrasse 117, 4054 Basel.
+          Paradieshofstrasse 117, 4054 Basel, Switzerland.
         </li>
         <li>
           <strong>Content</strong> refers to content such as text, images, or
@@ -78,7 +94,7 @@ const SecondPage = props => (
         </li>
         <li>
           <strong>Website</strong> refers to livebeam.me, accessible from
-          http://secret.livebeam.me
+          http://secret.livebeam.me and Soluneo, accessible from www.soluneo.com and Solutas, accessible from www.solutas.ch
         </li>{" "}
         <li>
           <strong>You</strong> means the individual accessing or using the
@@ -313,7 +329,7 @@ const SecondPage = props => (
         believe that the copyrighted work has been copied in a way that
         constitutes copyright infringement that is taking place through the
         Service, You must submit Your notice in writing to the attention of our
-        copyright agent via email at info@livebeam.me and include in Your notice
+        copyright agent via email at info@solutas.ch and include in Your notice
         a detailed description of the alleged infringement.
       </p>
       <p>
@@ -352,7 +368,7 @@ const SecondPage = props => (
           owner or authorized to act on the copyright owner's behalf.
         </li>
       </ul>
-      <p>You can contact our copyright agent via email at info@livebeam.me.</p>
+      <p>You can contact our copyright agent via email at info@solutas.ch.</p>
       <p>
         Upon receipt of a notification, the Company will take whatever action,
         in its sole discretion, it deems appropriate, including removal of the
@@ -566,40 +582,15 @@ const SecondPage = props => (
       <p>
         If you have any questions about these Terms and Conditions, You can
         contact us:
-        <ul>
-          <li>By email: info@livebeam.me</li>
-          <li>By phone number: +41 79 59 75 00 6</li>
-        </ul>
       </p>
-    </main>
 
-    <div className="container mb-5 mt-5">
-      <Row className="align-items-center mb-4">
-        <Col md={{ offset: 2, span: 3 }}>
-          <small>This Service is provided to you by:</small>
-        </Col>
-      </Row>
-      <Row className="align-items-center">
-        <Col md={{ offset: 2, span: 3 }}>
-          <img src={require("../assets/solutas-brief.png")} width="100%" />
-        </Col>
-        <Col md={{ span: 3 }}>
-          <p>
-            <small>
-              <strong>SOLUTAS GmbH</strong>
-              <br />
-              Paradieshofstrasse 117
-              <br />
-              4054 Basel, Switzerland
-              <br />
-              <a href="http://www.solutas.ch" target="_blank">
-                www.solutas.ch
-              </a>
-            </small>
-          </p>
-        </Col>
-      </Row>
+      <ul>
+        <li>By email: info@solutas.ch</li>
+        <li>By phone number: +41 79 59 75 00 6</li>
+      </ul>
+      
     </div>
+    </TextBlock>
   </Layout>
 )
 

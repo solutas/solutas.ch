@@ -15,25 +15,25 @@ export default ()=>(
         <small className="d-block mb-0 text-muted">Swiss Quality</small>
         <small className="d-block mb-3 text-muted">Made with <span className="text-swiss">♥</span> in Basel </small>
         </div>
-        <div className="col-6 col-md">
+        <div className="col-12 col-md">
           <h5>Contact</h5>
           <small className="text-muted"><strong>SOLUTAS GmbH</strong><br/>
           Paradieshofstrasse 117<br/>
-          4051 Basel, Switzerland</small>
+          4051 Basel, Switzerland<br/><br/>
+          +41 79 597 50 06</small>
         </div>
-        <div className="col-6 col-md">
+        <div className="col-12 col-md">
           <h5>Resources</h5>
           <ul className="list-unstyled text-small">
-            <li><a className="text-muted" href="#">www.soluneo.com</a></li>
-            <li><a className="text-muted" href="#">www.livebeam.me</a></li>            
+            <li><a className="text-muted" href="http://www.livebeam.me" target="_blank">www.livebeam.me</a></li>            
           </ul>
         </div>
-        <div className="col-6 col-md">
+        <div className="col-12 col-md">
           <h5>About</h5>
           <ul className="list-unstyled text-small">
           <li><IntlLink className="text-muted" to="/team">Team</IntlLink></li>
-            <li><a className="text-muted" href="#">Locations</a></li>
-            <li><a className="text-muted" href="#">Privacy</a></li>
+            {/*<li><a className="text-muted" href="#">Locations</a></li>
+            <li><a className="text-muted" href="#">Privacy</a></li>*/}
             <li><IntlLink className="text-muted" to="/terms">Terms</IntlLink></li>
           </ul>
         </div>

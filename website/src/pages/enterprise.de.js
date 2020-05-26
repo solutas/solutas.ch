@@ -27,9 +27,9 @@ const SecondPage = props => (
             <Col md="7" className="hero__content--right">
               <h1 class="display-3 mb-4">Your New Agency.</h1>
               <h2 class="display-5">For your Magnolia Projects.</h2>
-              <a className="btn btn-primary btn-sm" href="#" role="button">
+              {/*<a className="btn btn-primary btn-sm" href="#" role="button">
                 getting started
-              </a>
+</a>*/}
             </Col>
           </Row>
         </Container>
@@ -108,8 +108,8 @@ const SecondPage = props => (
           no more miscommunication between "Backend" and "Frontend" Development.
         </string>{" "}
         You will see creative Solutions, such as adding a GraphQL layer to your
-        portfolio to handle legacy systems.
-      </p>
+        portfolio to handle legacy systems. <strong>SOLUTAS</strong> is a Cloud Native Company.
+      </p>      
     </TextBlock>
     <TextBlock
       position="left"

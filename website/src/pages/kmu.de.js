@@ -27,11 +27,11 @@ const SecondPage = (props) => (
               
                 <h1 className="display-3 mb-4 d-flex" style={{alignItems: 'center'}}><img src={SwissLogo} height="20" className="mr-2"/>Your Local Partner.</h1>                
                 <h2>For small business owners.</h2>
-                
+                {/*
                 
                 <a  className="btn btn-primary btn-sm" href="#" role="button">
                   getting started
-                </a> 
+                </a> */}
               </Col>
             </Row>
           </Container>
@@ -51,7 +51,7 @@ const SecondPage = (props) => (
       <p>Weather it will be a Mobile App, PWA, Intranet, Website,E-Commerce, IoT,... you name it - we got your back!</p>      
       </TextBlock>
       <TextBlock>
-      <p>So, you will not read anything like Wordpress, Jimdo, Shopify, PHP, WooCommerce or anything alike form us. Tell us your challeange and we will show you the solutions. Get in touch with us, we are happy to help!</p>
+      <p>So, you will not read anything like Wordpress, Jimdo, Shopify, PHP, WooCommerce or anything alike form us. Tell us your challeange and we will show you an actually matching solution. Get in touch with us, we are happy to help!</p>
       </TextBlock>
 
       <Form/>

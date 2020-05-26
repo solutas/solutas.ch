@@ -27,9 +27,9 @@ const SecondPage = (props) => (
               <Col md="7" className="hero__content--right">
               <h1 className="display-3 mb-4 d-flex" style={{alignItems: 'center'}}><img src={SwissLogo} height="20" className="mr-2"/>We innovate.</h1>
                 <h2 class="display-5">For you. In Switzerland.</h2>
-                <a  className="btn btn-primary btn-sm" href="#" role="button">
+              {/*  <a  className="btn btn-primary btn-sm" href="#" role="button">
                   getting started
-                </a> 
+</a> */}
               </Col>
             </Row>
           </Container>

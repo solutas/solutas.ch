@@ -16,7 +16,7 @@ const SecondPage = props => (
           <Row>
             <Col md={{ span: 8, offset: 2 }}>
               <h1>Terms and Conditions</h1>
-              <h2>For livebeame.me and Soluneo.</h2>
+              <h2>For livebeame.me, Soluneo.com, solutas.ch</h2>
             </Col>
           </Row>
         </Container>
@@ -94,7 +94,7 @@ const SecondPage = props => (
         </li>
         <li>
           <strong>Website</strong> refers to livebeam.me, accessible from
-          http://secret.livebeam.me and Soluneo, accessible from www.soluneo.com
+          http://secret.livebeam.me and Soluneo, accessible from www.soluneo.com and Solutas, accessible from www.solutas.ch
         </li>{" "}
         <li>
           <strong>You</strong> means the individual accessing or using the
