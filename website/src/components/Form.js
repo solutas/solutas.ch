@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container"
 function content() {
   return (
     <>
-      <Form netlify>
+      <Form data-netlify="true">
         <Row>
           <Col md={{ offset: 2, span: 4 }}>
             <Form.Group>
