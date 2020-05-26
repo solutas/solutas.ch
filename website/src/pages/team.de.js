@@ -85,7 +85,7 @@ const SecondPage = props => (
             <strong>Şenol</strong> Managing Director, Engineering, co-owner
           </li>
           <li>
-            <strong>René</strong> Managing Partner, Sales
+            <strong>René</strong> Managing Partner, Sales, livebeam.me &amp; Soluneo
           </li>
           <li>
             <strong>Clelia</strong> Product &amp; Community Manager, Trainings &amp; Livebeam.me

@@ -71,7 +71,7 @@ const SecondPage = (props) => (
 
      
       <TextBlock position="left" title="Livebeam.me - Experience Your Event With The Eyes Of Your Guests." image={<div><img src={LivebeamOne}  width="100%"/></div>}>
-      <p>Livebeam.me Started as a private Project for a Wedding, Birthday for a Child and New Years Party. 
+      <p>Livebeam.me started as a private Project for a Wedding, Birthday for a Child and New Years Party. 
         After getting so many requests from the Attendees to make that available to them, we have decided to invest in this Product to make it publicly available.</p>
         <p>We were hit very hard from the Corona situation and therefore we were forced to put the project on hold.</p>        
       </TextBlock>      
