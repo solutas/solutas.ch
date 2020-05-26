@@ -9,7 +9,7 @@ import Container from "react-bootstrap/Container"
 function content() {
   return (
     <>
-      <Form data-netlify="true" name="solutas-contact-form" method="post">
+      <Form data-netlify="true" name="solutas-contact-form" method="post" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="solutas-contact-form" />
         <Row>
           <Col md={{ offset: 2, span: 4 }}>
