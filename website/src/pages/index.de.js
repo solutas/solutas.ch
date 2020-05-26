@@ -37,8 +37,8 @@ const IndexPage = props => (
                 <h1 class="display-3 mb-4">push the boundaries</h1>
                 <h2 class="display-5">To shape your future.</h2>
               {/*  <a className="btn btn-primary btn-sm" href="#" role="button">
-                  getting started*/}
-                </a>
+                  getting started
+                </a>*/}
               </Col>
             </Row>
           </Container>
