@@ -54,7 +54,7 @@ const Layout = ({ children, location, i18nMessages, soft }) => {
           <IntlProvider locale={langKey} messages={i18nMessages}>
             <div className={soft ? "soft" : ""}>
               <Helmet
-                title="solutas"
+                title="SOLUTAS. Because Simplicity Matters."
                 meta={[
                   { name: "description", content: "SOLUTAS. Digital Solution Partner. Magnolia Partner. " },
                   { name: "keywords", content: "Wordpress, Engineering, Magnolia, Headless,JAM Stack,Website,App, Development" },
