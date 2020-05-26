@@ -58,7 +58,7 @@ const SecondPage = (props) => (
   <li>Touchless Payment Solution</li>
 </ul>
 <p>We are currently in Beta, but our goal is to offer Soluneo for one price only. No add-ons, no hidden costs. One Price for all current and future features.</p>
-<strong>Interested?</strong> Get in touch with us for a Demo we are happy to evaluate if we can extend our Beta Program to you.
+<strong>Interested?</strong> <a href="#" onClick={(e)=>{e.preventDefault(); window.scroll({left: 0, top: document.querySelector("#contact-form").offsetTop - 120, behavior: 'smooth'});}}>Get in touch with us</a> for a Demo we are happy to evaluate if we can extend our Beta Program to you.
         </div>
       </TextBlock>
 
