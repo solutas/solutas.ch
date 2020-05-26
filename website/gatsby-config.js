@@ -30,6 +30,12 @@ module.exports = {
   },
   plugins: [ 
     //require.resolve(`./soluneo-plugin`),
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-147508305-1",
+      },
+    },
     `gatsby-plugin-transition-link`,
     {
       resolve: "gatsby-plugin-react-svg",
