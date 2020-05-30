@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../assets/solutas-brief.png";
 import SwissLogo from "../assets/Schweizer-Kreuz.jpg";
+import { FormattedMessage, useIntl } from "react-intl"
 import IntlLink from "./IntlLink"
 export default ()=>(
     
@@ -23,13 +24,13 @@ export default ()=>(
           +41 79 597 50 06</small>
         </div>
         <div className="col-12 col-md">
-          <h5>Resources</h5>
+          <h5><FormattedMessage id="Resources" /></h5>
           <ul className="list-unstyled text-small">
             <li><a className="text-muted" href="http://www.livebeam.me" target="_blank">www.livebeam.me</a></li>            
           </ul>
         </div>
         <div className="col-12 col-md">
-          <h5>About</h5>
+          <h5><FormattedMessage id="About"/></h5>
           <ul className="list-unstyled text-small"> 
           <li><IntlLink className="text-muted" to="/team">Team</IntlLink></li>
             {/*<li><a className="text-muted" href="#">Locations</a></li>

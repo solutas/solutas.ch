@@ -5,15 +5,17 @@ import Navbar from "react-bootstrap/Navbar"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import Nav from "react-bootstrap/Nav"
 import IntlLink from "./IntlLink"
-import { FormattedMessage } from "react-intl"
+import { FormattedMessage, useIntl } from "react-intl"
 import useScroll from "../hooks/scroll"
 
 import Logo from "../assets/sol-regular-icon.svg"
 import LogoWhite from "../assets/solutas-icon-white.svg"
 import Wave from "../assets/wave.svg"
 
-const Header = ({ menuLinks }) => {
+const Header = ({ menuLinks,...props }) => {
+  const intl = useIntl()
   let scroll = useScroll(65)
+
   let [navOpen, setNavOpen] = useState(false)
 
   //<!Wave className={scroll ? 'waved' : 'waved hide'}/>
@@ -68,17 +70,24 @@ const Header = ({ menuLinks }) => {
           </g>
         </svg>
       </IntlLink>
-      <div className={`navbar-links ${navOpen? 'open' :null}`}>
+      <div className={`navbar-links ${navOpen ? "open" : null}`}>
         {menuLinks
           ? menuLinks.map(item => (
               <IntlLink to={item.link} className="navbar-link">
-                {item.name}
+                <FormattedMessage id={item.name} />
               </IntlLink>
             ))
           : null}
+          <SelectLanguage langs={props.langs} />
       </div>
 
-      <svg viewBox="0 0 100 80" width="20" height="20" className={`hamburger ${navOpen? 'open' :null}`} onClick={()=>setNavOpen(!navOpen)}>
+      <svg
+        viewBox="0 0 100 80"
+        width="20"
+        height="20"
+        className={`hamburger ${navOpen ? "open" : null}`}
+        onClick={() => setNavOpen(!navOpen)}
+      >
         <rect width="100" height="2" className="line1"></rect>
         <rect y="30" width="100" height="2" className="line2"></rect>
         <rect y="60" width="100" height="2" className="line3"></rect>

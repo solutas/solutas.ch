@@ -1,4 +1,5 @@
 import React from "react"
+import { FormattedMessage, useIntl } from "react-intl"
 import Form from "react-bootstrap/Form"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
@@ -9,12 +10,20 @@ import Container from "react-bootstrap/Container"
 function content() {
   return (
     <>
-      <Form data-netlify="true" name="solutas-contact-form" method="post" data-netlify-honeypot="bot-field" id="contact-form">
+      <Form
+        data-netlify="true"
+        name="solutas-contact-form"
+        method="post"
+        data-netlify-honeypot="bot-field"
+        id="contact-form"
+      >
         <input type="hidden" name="form-name" value="solutas-contact-form" />
         <Row>
           <Col md={{ offset: 2, span: 4 }}>
             <Form.Group>
-              <Form.Label>Name</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="Name" />
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder=""
@@ -23,7 +32,9 @@ function content() {
               ></Form.Control>
             </Form.Group>
             <Form.Group>
-              <Form.Label>E-Mail</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="E-Mail" />
+              </Form.Label>
               <Form.Control
                 type="email"
                 placeholder=""
@@ -32,7 +43,9 @@ function content() {
               ></Form.Control>
             </Form.Group>
             <Form.Group>
-              <Form.Label>Company</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="Company" />
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder=""
@@ -41,7 +54,9 @@ function content() {
               ></Form.Control>
             </Form.Group>
             <Form.Group>
-              <Form.Label>Phone</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="Phone" />
+              </Form.Label>
               <Form.Control
                 type="number"
                 placeholder=""
@@ -51,7 +66,9 @@ function content() {
           </Col>
           <Col md={{ span: 4 }}>
             <Form.Group>
-              <Form.Label>Subject</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="Subject" />
+              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder=""
@@ -60,7 +77,9 @@ function content() {
               ></Form.Control>
             </Form.Group>
             <Form.Group>
-              <Form.Label>Message</Form.Label>
+              <Form.Label>
+                <FormattedMessage id="Message" />
+              </Form.Label>
               <Form.Control
                 as="textarea"
                 placeholder=""
@@ -70,7 +89,7 @@ function content() {
             </Form.Group>
 
             <Button type="submit" size="sm">
-              Send Message
+              <FormattedMessage id="Send Message" />
             </Button>
           </Col>
         </Row>

@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react"
+import Link from "gatsby-link"
 import Layout from "../layouts/de"
 import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
@@ -7,90 +7,196 @@ import TextBlock from "../components/TextBlock"
 import Form from "../components/Form"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
-import HeroImage from  '../assets/undraw_solution_mindset_34bi.svg';
-import SwissLogo from "../assets/Schweizer-Kreuz.jpg";
-import TimeImage from  '../assets/undraw_season_change_f99v.svg';
-import SoluneoOne from "../assets/soluneo-1.gif";
-import LivebeamOne from "../assets/livebeam-1.gif";
+import HeroImage from "../assets/undraw_solution_mindset_34bi.svg"
+import SwissLogo from "../assets/Schweizer-Kreuz.jpg"
+import TimeImage from "../assets/undraw_season_change_f99v.svg"
+import SoluneoOne from "../assets/soluneo-1.gif"
+import LivebeamOne from "../assets/livebeam-1.gif"
 
-const SecondPage = (props) => (
+const SecondPage = props => (
   <Layout location={props.location}>
-    
-       
     <Jumbotron fluid bsPrefix="hero">
-        <div className="hero__content">
-          <Container> 
-            <Row>
-              <Col md={{ span: 4, offset: 1 }} className="hero__content--left">
-              <HeroImage width="100%" height="100%" className="heroimg"/>
-              </Col>
-              <Col md="7" className="hero__content--right">
-              <h1 className="display-3 mb-4 d-flex" style={{alignItems: 'center'}}><img src={SwissLogo} height="20" className="mr-2"/>We innovate.</h1>
-                <h2 class="display-5">For you. In Switzerland.</h2>
+      <div className="hero__content">
+        <Container>
+          <Row>
+            <Col md={{ span: 4, offset: 1 }} className="hero__content--left">
+              <HeroImage width="100%" height="100%" className="heroimg" />
+            </Col>
+            <Col md="7" className="hero__content--right">
+              <h1
+                className="display-3 mb-4 d-flex"
+                style={{ alignItems: "center" }}
+              >
+                <img src={SwissLogo} height="20" className="mr-2" />
+                Wir innovieren.
+              </h1>
+              <h2 class="display-5">Für Sie. In der Schweiz.</h2>
               {/*  <a  className="btn btn-primary btn-sm" href="#" role="button">
                   getting started
 </a> */}
-              </Col>
-            </Row>
-          </Container>
-        </div>  
-      </Jumbotron>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Jumbotron>
 
-      <TextBlock position="right" title="Soluneo. Locally Connected." image={<div><img src={SoluneoOne}  width="100%"/></div>}>
-      <p>Soluneo ("the new solution"), currently in private Beta,  is providing a Digital Platform to support local SMEs and MICRO Businesses to establish a locally shared customer base by enabling them to easily create a Unique web-presence leading into increased consumer recognition, conversion rates and therefor increased sales.</p>
-      <p>The universal page editor provides maximum flexibility; for example being able to manage targeted campaigns (like “new arrivals”) to audience nearby, with the simple “Calendar Management” solution, we provide an end-to-end solution for your appointment management.</p>
-      
-      </TextBlock>
-      <TextBlock>
+    <TextBlock
+      position="right"
+      title="Soluneo. Lokal verbunden."
+      image={
         <div>
-        <p>We provide you the option of a unique e-commerce solution paired with the “Check-in” & “Check-out” functionality to increase customer satisfaction due to securely captured personal details like payment types, delivery address etc.</p>
-        <strong>Current &amp; Desired Features</strong>
-<ul>
-  <li>A Complete Web-CMS Solution for Small and Micro Businesses with access to thousends of royalty free Images. Change your content on the road with your Phone or Tablet.</li>
-  <li>E-Commerce Solution to handle one-time payment</li>
-  <li>Subscription Management for recuring revenue</li>
-  <li>Manage Classes &amp; Workshops from Website, Payment to Booking</li>
-  <li>Manage Services</li>
-  <li>Enable Virtual Classes &amp; Workshops through integrated unique TV-Like Conferencing solution</li>
-  <li>Shared Customer Base: Customers buying something from another Shop or attending classes, don't need to enter their information when buying or booking from you</li>
-  <li>Push Notification for local users</li>
-  <li>Payout Solution</li>
-  <li>Touchless Payment Solution</li>
-</ul>
-<p>We are currently in Beta, but our goal is to offer Soluneo for one price only. No add-ons, no hidden costs. One Price for all current and future features.</p>
-<strong>Interested?</strong> <a href="#" onClick={(e)=>{e.preventDefault(); window.scroll({left: 0, top: document.querySelector("#contact-form").offsetTop - 120, behavior: 'smooth'});}}>Get in touch with us</a> for a Demo we are happy to evaluate if we can extend our Beta Program to you.
+          <img src={SoluneoOne} width="100%" />
         </div>
-      </TextBlock>
+      }
+    >
+      <p>
+        Soluneo (“die neue Lösung”), zurzeit im privaten Beta, bietet eine
+        digitale Plattform für den Support von lokalen KMUs und Micro-Geschäften
+        um eine lokal geteilte Kundenbasis aufzubauen. Dies indem es möglich für
+        sie wird, einfache und einzigartige Web-Präsenz aufzubauen die zu einer
+        erhöhten Konsumenten Sichtbarkeit führt und damit Verkaufszahlen steigen
+        lässt.
+      </p>
+      <p>
+        Der universale Webseiten- Editor bietet die best mögliche Flexibilität.
+        Zum Beispiel ist es mit Soluneo möglich, eine gezielte Kampagne (wie
+        “neu im Verkauf”) zu Kunden in der Nähe, mit einer einach zu bedienenden
+        Kalendermanagement funktion zu erstellen.
+      </p>
+    </TextBlock>
+    <TextBlock>
+      <div>
+        <p>
+          Wir bieten Ihnen die einzigartige Option mit unserer E-Commerce-Lösung
+          mit implementierter “Check-in” & “Check-out” Funktionalität, die
+          Kundenzufriedenheit mit sicher gespeicherten Personendaten wie
+          Bezahlung, Lieferungsadresse usw. zu erhöhen.
+        </p>
+        <strong>Jetzige & Gewünschte Funktionen:</strong>
+        <ul>
+          <li>
+            Eine vollständige Web-CMS-Lösung für KMUs und Micro-Unternehmen mit
+            Zugriff auf frei verfügbaren Bildern zur Nutzung. Sie können Inhalte
+            auch von unterwegs via Telefon oder Tablet verändern.
+          </li>
+          <li>E-Commerce Lösung für einmalige Zahlungen.</li>
+          <li>Abonnementverwaltung für wiederkehrende Einnahmen.</li>
+          <li>
+            Verwaltung von Kursen &amp; Workshops von Webseiten, von Buchung bis
+            hin zur Bezahlung
+          </li>
+          <li>Dienstleistungen verwalten und anbieten</li>
+          <li>
+            Bereitstellungen von virtuellen Kursen &amp; Workshops über eine
+            einzeigartige Live-TV ähnliche Videokonferenz Lösung.
+          </li>
+          <li>
+            Geteilte Kundenbasis: Kunden die im einen Shop einkaufen oder an
+            einem Kurs teilnehmen, müssen die Zahlungsinformationen nicht
+            nochmals eingeben, wenn sie einen Kurs oder Produkt bei Ihnen
+            kaufen.
+          </li>
+          <li>Push-Notifikationen für Kunden in der nächsten Umgebung.</li>
+          <li>Lösung von Bankauszahlungen über die Platform auf Ihr Konto.</li>
+          <li>“Touchless Payment” Berührungslose Bezahlungslösung </li>
+        </ul>
+        <p>
+          Soluneo befindet sich in der geschlossenen Beta-Phase, aber unser Ziel
+          ist es, die gesamte Plattform für einen fixen Preis auf den Markt zu
+          bringen. Dies ohne Zusatz und versteckte Kosten. Einen Preis für die
+          jetzigen Funktionen und alle zukünftigen Erweiterungen, die noch
+          kommen werden.
+        </p>
+        <strong>Interessiert?</strong>{" "}
+        <a
+          href="#"
+          onClick={e => {
+            e.preventDefault()
+            window.scroll({
+              left: 0,
+              top: document.querySelector("#contact-form").offsetTop - 120,
+              behavior: "smooth",
+            })
+          }}
+        >
+          Kontaktiere uns für eine Demonstration
+        </a>{" "}
+        wir freuen uns darauf, zu prüfen, ob wir unser Beta-Programm auf Sie
+        ausweiten können.
+      </div>
+    </TextBlock>
 
-      <TextBlock>
-
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2QP6SxUDYbA" allowfullscreen></iframe>
-</div>
-      </TextBlock> 
-
-     
-      <TextBlock position="left" title="Livebeam.me - Experience Your Event With The Eyes Of Your Guests." image={<div><img src={LivebeamOne}  width="100%"/></div>}>
-      <p>Livebeam.me started as a private Project for a Wedding, Birthday for a Child and New Years Party. 
-        After getting so many requests from the Attendees to make that available to them, we have decided to invest in this Product to make it publicly available.</p>
-        <p>We were hit very hard from the Corona situation and therefore we were forced to put the project on hold.</p>        
-      </TextBlock>      
-      <TextBlock>
-        <div>
-        <p><strong>But we believe that Events will be possible and therefore we started again to work on livebeam.</strong> Before the crices, our first external users gave Livebeam.me such a good feedback that we simply cannot ignore it.</p>
-        <p>The Software is working and you can already use it for your Event. Still we have decided to get more experience and decided to roll it out in an controlled envrionment.</p>
-        <p>We launched the site <a href="http://www.livebeam.me" target="_blank">www.livebeam.me</a> for all people interested to register.</p>
-        <p>Register for the Beta Program and if you know already of an Event, let us know. We are more then happy to come back to you and to give you a demo account.</p>      
-        </div>
-      </TextBlock>
-
-      
-      <TextBlock>
+    <TextBlock>
       <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/HUzgxscpsWM" allowfullscreen></iframe>
-</div>
-      </TextBlock>
-      <Form/>
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/2QP6SxUDYbA"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </TextBlock>
+
+    <TextBlock
+      position="left"
+      title="Livebeam.me - Erleben Sie Ihren Anlass mit den Augen Ihrer Gäste."
+      image={
+        <div>
+          <img src={LivebeamOne} width="100%" />
+        </div>
+      }
+    >
+      <p>
+        Livebeam.me hat als privates Projekt für eine Hochzeit, Kindergeburtstag
+        und Neujahrsparty gestartet. Nachdem viele Anfragen von Gästen kam, die
+        das Tool auch nutzen wollten, haben wir entschieden, in dieses Produkt
+        zu investieren, um es öffentlich verfügbar zu machen.
+      </p>
+      <p>
+        Corona hat uns schwer getroffen und wir konnten livebean.me nicht
+        veröffentlichen und wir sahen uns gezwungen das Projekt zu pausieren.
+      </p>
+    </TextBlock>
+    <TextBlock>
+      <div>
+        <p>
+          <strong>
+            Aber wir glauben daran, dass Anlässe bald wieder möglich sind und
+            deshalb haben wir wieder angefangen an Livebeam.me weiterzuarbeiten.
+          </strong>{" "}
+          Vor der Krise haben wir bereits so gutes Feedback zu Livebeam.me
+          bekommen, dass wir es einfach nicht ignorieren können.
+        </p>
+        <p>
+          Die Software funktioniert und man kann sie auch schon für Anlässe
+          nutzen. Trotzdem haben wir uns dazu entschieden, mehr Erfahrungen
+          sammeln zu wollen und die Software erst in einer kontrollierten
+          Umgebung zu veröffentlichen.
+        </p>
+        <p>
+          Unter{" "}
+          <a href="http://www.livebeam.me" target="_blank">
+            www.livebeam.me
+          </a>{" "}
+          kann man sich bei Interesse registrieren.
+        </p>
+        <p>
+          Registrieren Sie sich für das Beta Programm und lassen Sie es uns
+          wissen, ob Sie es schon für ein Event nutzen könnten. Wir kommen sehr
+          gerne auf Sie zurück und geben Ihnen einen Demo-Account für Ihr Event.
+        </p>
+      </div>
+    </TextBlock>
+
+    <TextBlock>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/HUzgxscpsWM"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </TextBlock>
+    <Form />
   </Layout>
 )
 

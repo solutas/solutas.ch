@@ -26,8 +26,8 @@ const SecondPage = props => (
               <HeroImage width="100%" height="100%" className="heroimg" />
             </Col>
             <Col md="7" className="hero__content--right">
-              <h1 class="display-3 mb-4">Your New Agency.</h1>
-              <h2 class="display-5">For your Magnolia Projects.</h2>
+              <h1 class="display-3 mb-4">Ihre neue Software-Agentur.</h1>
+              <h2 class="display-5">Für Ihre Magnolia CMS Projekte.</h2>
               {/*<a className="btn btn-primary btn-sm" href="#" role="button">
                 getting started
 </a>*/}
@@ -39,45 +39,49 @@ const SecondPage = props => (
 
     <TextBlock
       position="right"
-      title="Take your CMS Project to the next level."
+      title="Bring dein CMS Projekt zum nächsten Level."
       image={<SuperHero width="300" height="182" />}
     >
       <p>
-        One of our Founder alone has more then 20 Years expierence within the
-        Enterprise Content Management field.
+        Einer unserer Gründer hat allein über 20 Jahre Erfahrung im Enterprise
+        Content Management Bereich.
       </p>
       <p>
-        He contributed to Open Source Projects such as Apache Sling (e.g.{" "}
+        Er steuerte bei grossen Open Source Projekten wie zum Beispiel bei
+        Apache Sling, die{" "}
         <a
           href="https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md"
           target="_blank"
         >
-          the HTL library and specification
-        </a>
-        ) and influenced well known commercial Systems like Adobe AEM. Knowing
-        all the pitfalls, our goal at SOLUTAS is to unfold the full potential of
-        your existing Content Management System or to lift up your new Project.
+          HTL Library und Spezifikation
+        </a>{" "}
+        bei. Damit beeinflusste er bekannte kommerzielle Systeme wie Adobe AEM.
+        Mit dem Wissen, wo die Schwachpunkte von solchen Projekten liegen, hat
+        ich die SOLUTAS das Ziel gesetzt das volle Potenzial von ihrem
+        bestehenden Content Management Systemen auszunutzen oder neue Projekte
+        gezielt anzuheben.
       </p>
     </TextBlock>
 
     <TextBlock
       position="left"
-      title="Full Power of Enterprise but lightway Development"
+      title="Volle Enterprise-Power aber leichte Entwicklung."
       image={<LiveDevelopment width="300" height="182" />}
     >
       <p>
-        For us as at SOLUTAS, Magnolia CMS is bringing back the fun when
-        implementing Enterprise Web Projects.
+        Für uns als SOLUTAS, bringt das Magnolia CMS die Freude an der
+        Implementation von Enterprise Web Projekten zurück.
       </p>
       <p>
-        Magnolia CMS is a strong stable system build in Java on top of JCR. But
-        with it's unique way of Light Development, paired with the option to
-        take advantage of the ready to use Magnolia Cloud, it will accelerate
-        any Project in unbelievable dimensions.
+        Magnolia CMS ist ein starkes stabiles System in Java geschrieben und auf
+        JCR aufbauend. Mit der einzigartigen leichten Entwicklung und dem
+        Vorteil die Option zu haben, das System mit der Magnolia Cloud zu
+        koppeln, kann jedes Projekt fahrt in unglaubliche Dimensionen aufnehmen.
       </p>
       <p>
-        Right from the beginning, we can focus on your actual Goal, knowing
-        there are no limits because of the strong background of Magnolia CMS.
+        Direkt vom Start an können wir uns auf Ihr eigentliches Projektziel
+        konzentrieren, mit dem Wissen das keine Grenzen gesetzt sind mit dem
+        starken Rückgrat von Magnolia CMS.
       </p>
     </TextBlock>
 
@@ -87,17 +91,17 @@ const SecondPage = props => (
       image={<Developer width="300" height="182" />}
     >
       <p>
-        At its core, Jamstack is a modern web development architecture. JAM
-        refers to client-side JavaScript, reusable APIs and prebuilt Markup.
-        Jamstack allows you to improve site performance by rendering out a set
-        of static pages at build time and deploying them to a content delivery
-        network (CDN).
+        Im Herzen ist Jamstack eine moderne Webentwicklungsarchitektur. JAM
+        referiert zu einer JavaScript Benutzerschnittstelle, wiederverwendbare
+        APIs und vorgebautem Markup. Jamstack erlaubt es Ihnen die Performance
+        Ihrer Seite zu verbessern indem gewisse statische Seiten bei Ausführung
+        in ein Content Delivery Network (CDN) eingesetzt werden.
       </p>
       <p>
-        Unlike many established Agencies in this Sector, we started our journey
-        with the strong belief that in order to be successful you need to fully
-        boost the Frontend implementation, especially with Java baked CMS
-        Systems.
+        Nicht wie manche etablierte Agenturen in diesem Sektor, starteten wir
+        unseren Weg mit der Überzeugung, dass um Erfolgreich zu sein, es nötig
+        ist sich auf die Frontend Entwicklung zu konzentrieren, besonders auf
+        Java basierenden CMS Systemen.
       </p>
     </TextBlock>
     <TextBlock>
@@ -109,48 +113,49 @@ const SecondPage = props => (
           no more miscommunication between "Backend" and "Frontend" Development.
         </string>{" "}
         You will see creative Solutions, such as adding a GraphQL layer to your
-        portfolio to handle legacy systems. <strong>SOLUTAS</strong> is a Cloud Native Company.
-      </p>      
+        portfolio to handle legacy systems. <strong>SOLUTAS</strong> is a Cloud
+        Native Company.
+      </p>
     </TextBlock>
     <TextBlock
       position="left"
-      title="We got your Project"
+      title="Wir schaffen Ihr Projekt"
       image={<ScrumBoard width="300" height="182" />}
     >
       <p>
-        We are not going to tell you any buzzwords about Agile and TDD
-        Development. We are sure you have heart about it enough.
+        Wir werden Ihnen nicht eine Liste mit Schlagwörtern über Agile
+        Entwicklung und Test Driven Development liefern. Wir sind sicher, dass
+        Sie davon schon genug gehört haben.
       </p>
       <p>
-        At the core, we do our implementation using our Agile Methodology. But
-        weather you are using Prince, Hermes or any other Methodology, we are
-        able to embedd our Engineering effort within your existing Project
-        Management framework. SOLUTAS has also experience in working in regulated environments.
+        Im Kern werden Implementationen von uns mit der Agilen Methoden
+        umgesetzt. Aber auch wenn Sie Prince, Hermes oder andere Methoden
+        anwenden, sind wir in der Lage unsere Entwicklungen in Ihre bestehende
+        Projekt Management Frameworks einzubauen. SOLUTAS hat Erfahrung in
+        regulierten Umgebungen.
       </p>
     </TextBlock>
     <TextBlock
-      title="Successful with 4D "
+      title="Erfolgreich mit 4D"
       position="right"
       image={<CelebrateImage width="300" height="211" />}
     >
       <div>
         <p>
-          Usually we are going to phases like Discovery, Define, Develop,
-          Deliver.
+          Normalerweise benutzen wir Phasen wie Ermittlung, Definition, Liefern.
         </p>
         <p>
-          We are using a methodology called Story Mapping to fully plan out your
-          desired featureset and to comeup with a reasonable Roadmap. You know
-          exactly what will be delivered and what is planed. This makes it
-          easier for you to communicate the progress and future planing to your
-          internal Stakeholders.
+          Wir nutzen Story Mapping um Erweiterungen zu Planen und eine klare
+          Roadmap aufzuzeichnen. Sie wissen genau, was wir liefern können und
+          was wir geplant haben. Das macht es einfacher für Sie, den Fortschritt
+          an Interne Stakeholders kommunizieren.
         </p>
       </div>
     </TextBlock>
     <TextBlock>
       <p>
-        Enough talking, let's get in touch with us. We are happy to give you a
-        Demo and showcase our unique approach.
+        Genug geschrieben, kontaktieren Sie uns. Wir präsentieren Ihnen gerne eine Demo und
+        zeigen Ihnen unser einzigartiges Vorgehen.
       </p>
     </TextBlock>
     <Form />

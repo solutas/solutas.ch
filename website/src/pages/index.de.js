@@ -34,9 +34,9 @@ const IndexPage = props => (
                 <HeroImage width="100%" height="100%" className="heroimg" />
               </Col>
               <Col md="7" className="hero__content--right">
-                <h1 class="display-3 mb-4">push the boundaries</h1>
-                <h2 class="display-5">To shape your future.</h2>
-              {/*  <a className="btn btn-primary btn-sm" href="#" role="button">
+                <h1 class="display-3 mb-4">DURCHBRECHE DIE GRENZEN</h1>
+                <h2 class="display-5">UM DIE ZUKUNFT ZU GESTALTEN .</h2>
+                {/*  <a className="btn btn-primary btn-sm" href="#" role="button">
                   getting started
                 </a>*/}
               </Col>
@@ -47,64 +47,74 @@ const IndexPage = props => (
 
       <TextBlock
         position="right"
-        title="Be creative. Don’t accept any constrains."
+        title="Seien sie kreativ. Akzeptieren Sie keine Einschränkungen."
         image={<TimeImage width="300" height="182" />}
       >
         <p>
-          There are a lot of constrains out there when you try to do the right
-          thing. We live in a fast changing world. Your own and your cusotmers
-          expectations are changing rapidly. Not everybody can start their digitalization project on a
-          greenfield. And if so, there are time, budget and technology
-          constrains
+          Es gibt fast immer Barrieren, wenn Sie probieren das Richtige zu tun.
+          Wir leben in einer sich schnell ändernden Welt. Die Erwartungen von
+          Ihnen und Ihren Kunden wechseln. Nicht jeder kann ein
+          Digitalisationsprojekt auf einer weissen Leinwand starten. Und auch
+          wenn, es gibt Zeit-, Geld- und Technologieeinschränkungen.
         </p>
         <p>
-          For us technology is a
-          vehicle, still we live and breath the latest technology. Not only do
-          we follow trends, we are able to innovate and lead.
+          Für uns ist Technologie ein tolles Fahrzeug, trotzdem holen wir uns
+          immer wieder die neueren Modelle. Wir folgen nicht nur den Trends, wir
+          helfen die neuen Trends zu setzen gehen mit gutem Beispiel voran.
         </p>
       </TextBlock>
 
       <TextBlock
-        title="Be smart. Don't waste your resources."
+        title="Seien sie clever. Verschwenden Sie nicht Ihre Ressourcen."
         image={<WalletImage width="300" height="211" />}
       >
-        <p>Resources are limited. Time and budget wise.</p>
+        <p>Ressourcen sind begrenzt in Geld und Zeit.</p>
         <p>
-          Therefore it is crusual to invest exactly in the right cause with
-          maximum impact on your business.
+          Darum ist es wichtig in die Dinge zu investieren, die maximale
+          Auswirkung auf den Erfolg Ihres Unternehmens haben.
         </p>
         <p>
-          You want a Partner to help you with an external view to understand
-          your unique business individually, a partner to help and consult you,
-          in order to go to the right direction, at the right time.
+          Sie wollen einen Partner der Ihnen hilft eine unvoreingenommene Sicht
+          auf Ihr Unternehmen zu kriegen, einen Partner, der unterstützt und
+          beratet um zum richtigen Zeitpunkt in das Richtige zu Investieren.
         </p>
       </TextBlock>
 
       <TextBlock
         position="right"
-        title="Be fast. Don't loose focus."
+        title="Seien Sie schnell. Verlieren Sie nicht den Fokus."
         image={<RunningImage width="300" height="182" />}
       >
         <p>
-          Your business is complex and you are facing your own individual
-          challenges.
+          Ihr Unternehmen ist komplex und Sie stehen vor Ihren eigenen,
+          speziellen Herausforderungen.
         </p>
         <p>
-          You can never ever resolve and improve every challenge you are facing
-          at the same time. We know that, we encourage you and help you not to
-          stand still. We innovate with you, in small iterations and we never
-          get your long term vision out of our sight. You want a partner to
-          trust. You want a partner to act in your very best interest.
+          Man kann sich nie allen Herausforderungen zur gleichen Zeit stellen,
+          aber wir ermutigen Sie dazu, nicht stehen zu bleiben, sondern dass sie
+          sich aktive Ihren Herausforderungen stellen mit uns als Rückendeckung.
+          Wir erstellen Innovative Lösungen mit Ihnen, in kleinen Schritten zum
+          Ziel ohne dabei Ihre Vision aus den Augen zu verlieren. Sie wollen
+          einen Partner dem Sie vertrauen. Sie wollen einen Partner der in Ihrem
+          Interesse handelt. Wir sind gerne Ihr Partner.
         </p>
       </TextBlock>
 
       <TextBlock
-        title="Show courage.  Let's start your journey."
+        title="Zeigen Sie Mut. Verfolgen Sie Ihre Ziele."
         image={<CelebrateImage width="300" height="211" />}
       >
-        <p>Changing and improving can be scary. You have to operate now and think about the future.</p>
-        <p>We are your sparring partner. You can brainstorm with us, tell us your ideas. Together, we will find a good way to move you forward. You have the right to get a honest Partner, helping you to shape your future, without risking your current.</p>
-        <p>Start today. Don't wait for tomorrow. Contact us now.</p>
+        <p>
+          Veränderungen und Neuerungen können beängstigend sein. Wir sind Ihr
+          Partner, mit uns können Sie Ideen aufgleisen und Brainstormen. 
+          Zusammen finden den richtigen Weg, Sie voran zu bringen.
+        </p>
+        <p>
+          Sie verdienen es einen ehrlichen Partner zu haben, der mit
+          Ihnen in die Zukunft schaut, Ihre Wünsche wahrnimmt; ohne dabei die
+          Gegenwart aufs Spiel zu setzten.
+        </p>
+        <p>Starten Sie heute. Kontaktieren Sie uns jetzt.</p>
       </TextBlock>
 
       <Form />

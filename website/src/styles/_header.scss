@@ -14,7 +14,7 @@
     position: absolute;
     transform: translateX(+100%);
     top: 0;
-    left:0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     font-size: 15px;
@@ -24,12 +24,11 @@
     background-color: $sol-brown;
     padding-top: 60px;
     flex: 1;
-    z-index:900;
+    z-index: 900;
     transition: transform 1s ease-in-out;
-    
+
     &.open {
       transform: translateX(0);
-      
     }
     @include media-breakpoint-up(md) {
       margin-left: auto;
@@ -68,11 +67,11 @@
   .hamburger {
     cursor: pointer;
     fill: $sol-white;
-    z-index:1000;
+    z-index: 1000;
     margin-left: auto;
     .line1 {
       transition: all 0.4s ease-in-out;
-      transform-origin: 15% 50%;      
+      transform-origin: 15% 50%;
     }
     .line2 {
       transition: all 0.4s ease-in-out;
@@ -82,11 +81,11 @@
       transition: all 0.4s ease-in-out;
       transform-origin: 25% 50%;
     }
-    
+
     &.open {
-      fill: $sol-white;                  
-      
-      .line1 {        
+      fill: $sol-white;
+
+      .line1 {
         transform: rotate(45deg);
       }
       .line2 {
@@ -96,7 +95,6 @@
       .line3 {
         transform: rotate(-45deg);
       }
-
     }
     @include media-breakpoint-up(md) {
       display: none;
@@ -118,8 +116,9 @@
     }
 
     .navbar-links {
-      .navbar-link {
-        color: $sol-secondary;
+      .navbar-link, a {
+        
+        color: $sol-secondary;        
         &.active {
           color: $sol-secondary-trans;
           border-bottom: none;
@@ -137,10 +136,8 @@
               color: $sol-secondary-trans;
             }
           }
-          
         }
       }
-      
     }
   }
 }

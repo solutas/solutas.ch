@@ -40,7 +40,7 @@ const SecondPage = props => (
 
     <TextBlock
       position="right"
-      title="About Us."
+      title="Über uns."
       image={
         <div>
           {/*<Founder width="300" height="187" />*/}
@@ -49,27 +49,21 @@ const SecondPage = props => (
       }
     >
       <p>
-        Our two Founders do have two totally different and unique Backgrounds.
-        Janine, a licensed Nurse and Şenol, a Computer Scientist. While both
-        have had working in different domains, they both realized that
-        technology, especially in Software Engineering needs to be crafted
-        around actual Human beings.​
+        Die beiden Firmengründer haben zwei ganz unterschiedliche Werdegänge.
+        Janine, eine diplomierte Pflegefachfrau und Şenol, ein Computer
+        Scientist. Während beide ganz unterschiedlichen Bereichen gearbeitet
+        hatten, haben beide realisiert, dass Technologie, besonders in der
+        Softwareentwicklung mit dem Menschen im Mittelpunkt entwickelt werden
+        muss.
       </p>
       <p>
-        Processes and Solutions need to be easy to understand and usable to be
-        successfully adapted.​
+        Um erfogreich angewednet weren zu können, müssen Prozesse und Lösungen
+        einfach zu verstehen und zu bedienen sein.
       </p>
     </TextBlock>
-    <TextBlock>
-      <p>
-        Merging over 10 Years experience in LifeScience, Tele Medicine,
-        practicing Nursing with more than 20 Years experience in Software
-        Engineering in Digital Marketing, Media and Television resulted in
-        SOLUTAS, because simplicity matters.​
-      </p>
-    </TextBlock>
+
     <TextBlock
-      title="Our Current Setup."
+      title="Unser Team."
       image={
         <div>
           <Founder width="300" height="187" />
@@ -85,16 +79,18 @@ const SecondPage = props => (
             <strong>Şenol</strong> Managing Director, Engineering, co-owner
           </li>
           <li>
-            <strong>René</strong> Managing Partner, Sales, livebeam.me &amp; Soluneo
+            <strong>René</strong> Managing Partner, Sales, livebeam.me &amp;
+            Soluneo
           </li>
           <li>
-            <strong>Clelia</strong> Product &amp; Community Manager, Trainings &amp; Livebeam.me
+            <strong>Clelia</strong> Product &amp; Community Manager, Trainings
+            &amp; Livebeam.me
           </li>
           <li>
-            <strong>Lucas</strong> Intern, Frontend and Cloud Engineering
+            <strong>Lucas</strong> Praktikant, Frontend and Cloud Engineering
           </li>
         </ul>
-        .... and a big network of hightly skilled friends.
+        .... und ein grosses Netzwerk and hoch talentierten Freunden.
       </div>
     </TextBlock>
 
