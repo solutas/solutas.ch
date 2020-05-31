@@ -142,20 +142,22 @@ const SecondPage = props => (
     >
       <div>
         <p>
-          Normalerweise benutzen wir Phasen wie Ermittlung, Definition, Liefern.
+          Normalerweise benutzen wir Phasen wie Discovery, Define, Develop,
+          Deliver.
         </p>
         <p>
-          Wir nutzen Story Mapping um Erweiterungen zu Planen und eine klare
-          Roadmap aufzuzeichnen. Sie wissen genau, was wir liefern können und
-          was wir geplant haben. Das macht es einfacher für Sie, den Fortschritt
-          an Interne Stakeholders kommunizieren.
+          Wir verwenden eine Methode namens Story Mapping, um Ihren gewünschten
+          Funktionsumfang vollständig zu planen und eine vernünftige Roadmap zu
+          erstellen. Sie wissen genau, was geliefert wird und was geplant ist.
+          Dies erleichtert es Ihnen, Ihren internen Stakeholdern den Fortschritt
+          und die zukünftige Planung mitzuteilen.
         </p>
       </div>
     </TextBlock>
     <TextBlock>
       <p>
-        Genug geschrieben, kontaktieren Sie uns. Wir präsentieren Ihnen gerne
-        eine Demo und zeigen Ihnen unser einzigartiges Vorgehen.
+        Genug geschrieben, kontaktieren Sie uns. Wir zeigen Ihnen gerne
+        eine Demo und präsentieren Ihnen unser einzigartiges Vorgehen.
       </p>
     </TextBlock>
     <Form />
