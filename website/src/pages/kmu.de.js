@@ -55,19 +55,19 @@ const SecondPage = props => (
       }
     >
       <p>
-        Unser Ziel ist Klein- Mittel und Micro Unternehmen zu unterstützen. Wir
-        glauben, dass Sie von unserem umfangreichen Wissen in Digitalisierung
-        profitieren können.
+        Unser Ziel ist es Klein- Mittel- und Kleinstunternehmen zu unterstützen.
+        Wir glauben, dass Sie von unserem umfangreichen Wissen in
+        Digitalisierung profitieren können.
       </p>
       <p>
-        Wir haben als Futuristen Prototypen entwickelt vor über 15 Jahren,
-        dessen Prinzipen in der heutigen Welt gang und gäbe sind.
+        Wir haben als Futuristen gearbeitet und vor mehr als 15 Jahren
+        Prototypen aus der Welt entwickelt, in der wir heute leben.
       </p>
       <p>
-        Geben Sie sich nicht nur zufrieden mit dem Nötigsten für die Welt von
-        heute, sondern bauen Sie sich Ihr Geschäft auf, um auf dem neusten Stand
-        der Zukunft zu sein, was auch immer diese bringen mag. Wir tun uns gerne
-        mit Ihnen zusammen.
+        Befolgen Sie nicht nur das, was heute benötigt wird, sondern bauen Sie
+        Ihr Unternehmen auf, um auf dem neuesten Stand und bereit zu sein für
+        alles, was in Zukunft passieren wird. Wir lieben es, mit Ihnen
+        zusammenzuarbeiten.
       </p>
     </TextBlock>
 
@@ -75,8 +75,8 @@ const SecondPage = props => (
       position="left"
       title={
         <span>
-          Wir lieben <span className="text-swiss">♥</span> es innovativzu sein.
-          Wir sind in Ihrer Nachbarschaft.
+          Wir lieben <span className="text-swiss">♥</span> es innovativ zu sein.
+          Und wir sind direkt in Ihrer Nachbarschaft.
         </span>
       }
       image={
@@ -86,28 +86,26 @@ const SecondPage = props => (
       }
     >
       <p>
-        Wir glauben, dass Sie nicht auf das Silicon Valley warten müssen um eine
-        Lösung rauszubringen, nur um diese umzuwandeln und zu adaptieren bis sie
-        auf unserem lokalen Markt brauchbar ist.
+        Wir glauben, dass Sie nicht warten müssen, bis das Silicon Valley uns
+        eine Lösung bietet, die Sie ändern und anpassen müssen, bis sie zu
+        unserem lokalen Markt passt.
       </p>
       <p>
-        Wir bauen die Lösungen hier, keine Anpassung und Adaption auf unseren
-        lokalen Markt nötig, weil wir die Zukunft gemeinsam mit Ihnen
-        erstellt haben und erstellen werden.
+        Wir bauen sie schon, keine Anpassung, denn wir haben und entwickeln die
+        Zukunft gemeinsam mit Ihnen.
       </p>
       <p>
-        Egal ob es sich um eine Mobile App, eine Progressive Webapp, Intranet, Webseite, E-Commerce, IoT,... handelt,
-        was auch immer es ist –
-        wir halten Ihren Rücken frei!
+        Egal ob es sich um eine Mobile App, eine Progressive Webapp, Intranet,
+        Webseite, E-Commerce, IoT,... handelt, was auch immer es ist – wir
+        halten Ihnen den Rücken frei!
       </p>
     </TextBlock>
     <TextBlock>
       <p>
-        Also, Sie werden an dieser Stelle nichts von uns über Wordpress, Jomdo,
-        Shopify, PHP, WooCommerce oder irgendetwas ähnliches lesen. Erzählen Sie
-        uns uns von Ihren grössten Herrausforderungen und wir werden Ihnen eine
-        wirklich passende Lösung aufzeigen. Setze Sie sich mit uns in
-        Verbindung, wir freuen uns Ihnen zu helfen!
+        Also, Sie werden an dieser Stelle nichts von uns über Wordpress, Jimdo,
+        Shopify, PHP, WooCommerce oder irgendetwas ähnliches lesen. Teilen Sie
+        uns Ihre Herausforderung mit und wir zeigen Ihnen eine wirlich passende Lösung.
+        Nehmen Sie Kontakt mit uns auf, wir helfen Ihnen gerne weiter!
       </p>
     </TextBlock>
     <Form />

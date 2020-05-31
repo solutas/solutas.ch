@@ -50,7 +50,7 @@ const SecondPage = props => (
       }
     >
       <p>
-        Soluneo (“die neue Lösung”), zurzeit im privaten Beta, bietet eine
+        Soluneo (“die neue Lösung”), derzeit in der privaten Beta-Phase, bietet eine
         digitale Plattform für den Support von lokalen KMUs und Micro-Geschäften
         um eine lokal geteilte Kundenbasis aufzubauen. Dies indem es möglich für
         sie wird, einfache und einzigartige Web-Präsenz aufzubauen die zu einer
@@ -119,7 +119,7 @@ const SecondPage = props => (
             })
           }}
         >
-          Kontaktiere uns für eine Demonstration
+          Kontaktieren Sie uns für eine Demonstration
         </a>{" "}
         wir freuen uns darauf, zu prüfen, ob wir unser Beta-Programm auf Sie
         ausweiten können.
@@ -146,13 +146,13 @@ const SecondPage = props => (
       }
     >
       <p>
-        Livebeam.me hat als privates Projekt für eine Hochzeit, Kindergeburtstag
-        und Neujahrsparty gestartet. Nachdem viele Anfragen von Gästen kam, die
+        Livebeam.me startete als privates Projekt für eine Hochzeit, Geburtstag
+        und Neujahrsparty. Nachdem viele Anfragen von Gästen kamen, die
         das Tool auch nutzen wollten, haben wir entschieden, in dieses Produkt
         zu investieren, um es öffentlich verfügbar zu machen.
       </p>
       <p>
-        Corona hat uns schwer getroffen und wir konnten livebean.me nicht
+        Corona hat uns schwer getroffen und wir konnten livebean.me nicht wie geplant
         veröffentlichen und wir sahen uns gezwungen das Projekt zu pausieren.
       </p>
     </TextBlock>
@@ -180,8 +180,8 @@ const SecondPage = props => (
           kann man sich bei Interesse registrieren.
         </p>
         <p>
-          Registrieren Sie sich für das Beta Programm und lassen Sie es uns
-          wissen, ob Sie es schon für ein Event nutzen könnten. Wir kommen sehr
+          Registrieren Sie sich für das Beta Programm und lassen Sie uns
+          wissen, ob Sie livebeam.me schon für ein Event nutzen möchten. Wir kommen sehr
           gerne auf Sie zurück und geben Ihnen einen Demo-Account für Ihr Event.
         </p>
       </div>

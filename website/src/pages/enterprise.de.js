@@ -47,7 +47,7 @@ const SecondPage = props => (
         Bereich Enterprise Content Management.
       </p>
       <p>
-        Er trug zu Open Source-Projekten wie Apache Sling (z. B. der
+        Er trug zu Open Source-Projekten wie Apache Sling (z.B. der{" "}
         <a
           href="https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md"
           target="_blank"
@@ -63,7 +63,7 @@ const SecondPage = props => (
 
     <TextBlock
       position="left"
-      title="Volle Enterprise-Power aber leichte Entwicklung."
+      title="Volle Enterprise-Power aber leichtgewichtige Entwicklung."
       image={<LiveDevelopment width="300" height="182" />}
     >
       <p>

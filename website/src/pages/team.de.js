@@ -57,8 +57,16 @@ const SecondPage = props => (
         muss.
       </p>
       <p>
-        Um erfogreich angewednet weren zu können, müssen Prozesse und Lösungen
+        Um erfogreich eingeführt werden zu können, müssen Prozesse und Lösungen
         einfach zu verstehen und zu bedienen sein.
+      </p>
+    </TextBlock>
+    <TextBlock>
+      <p>
+        Die Zusammenführung von mehr als 10 Jahren Erfahrung in LifeScience,
+        Telemedizin und Krankenpflege mit mehr als 20 Jahren Erfahrung in
+        Software Engineering in den Bereichen digitales Marketing, Medien und
+        Fernsehen führte zu SOLUTAS, because simplicity matters.​
       </p>
     </TextBlock>
 
