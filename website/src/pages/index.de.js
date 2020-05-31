@@ -34,8 +34,8 @@ const IndexPage = props => (
                 <HeroImage width="100%" height="100%" className="heroimg" />
               </Col>
               <Col md="7" className="hero__content--right">
-                <h1 class="display-3 mb-4">DURCHBRECHE DIE GRENZEN</h1>
-                <h2 class="display-5">UM DIE ZUKUNFT ZU GESTALTEN .</h2>
+                <h1 class="display-3 mb-4">push the boundaries</h1>
+                <h2 class="display-5">To shape your future.</h2>
                 {/*  <a className="btn btn-primary btn-sm" href="#" role="button">
                   getting started
                 </a>*/}
@@ -47,36 +47,39 @@ const IndexPage = props => (
 
       <TextBlock
         position="right"
-        title="Seien sie kreativ. Akzeptieren Sie keine Einschränkungen."
+        title="Seien Sie kreativ. Akzeptieren Sie keine Einschränkungen."
         image={<TimeImage width="300" height="182" />}
       >
         <p>
           Es gibt fast immer Barrieren, wenn Sie probieren das Richtige zu tun.
           Wir leben in einer sich schnell ändernden Welt. Die Erwartungen von
-          Ihnen und Ihren Kunden wechseln. Nicht jeder kann ein
-          Digitalisationsprojekt auf einer weissen Leinwand starten. Und auch
-          wenn, es gibt Zeit-, Geld- und Technologieeinschränkungen.
+          Ihnen und Ihren Kunden wechseln. Nicht jeder kann sein Projekt auf
+          einer grünen Wiese starten. Und selbst wenn, es gibt Zeit-, Geld- und
+          technische Einschränkungen.
         </p>
         <p>
-          Für uns ist Technologie ein tolles Fahrzeug, trotzdem holen wir uns
-          immer wieder die neueren Modelle. Wir folgen nicht nur den Trends, wir
-          helfen die neuen Trends zu setzen gehen mit gutem Beispiel voran.
+          Für uns ist Technologie ein Mittel zum Zweck, dennoch leben und atmen
+          wir die neusten Technologien. Wir folgen nicht nur Trends, wir sind
+          auch in der Lage zu innovieren und zu führen.
         </p>
       </TextBlock>
 
       <TextBlock
-        title="Seien sie clever. Verschwenden Sie nicht Ihre Ressourcen."
+        title="Seien Sie clever. Verschwenden Sie nicht Ihre Ressourcen."
         image={<WalletImage width="300" height="211" />}
       >
-        <p>Ressourcen sind begrenzt in Geld und Zeit.</p>
         <p>
-          Darum ist es wichtig in die Dinge zu investieren, die maximale
+          Ressourcen sind begrenzt, unter anderem im Bezug auf Zeit und Geld.
+        </p>
+        <p>
+          Darum ist es wichtig in die Dinge zu investieren, die eine maximale
           Auswirkung auf den Erfolg Ihres Unternehmens haben.
         </p>
         <p>
-          Sie wollen einen Partner der Ihnen hilft eine unvoreingenommene Sicht
-          auf Ihr Unternehmen zu kriegen, einen Partner, der unterstützt und
-          beratet um zum richtigen Zeitpunkt in das Richtige zu Investieren.
+          Sie wollen einen Partner der Ihnen hilft eine externe Sicht auf Ihr
+          Unternehmen zu bekommen, einen Partner, der Sie unterstützt und
+          beratet, damit Sie zum richtigen Zeitpunkt in das Richtige
+          investieren.
         </p>
       </TextBlock>
 
@@ -86,17 +89,16 @@ const IndexPage = props => (
         image={<RunningImage width="300" height="182" />}
       >
         <p>
-          Ihr Unternehmen ist komplex und Sie stehen vor Ihren eigenen,
-          speziellen Herausforderungen.
+          Ihr Unternehmen ist komplex und Sie stehen vor Ihren eigenen
+          individuellen Herausforderungen.
         </p>
         <p>
-          Man kann sich nie allen Herausforderungen zur gleichen Zeit stellen,
-          aber wir ermutigen Sie dazu, nicht stehen zu bleiben, sondern dass sie
-          sich aktive Ihren Herausforderungen stellen mit uns als Rückendeckung.
-          Wir erstellen Innovative Lösungen mit Ihnen, in kleinen Schritten zum
-          Ziel ohne dabei Ihre Vision aus den Augen zu verlieren. Sie wollen
-          einen Partner dem Sie vertrauen. Sie wollen einen Partner der in Ihrem
-          Interesse handelt. Wir sind gerne Ihr Partner.
+          Sie können niemals jede Herausforderung, der Sie gegenüberstehen,
+          gleichzeitig lösen und verbessern. Wir wissen das, wir ermutigen Sie
+          und helfen Ihnen, nicht still zu stehen. Wir arbeiten mit Ihnen in
+          kleinen Iterationen zusammen und verlieren Ihre langfristige Vision
+          nie aus den Augen. Sie möchten einen vertrauenswürdigen Partner. Sie
+          möchten einen Partner der in Ihrem besten Interesse handelt.
         </p>
       </TextBlock>
 
@@ -105,14 +107,15 @@ const IndexPage = props => (
         image={<CelebrateImage width="300" height="211" />}
       >
         <p>
-          Veränderungen und Neuerungen können beängstigend sein. Wir sind Ihr
-          Partner, mit uns können Sie Ideen aufgleisen und Brainstormen. 
-          Zusammen finden den richtigen Weg, Sie voran zu bringen.
+          Veränderungen und Verbesserungen können beängstigend sein. Sie müssen
+          jetzt Ihr Geschäft am laufen halten und über die Zukunft nachdenken.
         </p>
         <p>
-          Sie verdienen es einen ehrlichen Partner zu haben, der mit
-          Ihnen in die Zukunft schaut, Ihre Wünsche wahrnimmt; ohne dabei die
-          Gegenwart aufs Spiel zu setzten.
+          Wir sind Ihr Sparringspartner. Sie können mit uns ein Brainstorming
+          durchführen und uns Ihre Ideen mitteilen. Gemeinsam werden wir einen
+          guten Weg finden, um Sie voranzubringen. Sie haben das Recht, einen
+          ehrlichen Partner zu haben, der Ihnen hilft, Ihre Zukunft zu
+          gestalten, ohne Ihre Gegenwart zu riskieren.
         </p>
         <p>Starten Sie heute. Kontaktieren Sie uns jetzt.</p>
       </TextBlock>

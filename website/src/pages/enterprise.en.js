@@ -43,8 +43,7 @@ const SecondPage = props => (
       image={<SuperHero width="300" height="182" />}
     >
       <p>
-        One of our Founder alone has more then 20 Years expierence within the
-        Enterprise Content Management field.
+      One of our Founder alone has more than 20 Years experience within the Enterprise Content Management field.
       </p>
       <p>
         He contributed to Open Source Projects such as Apache Sling (e.g.{" "}

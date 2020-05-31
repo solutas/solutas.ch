@@ -39,27 +39,25 @@ const SecondPage = props => (
 
     <TextBlock
       position="right"
-      title="Bring dein CMS Projekt zum nächsten Level."
+      title="Bringen Sie Ihr CMS-Projekt auf die nächste Stufe."
       image={<SuperHero width="300" height="182" />}
     >
       <p>
-        Einer unserer Gründer hat allein über 20 Jahre Erfahrung im Enterprise
-        Content Management Bereich.
+        Allein einer unserer Gründer verfügt über mehr als 20 Jahre Erfahrung im
+        Bereich Enterprise Content Management.
       </p>
       <p>
-        Er steuerte bei grossen Open Source Projekten wie zum Beispiel bei
-        Apache Sling, die{" "}
+        Er trug zu Open Source-Projekten wie Apache Sling (z. B. der
         <a
           href="https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md"
           target="_blank"
         >
-          HTL Library und Spezifikation
-        </a>{" "}
-        bei. Damit beeinflusste er bekannte kommerzielle Systeme wie Adobe AEM.
-        Mit dem Wissen, wo die Schwachpunkte von solchen Projekten liegen, hat
-        ich die SOLUTAS das Ziel gesetzt das volle Potenzial von ihrem
-        bestehenden Content Management Systemen auszunutzen oder neue Projekte
-        gezielt anzuheben.
+          HTL-Bibliothek und -Spezifikation
+        </a>
+        ) bei und beeinflusste bekannte kommerzielle Systeme wie Adobe AEM.
+        Unser Ziel bei SOLUTAS ist es, das volle Potenzial Ihres vorhandenen
+        Content Management Systems auszuschöpfen oder Ihr neues Projekt
+        voranzutreiben.
       </p>
     </TextBlock>
 
@@ -73,15 +71,15 @@ const SecondPage = props => (
         Implementation von Enterprise Web Projekten zurück.
       </p>
       <p>
-        Magnolia CMS ist ein starkes stabiles System in Java geschrieben und auf
-        JCR aufbauend. Mit der einzigartigen leichten Entwicklung und dem
-        Vorteil die Option zu haben, das System mit der Magnolia Cloud zu
-        koppeln, kann jedes Projekt fahrt in unglaubliche Dimensionen aufnehmen.
+        Magnolia CMS ist ein starkes stabiles System, das in Java gerschrieben
+        ist und auf JCR aufbaut. Dank seiner einzigartigen Art der "Light
+        Development" und der Möglichkeit, die gebrauchsfertige Magnolia Cloud zu
+        nutzen, wird jedes Projekt in unglaublichen Dimensionen beschleunigt.
       </p>
       <p>
-        Direkt vom Start an können wir uns auf Ihr eigentliches Projektziel
-        konzentrieren, mit dem Wissen das keine Grenzen gesetzt sind mit dem
-        starken Rückgrat von Magnolia CMS.
+        Von Anfang an können wir uns auf Ihr eigentliches Ziel konzentrieren, da
+        wir wissen, dass aufgrund des starken Hintergrunds von Magnolia CMS
+        keine Grenzen gesetzt sind.
       </p>
     </TextBlock>
 
@@ -91,30 +89,32 @@ const SecondPage = props => (
       image={<Developer width="300" height="182" />}
     >
       <p>
-        Im Herzen ist Jamstack eine moderne Webentwicklungsarchitektur. JAM
-        referiert zu einer JavaScript Benutzerschnittstelle, wiederverwendbare
-        APIs und vorgebautem Markup. Jamstack erlaubt es Ihnen die Performance
-        Ihrer Seite zu verbessern indem gewisse statische Seiten bei Ausführung
-        in ein Content Delivery Network (CDN) eingesetzt werden.
+        Im Kern ist Jamstack eine moderne Webentwicklungsarchitektur. JAM
+        bezieht sich auf clientseitiges JavaScript, wiederverwendbare APIs und
+        vorgefertigtes Markup. Mit Jamstack können Sie die Site-Leistung
+        verbessern, indem Sie beim Erstellen eine Reihe statischer Seiten
+        rendern und diese in einem Content Delivery Network (CDN) bereitstellen.
       </p>
       <p>
-        Nicht wie manche etablierte Agenturen in diesem Sektor, starteten wir
-        unseren Weg mit der Überzeugung, dass um Erfolgreich zu sein, es nötig
-        ist sich auf die Frontend Entwicklung zu konzentrieren, besonders auf
-        Java basierenden CMS Systemen.
+        Im Gegensatz zu vielen etablierten Agenturen in diesem Sektor haben wir
+        unsere Reise mit der festen Überzeugung begonnen, dass Sie die
+        Frontend-Implementierung, insbesondere mit Java-basierten CMS-Systemen,
+        vollständig vorantreiben müssen, um erfolgreich zu sein.
       </p>
     </TextBlock>
     <TextBlock>
       <p>
-        We are very strong in the Java World but we do love{" "}
-        <span className="text-swiss">♥</span> Frontend development. Since we as
-        a company are feeling at home in both worlds equaly there will be{" "}
+        Wir sind sehr stark in der Java-Welt, aber wir lieben die{" "}
+        <span className="text-swiss">♥</span>
+        Frontend-Entwicklung. Da wir uns als Unternehmen in beiden Welten
+        gleichermaßen zu Hause fühlen, wird es{" "}
         <string>
-          no more miscommunication between "Backend" and "Frontend" Development.
-        </string>{" "}
-        You will see creative Solutions, such as adding a GraphQL layer to your
-        portfolio to handle legacy systems. <strong>SOLUTAS</strong> is a Cloud
-        Native Company.
+          keine Fehlkommunikation mehr zwischen "Backend" und "Frontend"
+          -Entwicklung geben
+        </string>
+        . Sie sehen kreative Lösungen, z. B. das Hinzufügen einer GraphQL-Ebene
+        zu Ihrem Portfolio, um ältere Systeme zu verwalten. SOLUTAS ist ein
+        Cloud Native Company.
       </p>
     </TextBlock>
     <TextBlock
@@ -128,11 +128,11 @@ const SecondPage = props => (
         Sie davon schon genug gehört haben.
       </p>
       <p>
-        Im Kern werden Implementationen von uns mit der Agilen Methoden
-        umgesetzt. Aber auch wenn Sie Prince, Hermes oder andere Methoden
-        anwenden, sind wir in der Lage unsere Entwicklungen in Ihre bestehende
-        Projekt Management Frameworks einzubauen. SOLUTAS hat Erfahrung in
-        regulierten Umgebungen.
+        Im Kern führen wir unsere Implementierung mit unserer agilen Methodik
+        durch. Wenn Sie jedoch Prince, Hermes oder eine andere Methodik
+        verwenden, können wir unseren Engineering-Aufwand in Ihr bestehendes
+        Projektmanagement-Framework einbetten. SOLUTAS hat auch Erfahrung in der
+        Arbeit in regulierten Umgebungen.
       </p>
     </TextBlock>
     <TextBlock
@@ -154,8 +154,8 @@ const SecondPage = props => (
     </TextBlock>
     <TextBlock>
       <p>
-        Genug geschrieben, kontaktieren Sie uns. Wir präsentieren Ihnen gerne eine Demo und
-        zeigen Ihnen unser einzigartiges Vorgehen.
+        Genug geschrieben, kontaktieren Sie uns. Wir präsentieren Ihnen gerne
+        eine Demo und zeigen Ihnen unser einzigartiges Vorgehen.
       </p>
     </TextBlock>
     <Form />
