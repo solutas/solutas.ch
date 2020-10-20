@@ -15,6 +15,7 @@ import TimeImage from "../assets/undraw_season_change_f99v.svg"
 import SoluneoOne from "../assets/soluneo-1.gif"
 import LivebeamOne from "../assets/livebeam-1.gif"
 import EditorImage from "../assets/soluneopageeditor.gif"
+import Senol from "../assets/senol-itting-1-2048x1463.png"
 const SecondPage = props => (
   <Layout location={props.location}>
     <Jumbotron fluid bsPrefix="hero">
@@ -77,10 +78,7 @@ const SecondPage = props => (
       title="How does it work?"
       image={
         <div>
-          <img
-            src="http://senolio.flywheelsites.com/wp-content/uploads/2020/08/senol-itting-1-2048x1463.png"
-            style={{ width: "100%" }}
-          />
+          <img src={Senol} style={{ width: "100%" }} />
         </div>
       }
     >
