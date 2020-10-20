@@ -1,22 +1,24 @@
-html, body {
-  font-size: 20px;   
+html,
+body {
+  font-size: 20px;
 }
 @import "~bootstrap/scss/functions.scss";
 @import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins"; 
+@import "~bootstrap/scss/mixins";
 
 @import "_theme.scss";
 @import "_form.scss";
 
-@import "~bootstrap/scss/reboot"; 
-@import "~bootstrap/scss/grid"; 
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
 @import "~bootstrap/scss/utilities";
 
 // components
-@import "~bootstrap/scss/type"; 
-@import "~bootstrap/scss/buttons"; 
-@import "~bootstrap/scss/jumbotron"; 
-@import "~bootstrap/scss/dropdown"; 
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/modal";
 
 @import "typo";
 
@@ -27,18 +29,25 @@ html, body {
 main {
   padding-top: 65px;
 }
-
+.theme-preview {
+  .modal-content {
+    left: 0;
+    min-height: 90vh !important;
+    min-width: 90vh !important;
+    display: flex;
+  }
+}
 .direction-reverse {
-  flex-direction: column-reverse;    
+  flex-direction: column-reverse;
 
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     flex-direction: row;
-  }  
+  }
 }
 
 .text-image {
-  display: flex;  
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
 }
 
@@ -51,12 +60,12 @@ main {
 }
 
 .hero {
-  @extend .jumbotron-fluid;  
+  @extend .jumbotron-fluid;
   display: flex;
   height: 465px;
-  align-items: center;    
+  align-items: center;
 
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(md) {
     height: 400px;
   }
 
@@ -66,12 +75,12 @@ main {
     font-family: $font-family-sans-serif;
     display: flex;
     flex: 1;
-    align-items: center;    
+    align-items: center;
     justify-items: center;
 
     &--left {
       display: flex;
-      align-items: center;    
+      align-items: center;
       justify-content: center;
       padding: 0;
     }
@@ -79,58 +88,61 @@ main {
     &--right {
       display: flex;
       flex-direction: column;
-      align-items: center;    
+      align-items: center;
       justify-items: center;
       align-content: center;
       justify-content: center;
-
     }
 
     .heroimg {
       width: 200px;
-      @include media-breakpoint-up(md){
+      @include media-breakpoint-up(md) {
         width: 350px;
       }
     }
-    @include media-breakpoint-between(xs,sm){
+    @include media-breakpoint-between(xs, sm) {
       .btn {
-          @include button-size($input-btn-padding-y-sm, $input-btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius-sm);
+        @include button-size(
+          $input-btn-padding-y-sm,
+          $input-btn-padding-x-sm,
+          $font-size-sm,
+          $line-height-sm,
+          $btn-border-radius-sm
+        );
       }
     }
     h1 {
       margin-top: 40px;
       font-weight: 200;
-      
+
       font-size: 25px;
       color: $sol-white;
       text-align: center;
       letter-spacing: -2px;
       text-transform: uppercase;
       line-height: 25px;
-      @include media-breakpoint-up(md){
+      @include media-breakpoint-up(md) {
         font-weight: 300;
-        font-size: 35px;          
+        font-size: 35px;
         line-height: 35px;
       }
     }
     h2 {
       margin-top: 0px;
-      color: rgba($sol-white, .5);
-      text-align: center;      
-      letter-spacing: -2px;            
+      color: rgba($sol-white, 0.5);
+      text-align: center;
+      letter-spacing: -2px;
       font-weight: 300;
       font-size: 25px;
       line-height: 25px;
-      @include media-breakpoint-up(md){
-        font-weight: 100;        
+      @include media-breakpoint-up(md) {
+        font-weight: 100;
         font-size: 40px;
         line-height: 40px;
       }
-    }    
+    }
   }
 }
-
-
 
 /*html, body {
     height: 100%;
