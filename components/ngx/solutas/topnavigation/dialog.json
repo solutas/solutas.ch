@@ -1,0 +1,14 @@
+{
+    "title": "Top Navigation",
+    "submitText": "Submit",
+    "cancelText": "Cancel",
+    "fields": [
+        {
+            "type": "ngh/dialog/form/query",
+            "id": "a45993bf-9a67-4450-8581-3b6f1aa1821d",
+            "name": "items",
+            "label": "Items",
+            "listChildren": true
+        }
+    ]
+}

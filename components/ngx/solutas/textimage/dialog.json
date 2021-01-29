@@ -1,0 +1,36 @@
+{
+    "title": "Text & Image",
+    "submitText": "Submit",
+    "cancelText": "Cancel",
+    "fields": [
+        {
+            "type": "ngh/dialog/form/text",
+            "id": "06993144-b991-4414-94be-3c27262a2188",
+            "new": true,
+            "name": "title",
+            "label": "Title"
+        },
+        {
+            "type": "ngh/dialog/form/text",
+            "id": "d6c19572-5433-475d-b3ab-4f98caf1ef03",
+            "new": true,
+            "name": "text",
+            "label": "Text"
+        },
+        {
+            "type": "ngh/dialog/form/text",
+            "id": "3e30be4a-8926-4517-95df-0576fc9c8832",
+            "new": true,
+            "name": "position",
+            "label": "Position",
+            "designValue": true
+        },
+        {
+            "type": "ngh/dialog/form/image",
+            "id": "436ca767-5039-4db5-a3d9-d323aeb4fa4c",
+            "new": true,
+            "name": "image",
+            "label": "Image"
+        }
+    ]
+}
