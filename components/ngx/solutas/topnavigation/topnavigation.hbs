@@ -34,9 +34,9 @@
                 ></path>
                 <path
                   d="M15.37285,7.52576 C18.49343,6.54167 23.3927,7.07514 26.31567,8.71731 C29.23866,10.35947 29.07847,12.48846 25.95787,13.47255 C22.83729,14.45664 17.93802,13.92317 15.01504,12.281 C12.09205,10.63884 12.25225,8.50985 15.37285,7.52576 Z"
-                  id="sol-logo-colord"
+                  class="sol-logo-colord"
                   fill-opacity="0.7922"
-                  fill="#0F0A0A"
+                  fill="#F5EFED"
                 ></path>
                 <path
                   d="M24.50246,0.87083 C26.72486,1.52403 26.80944,2.89682 24.6914,3.93705 C22.57336,4.97728 19.05476,5.29103 16.83238,4.63783 C14.60999,3.98463 14.5254,2.61184 16.64345,1.57161 C18.76148,0.53138 22.28008,0.21763 24.50246,0.87083 Z"
@@ -51,23 +51,13 @@
       <div class="navbar-links" >
          <a href="/content/{{currentPage.site}}/{{currentPage.lang}}/homepage.html" class="navbar-link {{#equal currentPage.path 'homepage'}} active {{/equal}}">Home</a>
         {{#if items.result}}
-      {{#each items.result}}      
-        <a class="navbar-link {{#equal ../currentPage.path this.path}} active {{/equal}}" href="/content/{{../currentPage.site}}/de/{{this.path}}.html">
-            {{this.title}} 
-        </a>    
-      {{/each}}
-      {{/if}}
- 
-        <!--{menuLinks
-          ? menuLinks.map(item => (
-              <IntlLink to={item.link} className="navbar-link">
-                <FormattedMessage id={item.name} />
-              </IntlLink>
-            ))
-          : null}
-          <SelectLanguage langs={props.langs} />-->
+            {{#each items.result}}      
+                <a class="navbar-link {{#equal ../currentPage.path this.path}} active {{/equal}}" href="/content/{{../currentPage.site}}/de/{{this.path}}.html">
+                    {{this.title}} 
+                </a>    
+            {{/each}}
+        {{/if}}
       </div>
-
       <svg
         viewBox="0 0 100 80"
         width="20"

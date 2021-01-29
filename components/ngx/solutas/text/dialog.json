@@ -1,0 +1,14 @@
+{
+    "title": "Text",
+    "submitText": "Submit",
+    "cancelText": "Cancel",
+    "fields": [
+        {
+            "type": "ngh/dialog/form/text",
+            "id": "06993144-b991-4414-94be-3c27262a2188",
+            "new": true,
+            "name": "text",
+            "label": "Text"
+        }        
+    ]
+}

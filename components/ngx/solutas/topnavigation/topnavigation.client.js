@@ -37,22 +37,27 @@ return class TopNavigation {
   onScroll() {
     if (window.pageYOffset > 65) {
       if (!this.scrolled) {
-        this.element.classList.add('top-header--scrolled')
-        this.scrolled = true
+        this.element.classList.add('top-header--scrolled');
+        this.stone.setAttribute("fill", "#0F0A0A");        
+        this.scrolled = true;
       }
     } else {
       if (this.scrolled) {
-        this.element.classList.remove('top-header--scrolled')
-        this.scrolled = false
+        this.element.classList.remove('top-header--scrolled');
+        this.stone.setAttribute("fill", "#F5EFED");
+        this.scrolled = false;
       }
     }
   }
 
   init(el) {
     this.element = el
-    this.hamburger = this.element.querySelector('.hamburger')
-    this.navigation = this.element.querySelector('.navbar-links')
-    document.addEventListener('scroll', (e) => this.onScroll())
-    this.onScroll()
+    this.hamburger = this.element.querySelector('.hamburger');
+    this.navigation = this.element.querySelector('.navbar-links');
+    this.stone = this.element.querySelector('.sol-logo-colord');
+    console.log("this.stone");
+    console.log(this.stone);
+    document.addEventListener('scroll', (e) => this.onScroll());
+    this.onScroll();
   }
 }
