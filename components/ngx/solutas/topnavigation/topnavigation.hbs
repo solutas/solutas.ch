@@ -49,14 +49,17 @@
         </svg>
       </div>
       <div class="navbar-links" >
-         <a href="/content/{{currentPage.site}}/{{currentPage.lang}}/homepage.html" class="navbar-link {{#equal currentPage.path 'homepage'}} active {{/equal}}">Home</a>
+         <a href="/content/{{currentPage.site}}/{{currentPage.lang}}/hoempage.html" class="navbar-link {{#equal currentPage.path 'hoempage'}} active {{/equal}}">Home</a>
         {{#if items.result}}
             {{#each items.result}}      
-                <a class="navbar-link {{#equal ../currentPage.path this.path}} active {{/equal}}" href="/content/{{../currentPage.site}}/de/{{this.path}}.html">
+                <a class="navbar-link {{#equal ../currentPage.path this.path}} active {{/equal}}" href="/content/{{../currentPage.site}}/{{../currentPage.lang}}/{{this.path}}.html">
                     {{this.title}} 
                 </a>    
             {{/each}}
         {{/if}}
+
+        {{#equal currentPage.lang 'de'}} <a class="navbar-link" href='/content/{{currentPage.site}}/en/{{currentPage.path}}.html'>English</a> {{/equal}}
+     {{#equal currentPage.lang 'en'}} <a class="navbar-link" href='/content/{{currentPage.site}}/de/{{currentPage.path}}.html'>Deutsch</a> {{/equal}}
       </div>
       <svg
         viewBox="0 0 100 80"

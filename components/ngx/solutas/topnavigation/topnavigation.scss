@@ -29,6 +29,7 @@
       &.open {
         transform: translateX(0);
       }
+      
       @include media-breakpoint-up(md) {
         margin-left: auto;
         position: relative;

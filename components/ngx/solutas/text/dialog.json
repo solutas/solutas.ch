@@ -1,7 +1,8 @@
 {
-    "title": "Text",
+    "title": "Text Component",
     "submitText": "Submit",
     "cancelText": "Cancel",
+    "enableLayoutOptions": true,
     "fields": [
         {
             "type": "ngh/dialog/form/text",
