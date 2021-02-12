@@ -51,10 +51,13 @@
       <div class="navbar-links" >
          <a href="/content/{{currentPage.site}}/{{currentPage.lang}}/hoempage.html" class="navbar-link {{#equal currentPage.path 'hoempage'}} active {{/equal}}">Home</a>
         {{#if items.result}}
-            {{#each items.result}}      
+            {{#each items.result}}
+                {{#if this.hideInNavigation}}
+                {{else}}
                 <a class="navbar-link {{#equal ../currentPage.path this.path}} active {{/equal}}" href="/content/{{../currentPage.site}}/{{../currentPage.lang}}/{{this.path}}.html">
-                    {{this.title}} 
-                </a>    
+                    {{this.navTitle}}
+                </a>
+                {{/if}}
             {{/each}}
         {{/if}}
 

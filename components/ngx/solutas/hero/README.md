@@ -1,5 +1,5 @@
 ---
-title: Hero
+title: Hero Komponente
 description: <p>Hero Banner</p>
 ---
 # Soluneo App Component

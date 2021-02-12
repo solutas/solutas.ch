@@ -4,6 +4,13 @@
     "cancelText": "Cancel",
     "fields": [
         {
+            "type": "ngh/dialog/form/text",
+            "id": "a45993bf-9a67-4450-8581-3b6f1aa1821d",
+            "new": true,
+            "name": "contact",
+            "label": "Contact"
+        },
+        {
             "type": "ngh/dialog/form/image",
             "id": "840d2d10-3d69-4fb6-b76f-5ac3375db04e",
             "new": true,
